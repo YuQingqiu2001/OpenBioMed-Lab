@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="OpenBioMed Lab" width="200">
+</p>
+
 # OpenBioMed Lab
 
 > 推动 AI Agent 在生物学和医学中的应用进展。
