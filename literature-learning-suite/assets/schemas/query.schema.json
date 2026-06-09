@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/query.schema.json",
+  "title": "Executed literature query",
+  "type": "object",
+  "required": ["source", "query", "executed_at", "result_count", "status"],
+  "properties": {
+    "source": {"enum": ["pubmed", "arxiv", "crossref", "biorxiv", "medrxiv"]},
+    "query": {"type": "string", "minLength": 1},
+    "executed_at": {"type": "string"},
+    "result_count": {"type": "integer", "minimum": 0},
+    "status": {"enum": ["success", "error", "partial", "skipped"]},
+    "parameters": {"type": "object"},
+    "error": {"type": "string"}
+  },
+  "additionalProperties": true
+}

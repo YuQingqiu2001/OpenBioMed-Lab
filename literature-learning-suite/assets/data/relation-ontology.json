@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "description": "Allowed literature and biomedical knowledge-graph relations.",
+  "relations": [
+    {
+      "id": "supports",
+      "category": "evidence",
+      "symmetric": false,
+      "meaning": "Provides evidence consistent with a claim in the target.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "contradicts",
+      "category": "evidence",
+      "symmetric": true,
+      "meaning": "Reports evidence in meaningful tension with the target.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "extends",
+      "category": "evidence",
+      "symmetric": false,
+      "meaning": "Adds scope, mechanism, population, or validation to the target.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "replicates",
+      "category": "evidence",
+      "symmetric": false,
+      "meaning": "Independently repeats a central result or analysis.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "cites",
+      "category": "bibliographic",
+      "symmetric": false,
+      "meaning": "The source explicitly cites the target.",
+      "generated_by": ["explicit_reference"],
+      "requires_description": true
+    },
+    {
+      "id": "methodological_complement",
+      "category": "method",
+      "symmetric": true,
+      "meaning": "Uses a method that addresses a limitation or blind spot of the other record.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "shared_mechanism",
+      "category": "mechanism",
+      "symmetric": true,
+      "meaning": "Supports a specifically described common mechanism.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "upstream_of",
+      "category": "mechanism",
+      "symmetric": false,
+      "inverse": "downstream_of",
+      "meaning": "Acts earlier in a supported causal or regulatory chain.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "downstream_of",
+      "category": "mechanism",
+      "symmetric": false,
+      "inverse": "upstream_of",
+      "meaning": "Acts later in a supported causal or regulatory chain.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "clinical_translation",
+      "category": "translation",
+      "symmetric": false,
+      "meaning": "Tests or applies a finding in a clinically relevant setting.",
+      "generated_by": ["analyst"],
+      "requires_description": true
+    },
+    {
+      "id": "defines_concept",
+      "category": "concept",
+      "symmetric": false,
+      "meaning": "The source paper operationally defines or introduces the target concept.",
+      "generated_by": ["gen_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "shares_curated_entities",
+      "category": "deterministic_similarity",
+      "symmetric": true,
+      "meaning": "Shares at least the configured number of curated biological entities.",
+      "generated_by": ["build_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "shares_molecules",
+      "category": "deterministic_similarity",
+      "symmetric": true,
+      "meaning": "Shares at least two validated molecular or pathway entities.",
+      "generated_by": ["gen_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "shares_topic",
+      "category": "text_similarity",
+      "symmetric": true,
+      "meaning": "Shares a non-trivial set of informative topic terms.",
+      "generated_by": ["gen_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "shares_disease_method",
+      "category": "biomedical_similarity",
+      "symmetric": true,
+      "meaning": "Studies the same disease context with at least one shared method.",
+      "generated_by": ["gen_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "shares_paradigm",
+      "category": "conceptual_similarity",
+      "symmetric": true,
+      "meaning": "Shares a specifically articulated hidden organizing axis or paradigm.",
+      "generated_by": ["gen_edges"],
+      "requires_description": true
+    },
+    {
+      "id": "related",
+      "category": "fallback",
+      "symmetric": false,
+      "meaning": "Fallback relation used only when a more precise verified relation is unavailable.",
+      "generated_by": ["analyst"],
+      "requires_description": true,
+      "discouraged": true
+    }
+  ],
+  "forbidden_relations": [
+    "same_author",
+    "same_issue",
+    "same_journal",
+    "shares_keyword"
+  ]
+}

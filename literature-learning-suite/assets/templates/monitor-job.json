@@ -1,0 +1,44 @@
+{
+  "name": "daily-biomedical-literature-monitor",
+  "timezone": "UTC",
+  "schedule": "0 9 * * *",
+  "workspace": "${LITERATURE_WORKSPACE}",
+  "batch_size": 10,
+  "queries": [
+    {
+      "source": "pubmed",
+      "query": "(single-cell OR spatial transcriptomics) AND (cancer OR tumor microenvironment)",
+      "enabled": true,
+      "tags": ["single-cell", "spatial", "cancer"]
+    },
+    {
+      "source": "pubmed",
+      "query": "(CRISPR OR genome editing) AND (gene therapy OR functional genomics)",
+      "enabled": true,
+      "tags": ["crispr", "genomics"]
+    },
+    {
+      "source": "arxiv",
+      "query": "cat:q-bio.* AND (foundation model OR machine learning)",
+      "enabled": true,
+      "tags": ["q-bio", "machine-learning"]
+    },
+    {
+      "source": "biorxiv",
+      "query": "single-cell spatial transcriptomics",
+      "enabled": true,
+      "tags": ["preprint", "single-cell", "spatial"]
+    },
+    {
+      "source": "medrxiv",
+      "query": "biomarker immunotherapy",
+      "enabled": false,
+      "tags": ["clinical-preprint", "biomarker"]
+    }
+  ],
+  "outputs": {
+    "digest": true,
+    "network": true,
+    "audit": true
+  }
+}

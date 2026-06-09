@@ -1,0 +1,47 @@
+# MCP Server Configuration Template
+# 
+# Copy this into your agent host's config.yaml under mcp_servers.
+# Replace ${PLACEHOLDERS} with your actual values.
+# Never commit this file with real credentials.
+
+mcp_servers:
+  # ── PubMed ──────────────────────────────────────────────
+  # Required: PUBMED_EMAIL (for NCBI rate limiting compliance)
+  # Optional: PUBMED_API_KEY (increases rate limit from 3/s to 10/s)
+  pubmed:
+    command: mcp-simple-pubmed
+    enabled: true
+    env:
+      PUBMED_EMAIL: ${PUBMED_EMAIL}           # e.g. "researcher@university.edu"
+      PUBMED_API_KEY: ${PUBMED_API_KEY}       # optional, from NCBI account
+
+  # ── arXiv ───────────────────────────────────────────────
+  # Provides: search, download, read, citation_graph, topic watch
+  # Storage path: where downloaded papers and indexes live
+  arxiv:
+    command: arxiv-mcp-server
+    args:
+      - --storage-path
+      - ${ARXIV_STORAGE_PATH}                 # e.g. "./arxiv-storage"
+    enabled: true
+
+  # ── Fetch ───────────────────────────────────────────────
+  # Generic HTTP fetch for public web pages.
+  # Respects robots.txt. Do not use for authenticated/paywalled content.
+  fetch:
+    command: mcp-server-fetch
+    enabled: true
+    # Optional proxy:
+    # args:
+    #   - --proxy-url
+    #   - ${HTTP_PROXY}
+
+  # ── Playwright (Browser) ─────────────────────────────────
+  # For JavaScript-rendered pages (e.g. bioRxiv/medRxiv).
+  # Requires a visible browser — user must complete security challenges manually.
+  # Alternative: use extract_biorxiv_cdp.mjs for Chrome CDP extraction.
+  browser:
+    command: npx
+    args:
+      - "@playwright/mcp@latest"
+    enabled: false                            # Enable only when needed

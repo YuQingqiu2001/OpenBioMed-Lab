@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/journal-metric-2024.schema.json",
+  "title": "Normalized 2024 journal metric",
+  "type": "object",
+  "required": ["name", "metric_year"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "abbr_name": {"type": "string"},
+    "issn": {"type": "string"},
+    "eissn": {"type": "string"},
+    "jif": {"type": ["number", "null"]},
+    "jif_5y": {"type": ["number", "null"]},
+    "category_name": {"type": "string"},
+    "quartile": {"type": "string"},
+    "rank": {},
+    "rank_total": {},
+    "metric_year": {"const": 2024}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+# Git LFS and attribute configuration
+# Large data files — GitHub recommends LFS for files > 50MB.
+# The largest bundled file is ~7.8MB, which is below the GitHub warning
+# threshold (50MB) but large enough to benefit from LFS if you choose.
+
+# If using Git LFS, uncomment:
+# assets/data/journal_metrics_2024.json filter=lfs diff=lfs merge=lfs -text
+# assets/data/bioc_genes.json filter=lfs diff=lfs merge=lfs -text
+# assets/data/kegg_pathways.json filter=lfs diff=lfs merge=lfs -text
+
+# Text files — ensure consistent line endings
+*.md text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.bat text eol=crlf
+*.R text eol=lf
+LICENSE text eol=lf
+VERSION text eol=lf

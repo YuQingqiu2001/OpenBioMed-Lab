@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "classification_labels": [
+    "REPORTED",
+    "SUPPORTED INFERENCE",
+    "HYPOTHESIS",
+    "UNKNOWN"
+  ],
+  "levels": [
+    {
+      "id": "high",
+      "label": "High confidence",
+      "minimum_score": 12,
+      "guidance": "Direct, well-controlled evidence with adequate precision, low material bias, and independent or orthogonal support."
+    },
+    {
+      "id": "moderate",
+      "label": "Moderate confidence",
+      "minimum_score": 8,
+      "guidance": "Generally supportive evidence with one or more material limitations, incomplete replication, or constrained external validity."
+    },
+    {
+      "id": "low",
+      "label": "Low confidence",
+      "minimum_score": 4,
+      "guidance": "Preliminary, indirect, underpowered, weakly controlled, or highly confounded evidence."
+    },
+    {
+      "id": "insufficient",
+      "label": "Insufficient",
+      "minimum_score": 0,
+      "guidance": "Available material cannot support claim-level assessment."
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "study_design",
+      "range": [0, 2],
+      "question": "Is the design appropriate for the causal or descriptive claim?"
+    },
+    {
+      "id": "risk_of_bias",
+      "range": [0, 2],
+      "question": "Are selection, measurement, confounding, and analytic biases controlled?"
+    },
+    {
+      "id": "sample_size_and_precision",
+      "range": [0, 2],
+      "question": "Are sample size, uncertainty, effect estimates, and missingness adequate?"
+    },
+    {
+      "id": "control_quality",
+      "range": [0, 2],
+      "question": "Are negative, positive, comparator, and perturbation controls appropriate?"
+    },
+    {
+      "id": "replication",
+      "range": [0, 2],
+      "question": "Is the result supported by independent cohorts, models, laboratories, or orthogonal assays?"
+    },
+    {
+      "id": "external_validity",
+      "range": [0, 2],
+      "question": "Does the evidence generalize beyond the tested model, population, or setting?"
+    },
+    {
+      "id": "data_and_code_availability",
+      "range": [0, 2],
+      "question": "Are data, code, protocols, and sufficient reporting available for audit or reproduction?"
+    }
+  ],
+  "rules": [
+    "Journal prestige never increases the score.",
+    "Abstract-only analysis cannot receive high confidence.",
+    "A score does not override a fatal design flaw or unverifiable identity.",
+    "Each rating requires a plain-language justification."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "PMID:00000000",
+  "title": "REPLACE WITH VERIFIED TITLE",
+  "normalized_title": "replace with verified title",
+  "authors": [],
+  "year": null,
+  "venue": "",
+  "doi": "",
+  "pmid": "",
+  "pmcid": "",
+  "arxiv_id": "",
+  "source": "pubmed",
+  "url": "",
+  "abstract": "",
+  "document_type": "article",
+  "publication_status": "peer_reviewed",
+  "fulltext_status": "abstract_only",
+  "fulltext_source": "",
+  "fulltext_accessed_at": "",
+  "extraction_method": "",
+  "retrieved_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "analysis_tier": "B",
+  "study_profile": {
+    "design": "",
+    "population_or_model": "",
+    "sample_size": null,
+    "intervention_or_exposure": "",
+    "comparator": "",
+    "primary_outcomes": [],
+    "assays_or_data": [],
+    "preregistered": null,
+    "data_available": null,
+    "code_available": null
+  },
+  "evidence_grade": {
+    "overall": "insufficient",
+    "score": 0,
+    "dimension_scores": {
+      "study_design": 0,
+      "risk_of_bias": 0,
+      "sample_size_and_precision": 0,
+      "control_quality": 0,
+      "replication": 0,
+      "external_validity": 0,
+      "data_and_code_availability": 0
+    },
+    "justification": ""
+  },
+  "analysis": {
+    "core_question": "",
+    "subquestions": [],
+    "ces_chains": [
+      {
+        "claim": "REPLACE WITH A FALSIFIABLE CLAIM",
+        "evidence": "REPLACE WITH CONCRETE DATA, MODEL, SAMPLE, EFFECT, OR ASSAY",
+        "synthesis": "REPLACE WITH WHY THE EVIDENCE SUPPORTS OR WEAKENS THE CLAIM",
+        "strength": "insufficient",
+        "classification": "UNKNOWN",
+        "uncertainty": "",
+        "location": ""
+      }
+    ],
+    "mechanism": {
+      "trigger": "",
+      "steps": [],
+      "modifiers": [],
+      "outcomes": [],
+      "feedback": []
+    },
+    "hidden_axes": [
+      {
+        "observation": "",
+        "interpretation": "",
+        "implication": ""
+      }
+    ],
+    "conceptual_contribution": {
+      "new_concepts": [],
+      "challenged_views": [],
+      "methodological_advances": [],
+      "generalization_limits": []
+    },
+    "cross_references": [],
+    "limitations": [],
+    "open_questions": [],
+    "analysis_date": "",
+    "analyst": ""
+  },
+  "entities": {
+    "genes": [],
+    "proteins": [],
+    "pathways": [],
+    "cell_types": [],
+    "tissues": [],
+    "diseases": [],
+    "drugs": [],
+    "methods": [],
+    "datasets": []
+  },
+  "provenance": {
+    "query": "",
+    "source": "pubmed",
+    "source_record_url": "",
+    "raw": {}
+  }
+}

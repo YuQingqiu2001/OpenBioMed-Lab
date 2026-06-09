@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "categories": {
+    "q-bio.BM": {"label": "Biomolecules", "area": "quantitative_biology"},
+    "q-bio.CB": {"label": "Cell Behavior", "area": "quantitative_biology"},
+    "q-bio.GN": {"label": "Genomics", "area": "quantitative_biology"},
+    "q-bio.MN": {"label": "Molecular Networks", "area": "quantitative_biology"},
+    "q-bio.NC": {"label": "Neurons and Cognition", "area": "quantitative_biology"},
+    "q-bio.OT": {"label": "Other Quantitative Biology", "area": "quantitative_biology"},
+    "q-bio.PE": {"label": "Populations and Evolution", "area": "quantitative_biology"},
+    "q-bio.QM": {"label": "Quantitative Methods", "area": "quantitative_biology"},
+    "q-bio.SC": {"label": "Subcellular Processes", "area": "quantitative_biology"},
+    "q-bio.TO": {"label": "Tissues and Organs", "area": "quantitative_biology"},
+    "cs.AI": {"label": "Artificial Intelligence", "area": "computer_science"},
+    "cs.CL": {"label": "Computation and Language", "area": "computer_science"},
+    "cs.CV": {"label": "Computer Vision and Pattern Recognition", "area": "computer_science"},
+    "cs.DB": {"label": "Databases", "area": "computer_science"},
+    "cs.IR": {"label": "Information Retrieval", "area": "computer_science"},
+    "cs.LG": {"label": "Machine Learning", "area": "computer_science"},
+    "stat.AP": {"label": "Applications", "area": "statistics"},
+    "stat.CO": {"label": "Computation", "area": "statistics"},
+    "stat.ME": {"label": "Methodology", "area": "statistics"},
+    "stat.ML": {"label": "Machine Learning", "area": "statistics"},
+    "eess.IV": {"label": "Image and Video Processing", "area": "electrical_engineering"},
+    "physics.bio-ph": {"label": "Biological Physics", "area": "physics"}
+  }
+}

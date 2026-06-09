@@ -1,0 +1,13 @@
+# Core scripts use only the Python standard library.
+#
+# Optional local PDF extraction:
+# pymupdf>=1.24
+# pymupdf4llm>=0.0.17
+#
+# Optional advanced OCR:
+# marker-pdf
+#
+# Optional biomedical entity export uses R/Bioconductor:
+# org.Hs.eg.db, org.Mm.eg.db, jsonlite, KEGGREST
+#
+# Browser-assisted bioRxiv/medRxiv extraction uses Node.js 22+ and visible Chrome.

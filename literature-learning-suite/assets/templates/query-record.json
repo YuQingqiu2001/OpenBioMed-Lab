@@ -1,0 +1,9 @@
+{
+  "source": "pubmed",
+  "query": "REPLACE WITH THE EXACT EXECUTED QUERY",
+  "executed_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "result_count": 0,
+  "status": "success",
+  "parameters": {},
+  "error": ""
+}

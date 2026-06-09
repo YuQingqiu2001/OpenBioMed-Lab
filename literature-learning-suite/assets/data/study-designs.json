@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "designs": [
+    {"id": "systematic_review", "family": "evidence_synthesis", "human": true, "causal_strength": "variable"},
+    {"id": "meta_analysis", "family": "evidence_synthesis", "human": true, "causal_strength": "variable"},
+    {"id": "randomized_controlled_trial", "family": "interventional", "human": true, "causal_strength": "high"},
+    {"id": "nonrandomized_trial", "family": "interventional", "human": true, "causal_strength": "moderate"},
+    {"id": "prospective_cohort", "family": "observational", "human": true, "causal_strength": "moderate"},
+    {"id": "retrospective_cohort", "family": "observational", "human": true, "causal_strength": "low"},
+    {"id": "case_control", "family": "observational", "human": true, "causal_strength": "low"},
+    {"id": "cross_sectional", "family": "observational", "human": true, "causal_strength": "low"},
+    {"id": "diagnostic_accuracy", "family": "diagnostic", "human": true, "causal_strength": "not_applicable"},
+    {"id": "case_series", "family": "descriptive", "human": true, "causal_strength": "very_low"},
+    {"id": "case_report", "family": "descriptive", "human": true, "causal_strength": "very_low"},
+    {"id": "animal_experiment", "family": "preclinical", "human": false, "causal_strength": "variable"},
+    {"id": "in_vitro", "family": "preclinical", "human": false, "causal_strength": "variable"},
+    {"id": "ex_vivo", "family": "preclinical", "human": false, "causal_strength": "variable"},
+    {"id": "organoid", "family": "preclinical", "human": false, "causal_strength": "variable"},
+    {"id": "computational_benchmark", "family": "computational", "human": false, "causal_strength": "not_applicable"},
+    {"id": "method_development", "family": "methods", "human": false, "causal_strength": "not_applicable"},
+    {"id": "simulation", "family": "computational", "human": false, "causal_strength": "not_applicable"},
+    {"id": "qualitative", "family": "qualitative", "human": true, "causal_strength": "not_applicable"},
+    {"id": "protocol", "family": "protocol", "human": "variable", "causal_strength": "not_applicable"},
+    {"id": "narrative_review", "family": "review", "human": "variable", "causal_strength": "not_applicable"},
+    {"id": "editorial", "family": "commentary", "human": "variable", "causal_strength": "not_applicable"}
+  ],
+  "publication_statuses": [
+    "peer_reviewed",
+    "preprint",
+    "accepted_manuscript",
+    "protocol",
+    "withdrawn",
+    "retracted",
+    "corrected"
+  ]
+}

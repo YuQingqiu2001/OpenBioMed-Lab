@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-09",
+  "datasets": [
+    {
+      "id": "bioc_genes",
+      "path": "assets/data/bioc_genes.json",
+      "record_count": 90125,
+      "sha256": "653cc3c08eea90bbf59b6c4d68fdc1684361aa55bb0a19dd0609fcbe545eedbf",
+      "format": "JSON array of unique strings",
+      "purpose": "Human and mouse gene-symbol validation for two-stage entity matching.",
+      "sources": [
+        "org.Hs.eg.db",
+        "org.Mm.eg.db"
+      ],
+      "regenerator": "scripts/export_bioc_genes.R"
+    },
+    {
+      "id": "kegg_go_pathways",
+      "path": "assets/data/kegg_pathways.json",
+      "record_count": 25939,
+      "sha256": "1f153439d28a5b374abe0a9dc89a55df14736fea8070a396101c5f4694c66fa2",
+      "format": "JSON array of unique strings",
+      "purpose": "KEGG pathway names and GO Biological Process terms for pathway/process matching.",
+      "sources": [
+        "KEGGREST",
+        "GO.db"
+      ],
+      "regenerator": "scripts/export_bioc_genes.R"
+    },
+    {
+      "id": "jcr_2024_journal_metrics",
+      "path": "assets/data/journal_metrics_2024.json",
+      "record_count": 21800,
+      "sha256": "51a405a19336ab7d031024483092ac90547db398895e1fb5b366dddf5343c090",
+      "format": "JSON array of objects with jif, quartile, category fields",
+      "purpose": "JCR 2024 journal impact factors for automatic IF annotation.",
+      "sources": [
+        "Journal Citation Reports 2024 (Clarivate)"
+      ],
+      "note": "Metrics are labeled as 2024 values. Use enrich_paper_if() in kg_core.py for lookup."
+    }
+  ],
+  "notices": [
+    "Gene, ontology, and journal metric source-package terms and attribution requirements continue to apply.",
+    "GO content is available under the Gene Ontology attribution and license terms.",
+    "Review KEGG terms before redistributing a regenerated dataset in another product.",
+    "JCR 2024 journal metrics are from Clarivate Journal Citation Reports. Check redistribution terms for your use case."
+  ]
+}

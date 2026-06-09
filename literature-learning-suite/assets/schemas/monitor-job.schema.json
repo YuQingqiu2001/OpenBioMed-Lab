@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/monitor-job.schema.json",
+  "title": "Literature monitoring job",
+  "type": "object",
+  "required": ["name", "timezone", "batch_size", "queries"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "timezone": {"type": "string", "minLength": 1},
+    "schedule": {"type": "string"},
+    "workspace": {"type": "string"},
+    "batch_size": {"type": "integer", "minimum": 1, "maximum": 100},
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "query"],
+        "properties": {
+          "source": {"enum": ["pubmed", "arxiv", "crossref", "biorxiv", "medrxiv"]},
+          "query": {"type": "string", "minLength": 1},
+          "enabled": {"type": "boolean"},
+          "from_date": {"type": "string"},
+          "to_date": {"type": "string"},
+          "tags": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "digest": {"type": "boolean"},
+        "network": {"type": "boolean"},
+        "audit": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

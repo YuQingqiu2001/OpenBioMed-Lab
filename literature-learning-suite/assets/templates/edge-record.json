@@ -1,0 +1,10 @@
+{
+  "source": "PMID:00000000",
+  "target": "PMID:11111111",
+  "relation": "supports",
+  "description": "Specific evidence-bearing reason for the relation.",
+  "provenance": "explicit_analysis",
+  "metadata": {},
+  "evidence": [],
+  "created_at": ""
+}

@@ -1,0 +1,2 @@
+{"id":"DOI:10.1000/example-a","doi":"10.1000/example-a","title":"Example spatial biology study","authors":["A. Researcher"],"source":"crossref","entities":{"genes":["TP53"],"methods":["spatial transcriptomics"]},"analysis":{"cross_references":[{"ref_id":"PMID:12345","relation":"extends","description":"Tests the same mechanism with spatial resolution."}]}}
+{"id":"PMID:12345","pmid":"12345","title":"Example molecular study","authors":["B. Scientist"],"source":"pubmed","entities":{"genes":["TP53"],"methods":["spatial transcriptomics"]}}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/concept.schema.json",
+  "title": "Literature knowledge-graph concept",
+  "type": "object",
+  "required": ["id", "name", "type", "definition", "created_at"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CONCEPT:"},
+    "name": {"type": "string", "minLength": 1},
+    "type": {"type": "string", "minLength": 1},
+    "definition": {"type": "string", "minLength": 1},
+    "source_papers": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "provenance": {"type": "object"},
+    "created_at": {"type": "string"}
+  },
+  "additionalProperties": true
+}

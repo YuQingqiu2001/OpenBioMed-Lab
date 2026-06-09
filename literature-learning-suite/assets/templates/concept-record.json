@@ -1,0 +1,13 @@
+{
+  "id": "CONCEPT:example",
+  "name": "Example concept",
+  "type": "mechanism",
+  "definition": "Operational definition grounded in the source papers.",
+  "aliases": [],
+  "source_papers": [],
+  "provenance": {
+    "created_by": "analyst",
+    "basis": ""
+  },
+  "created_at": ""
+}

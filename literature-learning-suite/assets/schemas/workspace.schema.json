@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/workspace.schema.json",
+  "title": "Literature workspace manifest",
+  "type": "object",
+  "required": ["format", "version", "created_at"],
+  "properties": {
+    "format": {"const": "literature-learning-suite"},
+    "version": {"type": "integer", "minimum": 1},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "bundled_data_manifest": {"type": "string"}
+  },
+  "additionalProperties": true
+}

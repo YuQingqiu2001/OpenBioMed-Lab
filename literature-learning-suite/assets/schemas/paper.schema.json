@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/literature-learning-suite/paper.schema.json",
+  "title": "Literature paper record",
+  "type": "object",
+  "required": ["id", "title", "source", "retrieved_at"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "normalized_title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "year": {"type": ["integer", "null"], "minimum": 1000, "maximum": 3000},
+    "venue": {"type": "string"},
+    "journal": {"type": "string"},
+    "doi": {"type": "string"},
+    "pmid": {"type": "string"},
+    "pmcid": {"type": "string"},
+    "arxiv_id": {"type": "string"},
+    "source": {
+      "enum": ["pubmed", "arxiv", "crossref", "biorxiv", "medrxiv", "semantic_scholar", "local", "manual", "other"]
+    },
+    "url": {"type": "string"},
+    "abstract": {"type": "string"},
+    "document_type": {"type": "string"},
+    "publication_status": {"type": "string"},
+    "fulltext_status": {
+      "enum": ["fulltext", "abstract_only", "metadata_only", "unavailable"]
+    },
+    "fulltext_source": {"type": "string"},
+    "fulltext_accessed_at": {"type": "string"},
+    "extraction_method": {"type": "string"},
+    "retrieved_at": {"type": "string", "minLength": 1},
+    "analysis_tier": {"enum": ["B", "A", "S"]},
+    "study_profile": {"$ref": "#/$defs/study_profile"},
+    "evidence_grade": {"$ref": "#/$defs/evidence_grade"},
+    "analysis": {"$ref": "#/$defs/analysis"},
+    "entities": {"$ref": "#/$defs/entities"},
+    "provenance": {"$ref": "#/$defs/provenance"}
+  },
+  "$defs": {
+    "string_array": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "study_profile": {
+      "type": "object",
+      "properties": {
+        "design": {"type": "string"},
+        "population_or_model": {"type": "string"},
+        "sample_size": {"type": ["integer", "string", "null"]},
+        "intervention_or_exposure": {"type": "string"},
+        "comparator": {"type": "string"},
+        "primary_outcomes": {"$ref": "#/$defs/string_array"},
+        "assays_or_data": {"$ref": "#/$defs/string_array"},
+        "preregistered": {"type": ["boolean", "null"]},
+        "data_available": {"type": ["boolean", "null"]},
+        "code_available": {"type": ["boolean", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "ces_chain": {
+      "type": "object",
+      "required": ["claim", "evidence", "synthesis"],
+      "properties": {
+        "claim": {"type": "string", "minLength": 1},
+        "evidence": {"type": "string", "minLength": 1},
+        "synthesis": {"type": "string", "minLength": 1},
+        "strength": {"enum": ["high", "moderate", "low", "insufficient"]},
+        "classification": {
+          "enum": ["REPORTED", "SUPPORTED INFERENCE", "HYPOTHESIS", "UNKNOWN"]
+        },
+        "uncertainty": {"type": "string"},
+        "location": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "mechanism": {
+      "type": "object",
+      "properties": {
+        "trigger": {"type": "string"},
+        "steps": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {"type": "string"},
+              {
+                "type": "object",
+                "properties": {
+                  "from": {"type": "string"},
+                  "relation": {"type": "string"},
+                  "to": {"type": "string"},
+                  "support": {"type": "string"},
+                  "classification": {
+                    "enum": ["REPORTED", "SUPPORTED INFERENCE", "HYPOTHESIS", "UNKNOWN"]
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "modifiers": {"$ref": "#/$defs/string_array"},
+        "outcomes": {"$ref": "#/$defs/string_array"},
+        "feedback": {"$ref": "#/$defs/string_array"}
+      },
+      "additionalProperties": true
+    },
+    "cross_reference": {
+      "type": "object",
+      "required": ["ref_id", "relation", "description"],
+      "properties": {
+        "ref_id": {"type": "string", "minLength": 1},
+        "relation": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "core_question": {"type": "string"},
+        "subquestions": {"$ref": "#/$defs/string_array"},
+        "ces_chains": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/ces_chain"},
+          "maxItems": 5
+        },
+        "mechanism": {"$ref": "#/$defs/mechanism"},
+        "hidden_axes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["observation", "interpretation"],
+            "properties": {
+              "observation": {"type": "string"},
+              "interpretation": {"type": "string"},
+              "implication": {"type": "string"}
+            },
+            "additionalProperties": true
+          }
+        },
+        "conceptual_contribution": {
+          "type": "object",
+          "properties": {
+            "new_concepts": {"$ref": "#/$defs/string_array"},
+            "challenged_views": {"$ref": "#/$defs/string_array"},
+            "methodological_advances": {"$ref": "#/$defs/string_array"},
+            "generalization_limits": {"$ref": "#/$defs/string_array"}
+          },
+          "additionalProperties": true
+        },
+        "cross_references": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/cross_reference"}
+        },
+        "limitations": {"$ref": "#/$defs/string_array"},
+        "open_questions": {"$ref": "#/$defs/string_array"},
+        "analysis_date": {"type": "string"},
+        "analyst": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "evidence_grade": {
+      "type": "object",
+      "properties": {
+        "overall": {"enum": ["high", "moderate", "low", "insufficient"]},
+        "score": {"type": "integer", "minimum": 0, "maximum": 14},
+        "dimension_scores": {
+          "type": "object",
+          "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 2}
+        },
+        "justification": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "genes": {"$ref": "#/$defs/string_array"},
+        "proteins": {"$ref": "#/$defs/string_array"},
+        "pathways": {"$ref": "#/$defs/string_array"},
+        "cell_types": {"$ref": "#/$defs/string_array"},
+        "tissues": {"$ref": "#/$defs/string_array"},
+        "diseases": {"$ref": "#/$defs/string_array"},
+        "drugs": {"$ref": "#/$defs/string_array"},
+        "methods": {"$ref": "#/$defs/string_array"},
+        "datasets": {"$ref": "#/$defs/string_array"}
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "query": {"type": "string"},
+        "source": {"type": "string"},
+        "source_record_url": {"type": "string"},
+        "raw": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

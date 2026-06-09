@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "packs": {
+    "biomedical_broad": {
+      "description": "Broad daily biomedical discovery across mechanisms, omics, immunity, neuroscience, cancer, and translation.",
+      "queries": [
+        {"source": "pubmed", "query": "(molecular biology OR signaling pathway OR gene regulation)"},
+        {"source": "pubmed", "query": "(genomics OR epigenetics OR CRISPR OR single-cell OR spatial transcriptomics)"},
+        {"source": "pubmed", "query": "(immunology OR immunotherapy OR microbiome OR T cell OR B cell)"},
+        {"source": "pubmed", "query": "(neuroscience OR neuron OR synapse OR neurodegeneration)"},
+        {"source": "pubmed", "query": "(cancer OR tumor microenvironment OR metastasis OR drug resistance)"},
+        {"source": "biorxiv", "query": "single-cell spatial transcriptomics mechanism"},
+        {"source": "arxiv", "query": "cat:q-bio.* AND (single cell OR genomics OR protein)"}
+      ]
+    },
+    "clinical_pico": {
+      "description": "Fill placeholders before use.",
+      "template": "({population}) AND ({intervention}) AND ({comparator}) AND ({outcome}) AND ({study_design})",
+      "fields": ["population", "intervention", "comparator", "outcome", "study_design"]
+    },
+    "mechanism": {
+      "description": "Mechanistic query decomposition.",
+      "template": "({entity}) AND ({process}) AND ({context}) AND ({perturbation}) AND ({readout})",
+      "fields": ["entity", "process", "context", "perturbation", "readout"]
+    },
+    "method_benchmark": {
+      "description": "Computational or experimental method benchmarking.",
+      "template": "({task}) AND ({dataset}) AND ({baseline}) AND ({metric}) AND ({external_validation})",
+      "fields": ["task", "dataset", "baseline", "metric", "external_validation"]
+    },
+    "safety_signal": {
+      "description": "Clinical or pharmacovigilance safety-signal search.",
+      "template": "({exposure}) AND ({adverse_event}) AND ({population}) AND ({time_window})",
+      "fields": ["exposure", "adverse_event", "population", "time_window", "reporting_source"]
+    }
+  }
+}
