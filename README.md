@@ -98,6 +98,8 @@ Cell 期刊发表的 Path2Space (Schott et al., 2024)：
 | All genes | Cross-validation | **0.269** | 0.266 | +1.1% |
 | All genes | External validation | **0.205** | 0.181 | +13.3% |
 
+![OpenST vs Path2Space benchmark](assets/openst_path2space_ranked_median_pcc.png)
+
 完整 benchmark（19 个 baseline 模型对比）与项目文档将在正式上线时发布。
 
 📖 项目目录（即将开放）：`openst/`
