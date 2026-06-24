@@ -80,14 +80,36 @@ python scripts/init_workspace.py
 
 ---
 
-## 路线图
+### 2. OpenST — H&E → 空间转录组预测 `即将上线`
 
-接下来计划添加的子项目：
+从常规 H&E 染色切片直接预测全转录组空间表达分布。
+
+**状态：** 乳腺癌 benchmark 初步验证完成，泛癌全量预测模型即将上线。
+
+**初步验证结果（乳腺癌 Visium + Xenium，Median PCC）：**
+
+在 HVG（高变基因）和 All genes（全基因）两个设定上，OpenST 均超越
+Cell 期刊发表的 Path2Space (Schott et al., 2024)：
+
+| 设定 | 指标 | OpenST | Path2Space | Δ |
+|------|------|--------|------------|---|
+| HVG | Cross-validation | **0.548** | 0.518 | +5.8% |
+| HVG | External validation | **0.415** | 0.392 | +5.9% |
+| All genes | Cross-validation | **0.269** | 0.266 | +1.1% |
+| All genes | External validation | **0.205** | 0.181 | +13.3% |
+
+完整 benchmark（19 个 baseline 模型对比）与项目文档将在正式上线时发布。
+
+📖 项目目录（即将开放）：`openst/`
+
+---
+
+## 路线图
 
 | # | 子项目 | 说明 |
 |---|--------|------|
 | 2 | 常规生物学/医学数据运行 | 常见生物医学数据格式的读取、处理、可视化流水线 |
-| 3 | H&E → 伪空间转录组推断 | 从常规 H&E 染色切片中推断基因表达空间分布 |
+| 3 | OpenST 泛癌扩展 | 从乳腺癌扩展到 10+ 癌种的 H&E→空间转录组预测 |
 
 ---
 
