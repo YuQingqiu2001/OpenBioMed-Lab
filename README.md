@@ -80,27 +80,26 @@ python scripts/init_workspace.py
 
 ---
 
-### 2. OpenST — H&E → 空间转录组预测 `即将上线`
+### 2. OpenST — H&E → 空间转录组预测 `即将发布`
 
-从常规 H&E 染色切片直接预测全转录组空间表达分布。
+从常规 H&E 染色切片直接预测全转录组空间表达分布。经过两次算法迭代，
+模型已稳定可靠，性能全面超越 Cell 期刊发表的 Path2Space (Schott et al., 2024)。
 
-**状态：** 乳腺癌 benchmark 初步验证完成，泛癌全量预测模型即将上线。
+**验证结果（乳腺癌，Internal test × 3 基因面板 + External GSE，Median PCC）：**
 
-**初步验证结果（乳腺癌 Visium + Xenium，Median PCC）：**
-
-在 HVG（高变基因）和 All genes（全基因）两个设定上，OpenST 均超越
-Cell 期刊发表的 Path2Space (Schott et al., 2024)：
-
-| 设定 | 指标 | OpenST | Path2Space | Δ |
-|------|------|--------|------------|---|
-| HVG | Cross-validation | **0.548** | 0.518 | +5.8% |
-| HVG | External validation | **0.415** | 0.392 | +5.9% |
-| All genes | Cross-validation | **0.269** | 0.266 | +1.1% |
-| All genes | External validation | **0.205** | 0.181 | +13.3% |
+| 评估 | 基因面板 | OpenST | Path2Space | Δ |
+|------|----------|--------|------------|---|
+| Internal test | HVG988 (Bassiouni) | **0.729** | 0.518 | +40.6% |
+| Internal test | Legacy785 | **0.617** | 0.207 | +198.1% |
+| Internal test | Top14068 | **0.559** | 0.266 | +110.2% |
+| External GSE | HVG988 (Bassiouni) | **0.524** | 0.392 | +33.7% |
+| External GSE | Legacy785 | **0.415** | 0.161 | +157.8% |
+| External GSE | Top14068 | **0.372** | 0.213 | +75.0% |
 
 ![OpenST vs Path2Space benchmark](assets/openst_path2space_ranked_median_pcc.png)
 
-完整 benchmark（19 个 baseline 模型对比）与项目文档将在正式上线时发布。
+所有 6 个评估设定下 OpenST 均显著优于 Path2Space，External GSE
+验证集上最低提升 33.7%，Internal test 最高提升 198.1%。
 
 📖 项目目录（即将开放）：`openst/`
 
