@@ -83,7 +83,7 @@ python scripts/init_workspace.py
 ### 2. OpenST — H&E → 空间转录组预测 `即将发布`
 
 从常规 H&E 染色切片直接预测全转录组空间表达分布。经过两次算法迭代，
-模型已稳定可靠，性能全面超越 Cell 期刊发表的 Path2Space (Schott et al., 2024)。
+模型已稳定可靠，性能全面超越 Cell 期刊发表的 Path2Space（[Schott et al., 2024](https://www.cell.com/cell/fulltext/S0092-8674(26)00458-7)）。
 
 **验证结果（乳腺癌，Internal test × 3 基因面板 + External GSE，Median PCC）：**
 
