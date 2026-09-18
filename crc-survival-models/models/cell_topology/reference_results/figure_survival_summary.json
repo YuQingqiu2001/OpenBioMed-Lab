@@ -1,0 +1,46 @@
+{
+  "cindex_bootstrap": {
+    "bootstrap_repeats": 2000,
+    "ci95_high": 0.7068525524219063,
+    "ci95_low": 0.5846271968236978,
+    "estimate": 0.6453716313812884,
+    "valid_repeats": 2000
+  },
+  "cox_descriptive": {
+    "ci95_high": 2.463621018883373,
+    "ci95_low": 1.3294560973946856,
+    "hazard_ratio_per_1iqr": 1.8097723572936482,
+    "p_value_descriptive": 0.0001634839069647767
+  },
+  "ensemble_definition": {
+    "clinical_covariates": false,
+    "component_risks_already_centered_and_scaled_using_outer_training_fold": true,
+    "test_fold_rescaling": false,
+    "weights": {
+      "whole_tissue": 0.5,
+      "tumour_front": 0.5
+    }
+  },
+  "fold_cindex": {
+    "0": 0.575240128068303,
+    "1": 0.7653806047966631,
+    "2": 0.6983240223463687,
+    "3": 0.6040494938132733,
+    "4": 0.634453781512605
+  },
+  "harrell_c_oof": 0.6453716313812884,
+  "high_n": 216,
+  "logrank_p_descriptive": 8.750084064147439e-05,
+  "low_n": 215,
+  "n_events": 92,
+  "n_patients": 431,
+  "permuted_score_cindex_95_interval": [
+    0.43320230283521105,
+    0.5718614584623003
+  ],
+  "time_dependent_auc": {
+    "1-year": 0.679456136925772,
+    "3-year": 0.6253216882415162,
+    "5-year": 0.5250012669197186
+  }
+}

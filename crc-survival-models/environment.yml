@@ -1,0 +1,33 @@
+name: crc-survival
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.2.1
+  - torchvision=0.17.1
+  - pytorch-cuda=12.1
+  - numpy=1.26
+  - scipy
+  - pandas
+  - h5py=3.9
+  - scikit-learn=1.6.1
+  - scikit-image
+  - opencv
+  - openslide
+  - openslide-python
+  - shapely
+  - rasterio
+  - pyvips
+  - python-snappy
+  - pip:
+      - timm==1.0.8
+      - ray==2.9.3
+      - pathopatch==1.0.2
+      - cucim-cu12
+      - natsort==8.4.0
+      - geojson==3.0.0
+      - einops==0.6.1
+      - tqdm==4.65.0

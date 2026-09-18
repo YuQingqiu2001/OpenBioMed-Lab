@@ -109,12 +109,27 @@ python scripts/init_workspace.py
 
 ---
 
+### 3. CRC Survival Models
+
+从常规结直肠癌病理切片评估总体生存相对风险的双模型工具：
+
+- **Cell Topology Survival Model**：仅基于细胞类型及邻接拓扑，不使用图像颜色、形态、临床变量或微生物数据。
+- **Patch Feature Survival Model**：联合病理 Patch 表征、局部空间梯度以及肿瘤核心/边界/瘤周结构。
+
+两套冻结模型均对应 `Fig3` 中最终生存曲线所使用的模型，并保留曲线统计量、模型溯源、
+双语模型卡和可复现推理入口。公开子项目不上传 UNI 或 CellViT++ 源码及权重，仅提供
+官方原库链接和用户本地路径接口，因此仓库保持轻量。
+
+📖 [项目文档](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [Fig3 溯源](crc-survival-models/docs/FIG3_PROVENANCE.md)
+
+---
+
 ## 路线图
 
 | # | 子项目 | 说明 |
 |---|--------|------|
-| 2 | 常规生物学/医学数据运行 | 常见生物医学数据格式的读取、处理、可视化流水线 |
-| 3 | OpenST 泛癌扩展 | 从乳腺癌扩展到 10+ 癌种的 H&E→空间转录组预测 |
+| 4 | 常规生物学/医学数据运行 | 常见生物医学数据格式的读取、处理、可视化流水线 |
+| 5 | OpenST 泛癌扩展 | 从乳腺癌扩展到 10+ 癌种的 H&E→空间转录组预测 |
 
 ---
 

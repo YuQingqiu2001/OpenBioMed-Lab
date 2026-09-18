@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+crc_survival_output/
+results/
+/external/
+/vendor/
+/weights/
+*.pth
+*.incomplete
+*.tmp
+cell_detection_status.json
+patch_cache_audit.tsv

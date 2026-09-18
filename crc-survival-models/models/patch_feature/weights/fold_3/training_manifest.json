@@ -1,0 +1,8 @@
+{
+  "fold": 3,
+  "best_epoch": 17,
+  "inner_validation_cindex": 0.7135815991237678,
+  "n_train": 351,
+  "n_test": 88,
+  "completed_at_unix": 1788887007.9090948
+}

@@ -1,0 +1,4 @@
+* text=auto
+*.npz binary
+*.pt binary
+*.pkl binary

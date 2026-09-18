@@ -1,0 +1,38 @@
+{
+  "schema": "crc_survival_end_to_end_validation",
+  "status": "passed",
+  "input": {
+    "disease": "colorectal cancer",
+    "format": "SVS",
+    "bytes": 304621575,
+    "fresh_intermediates": true,
+    "historical_feature_cache_reused": false
+  },
+  "cell_topology_pipeline": {
+    "tissue_area_mm2": 36.135,
+    "consensus_typed_cells": 236169,
+    "regions_whole_tissue": 512,
+    "regions_tumour_front": 422,
+    "whole_tissue_risk": -0.37224136860253204,
+    "tumour_front_risk": -0.317605484414688,
+    "ensemble_risk": -0.34492342650861,
+    "risk_group": "low"
+  },
+  "patch_feature_pipeline": {
+    "coarse_candidates": 683,
+    "decoded_candidates": 193,
+    "retained_regions": 192,
+    "mean_rgb_tissue_fraction": 0.7396750450134277,
+    "ensemble_risk": 0.276615599397364,
+    "risk_group": "high"
+  },
+  "checks": {
+    "locally_supplied_cell_segmentation_weight_loaded": true,
+    "all_seven_cell_classifier_heads_loaded": true,
+    "cell_graph_created": true,
+    "topology_tokens_created": true,
+    "locally_supplied_patch_backbone_loaded": true,
+    "patch_cache_created": true,
+    "both_survival_models_completed": true
+  }
+}

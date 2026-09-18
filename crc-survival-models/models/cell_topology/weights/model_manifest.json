@@ -1,0 +1,51 @@
+{
+  "schema": "crc_cell_topology_survival_model",
+  "purpose": "deployable full-development-cohort refit of the model used for Fig. 3C",
+  "endpoint": "overall survival",
+  "ensemble": "equal mean of whole-tissue and tumour-front standardized risks",
+  "group_rule": "high risk if ensemble risk >= 0; otherwise low risk",
+  "validation_curve": {
+    "design": "nested five-fold out-of-fold",
+    "n": 431,
+    "events": 92,
+    "harrell_c": 0.6453716313812884,
+    "logrank_p_descriptive": 8.750084064147439e-05,
+    "hr_per_iqr": 1.8097723572936482,
+    "hr_ci95": [
+      1.3294560973946856,
+      2.463621018883373
+    ]
+  },
+  "deployment_note": "The numeric deployment checkpoint is refitted on all eligible development patients. The Fig. 3 statistics above remain the leakage-controlled OOF estimates and are not recomputed from this all-data refit.",
+  "feature_contract": {
+    "input": "cell-topology token HDF5 produced by the bundled topology feature pipeline",
+    "original_feature_count": 256,
+    "feature_mask": "no_qc",
+    "clusters_per_branch": 24,
+    "fingerprint": "per-prototype mean, standard deviation, 90th percentile, worst-slide 90th percentile, and between-slide mean heterogeneity"
+  },
+  "branches": {
+    "whole_tissue": {
+      "scope": "all",
+      "n_training_patients": 439,
+      "n_events": 97,
+      "alpha": 100.0,
+      "seed": 20261907,
+      "input_dimension": 120,
+      "risk_median": 0.13706224550936325,
+      "risk_iqr": 0.6962984606567162
+    },
+    "tumour_front": {
+      "scope": "front",
+      "n_training_patients": 431,
+      "n_events": 92,
+      "alpha": 100.0,
+      "seed": 20262907,
+      "input_dimension": 120,
+      "risk_median": 0.2027878025084777,
+      "risk_iqr": 0.7430830411051403
+    }
+  },
+  "model_file": "cell_topology_model.npz",
+  "model_sha256": "8594938414585d4b31df355611591695215929ba761f0ed80dee1758ad82c2db"
+}

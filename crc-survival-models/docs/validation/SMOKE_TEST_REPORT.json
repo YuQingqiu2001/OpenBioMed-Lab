@@ -1,0 +1,35 @@
+{
+  "schema": "crc_survival_smoke_test_report",
+  "cell_topology": {
+    "status": "passed",
+    "input": "existing two-slide topology-token case",
+    "n_slides": 2,
+    "whole_tissue_regions": 1024,
+    "tumour_front_regions": 1024,
+    "risk": 0.16606455781780532,
+    "risk_group": "high"
+  },
+  "patch_feature": {
+    "status": "passed",
+    "input": "existing one-slide external patch cache",
+    "n_slides": 1,
+    "risk": -0.1428913464889195,
+    "historical_risk": -0.14350477262520586,
+    "absolute_difference": 0.00061342613628636,
+    "risk_group": "low",
+    "historical_risk_group": "low",
+    "group_match": true,
+    "note": "The sub-milliscale continuous-score difference is consistent with historical GPU versus current CPU floating-point execution."
+  },
+  "raw_wsi": {
+    "status": "passed",
+    "input": "fresh 304 MB CRC SVS run through both pipelines",
+    "consensus_typed_cells": 236169,
+    "patch_regions": 192,
+    "cell_topology_risk": -0.34492342650861,
+    "cell_topology_group": "low",
+    "patch_feature_risk": 0.276615599397364,
+    "patch_feature_group": "high",
+    "note": "Different groups are allowed because the two models measure complementary biological representations."
+  }
+}
