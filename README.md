@@ -15,14 +15,13 @@
 ## 这是什么
 
 OpenBioMed Lab 收集在生物医学 AI 研究中开发的可复现工具。所有工具
-都以 AI Agent 作为主要操作界面——不只是给人看的文档，更是给 Agent
-直接执行的指令。
+都以 AI Agent 作为主要操作界面。文档既供人阅读，也可由 Agent 直接执行。
 
 ---
 
 ## 推荐运行环境
 
-本 Lab 的工具都是 **Agent 原生**的——每个子项目包含 `SKILL.md`，
+本 Lab 的工具都是 **Agent 原生**的。每个子项目包含 `SKILL.md`，
 Agent 加载后即掌握完整操作流程。
 
 **经过验证的运行方式：**
@@ -80,7 +79,7 @@ python scripts/init_workspace.py
 
 ---
 
-### 2. OpenST — H&E → 空间转录组预测 `即将发布`
+### 2. OpenST：H&E → 空间转录组预测 `即将发布`
 
 <p align="center">
   <img src="assets/OpenST_logo.png" alt="OpenST" width="360">
@@ -111,16 +110,15 @@ python scripts/init_workspace.py
 
 ### 3. CRC Survival Models
 
-从常规结直肠癌病理切片评估总体生存相对风险的双模型工具：
+`Fig3` 使用的两套结直肠癌病理生存模型已经整理为独立子项目：
 
-- **Cell Topology Survival Model**：仅基于细胞类型及邻接拓扑，不使用图像颜色、形态、临床变量或微生物数据。
-- **Patch Feature Survival Model**：联合病理 Patch 表征、局部空间梯度以及肿瘤核心/边界/瘤周结构。
+- **Cell Topology**：根据带细胞类型的邻接图，分别计算全组织和肿瘤前沿风险。
+- **Patch Feature**：结合 Patch 表征、局部空间梯度和肿瘤核心、前沿、瘤周信息，以五折集成输出风险。
 
-两套冻结模型均对应 `Fig3` 中最终生存曲线所使用的模型，并保留曲线统计量、模型溯源、
-双语模型卡和可复现推理入口。公开子项目不上传 UNI 或 CellViT++ 源码及权重，仅提供
-官方原库链接和用户本地路径接口，因此仓库保持轻量。
+仓库包含模型权重、推理代码、模型卡和 `Fig3` 统计量。UNI 与 CellViT++ 仅链接官方项目，
+不在本仓库中复制源码或权重。
 
-📖 [项目文档](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [Fig3 溯源](crc-survival-models/docs/FIG3_PROVENANCE.md)
+[项目说明](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [Fig3 统计与模型对应关系](crc-survival-models/docs/FIG3_PROVENANCE.md)
 
 ---
 

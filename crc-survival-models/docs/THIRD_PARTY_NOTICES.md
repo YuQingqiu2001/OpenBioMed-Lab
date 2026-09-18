@@ -1,43 +1,45 @@
-# External dependencies / 外部依赖
+# 外部依赖
 
-This repository does not contain or redistribute UNI or CellViT++ source code,
-checkpoints, classifier heads, or derived large backbone files.
+本仓库不提供 UNI 或 CellViT++ 的源码、checkpoint、分类头和衍生主干权重。需要运行
+原始 WSI 流程时，请从官方项目获取文件并遵守相应许可证：
 
-本仓库不包含也不再分发 UNI 或 CellViT++ 的源码、主干权重、分类头或衍生大模型文件。
+- [CellViT++](https://github.com/TIO-IKIM/CellViT-plus-plus)
+- [UNI](https://github.com/mahmoodlab/UNI)
 
-## Official upstream repositories / 官方原库
+官方仓库只说明文件来源。它们不一定包含本流程所需的项目特定分类头，用户仍需确认
+checkpoint 与代码接口是否兼容。
 
-- CellViT++: https://github.com/TIO-IKIM/CellViT-plus-plus
-- UNI: https://github.com/mahmoodlab/UNI
+## 本地路径
 
-Users must obtain any required third-party files directly from the official projects,
-review their current licenses and access conditions, and provide compatible local paths.
-The official repositories are references; they do not guarantee that a checkpoint has
-the exact project-specific classifier head expected by this pipeline.
+可以通过命令行参数提供文件，也可以设置环境变量：
 
-用户必须直接从官方项目获取所需文件，阅读其当前许可证和访问条件，并提供兼容的
-本地路径。官方原库链接仅用于指引；它们并不保证所下载权重包含本流程所需的特定分类头。
-
-## Local path contract / 本地路径约定
-
-Raw-WSI inference accepts command-line paths or these environment variables:
-
-| Variable | Required content |
+| 环境变量 | 内容 |
 |---|---|
-| `CRC_SURVIVAL_CELLVIT_ROOT` | local CellViT++ repository checkout |
-| `CRC_SURVIVAL_CELLVIT_CHECKPOINT` | compatible CellViT++ segmentation checkpoint |
-| `CRC_SURVIVAL_CELLVIT_CLASSIFIERS` | directory containing the seven compatible phenotype heads |
-| `CRC_SURVIVAL_UNI_CHECKPOINT` | compatible UNI-derived coarse-classifier checkpoint |
+| `CRC_SURVIVAL_CELLVIT_ROOT` | CellViT++ 本地仓库 |
+| `CRC_SURVIVAL_CELLVIT_CHECKPOINT` | 兼容的 CellViT++ 分割 checkpoint |
+| `CRC_SURVIVAL_CELLVIT_CLASSIFIERS` | 七个兼容表型分类头所在目录 |
+| `CRC_SURVIVAL_UNI_CHECKPOINT` | 兼容的 UNI 衍生粗分类 checkpoint |
 
-All default locations are under the ignored `external/` directory. `vendor/`, `weights/`,
-`external/`, and `*.pth` are ignored to prevent accidental publication.
+默认路径位于 `external/`。`.gitignore` 同时排除了根目录下的 `external/`、`vendor/`、
+`weights/` 和所有 `.pth` 文件，避免把本地第三方文件提交到仓库。
 
-默认路径均位于已忽略的 `external/` 目录下；`vendor/`、`weights/`、`external/`
-及所有 `*.pth` 均被忽略，以防止误上传第三方资产。
+本子项目的许可证只覆盖仓库原创代码、文档和随附的 CRC 生存模型，不改变用户另行取得
+的 UNI 或 CellViT++ 材料的许可证。
 
-## License boundary / 许可证边界
+<details>
+<summary>English</summary>
 
-The subproject license applies only to repository-original code, documentation and the
-included CRC survival-model files. It does not relicense any separately obtained UNI or
-CellViT++ material. / 本子项目许可证仅覆盖仓库原创代码、文档及随附的 CRC 生存模型文件，
-不对用户另行取得的 UNI 或 CellViT++ 材料重新授权。
+This repository does not redistribute UNI or CellViT++ source, checkpoints, classifier
+heads, or derived backbone files. Obtain the required files from the official
+[CellViT++](https://github.com/TIO-IKIM/CellViT-plus-plus) and
+[UNI](https://github.com/mahmoodlab/UNI) projects and follow their current licence and
+access terms.
+
+The official repositories identify the upstream sources but may not contain the exact
+project-specific classifier heads expected by this pipeline. Provide compatible local
+paths with the command-line options or the four environment variables listed above.
+
+The licence in this subproject covers only the original code, documentation, and included
+CRC survival models. It does not relicense separately obtained UNI or CellViT++ material.
+
+</details>

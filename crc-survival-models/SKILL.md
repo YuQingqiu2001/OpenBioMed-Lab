@@ -1,31 +1,36 @@
 ---
 name: crc-survival-models
-description: Run the two frozen CRC pathology survival-risk models from prepared features or locally configured WSI dependencies.
+description: Score CRC overall-survival risk from prepared topology tokens, patch caches, or locally configured WSI dependencies.
 ---
 
-# CRC Survival Models agent protocol
+# CRC Survival Models
 
-1. Read `README.md`, `docs/QUICKSTART.md`, and both model cards before inference.
-2. Treat all slides supplied under one `case-id` as one patient; never score them as separate patients.
-3. Prefer prepared-feature mode when topology-token or patch-cache HDF5 files already exist.
-4. Before raw-WSI inference, run `python predict_wsi.py ... --check-only` and resolve every missing dependency.
-5. Never guess micrometres-per-pixel. Use `--mpp` only when the scanner or acquisition record supplies it.
-6. Do not download or redistribute UNI or CellViT++ assets automatically. Direct the user to the official links in `docs/THIRD_PARTY_NOTICES.md` and require local paths.
-7. Report the continuous relative-risk score first. The frozen zero-threshold group is descriptive and is not a clinical decision boundary.
-8. Never reuse Fig3 outcome-adaptive cutpoints for a new patient.
+Read `README.md`, `docs/QUICKSTART.md`, and the relevant model card before running a case.
 
-Prepared topology inference:
+## Rules
 
-```bash
-python predict.py topology slide_a.topology_tokens.h5 --case-id CRC_001 --output results/topology.json
-```
+- Group every slide from one patient under the same `case-id` and score them together.
+- Use prepared topology tokens or patch caches when they already exist.
+- Run the WSI command with `--check-only` before starting feature extraction.
+- Supply `--mpp` only when the scanner or acquisition record gives the value.
+- Do not download or redistribute UNI or CellViT++ files. Point the user to
+  `docs/THIRD_PARTY_NOTICES.md` and use local paths.
+- Report continuous risk before the optional zero-threshold group.
+- Do not apply the outcome-adaptive Fig3 cutpoints to a new patient.
 
-Prepared patch inference:
+Topology tokens:
 
 ```bash
-python predict.py patch slide_a.patch_cache.h5 --case-id CRC_001 --output results/patch.json
+python predict.py topology slide_a.topology_tokens.h5 \
+  --case-id CRC_001 --output results/topology.json
 ```
 
-本协议要求：同一患者多张切片必须合并输入；原始 WSI 运行前必须预检；禁止猜测 MPP；
-禁止自动下载或再分发 UNI、CellViT++；结果优先解释连续相对风险，不把零阈值分组当作
-临床决策界值，也不得把 Fig3 的结局自适应切点用于新患者。
+Patch cache:
+
+```bash
+python predict.py patch slide_a.patch_cache.h5 \
+  --case-id CRC_001 --output results/patch.json
+```
+
+执行时请记住三点：同一患者的切片一起输入，MPP 只能来自扫描记录，Fig3 的结局自适应
+切点不能用于新患者。
