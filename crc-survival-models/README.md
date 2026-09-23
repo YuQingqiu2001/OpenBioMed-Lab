@@ -60,11 +60,7 @@ python predict_wsi.py patient_slide.svs \
 不能低于 0.75 µm/pixel。Windows 用户宜在 WSL2 或 Linux 中运行 WSI 流程；已有特征
 文件的推理没有这个限制。
 
-## Fig3 与新样本的阈值
-
-Fig3 中的 Patch 曲线采用了各队列基于结局选择的切点，因此分离程度会受到选择偏倚影响。
-这些切点保留在 `reference_results` 中用于复现原图，不应用于新患者。新样本应报告连续风险，
-如需描述性分组，则使用固定阈值 0。
+## Fig3 结果
 
 细胞拓扑模型的 Fig3 结果来自嵌套五折 OOF 预测：431 名患者、92 个事件，
 C-index 0.6454，log-rank P=`8.75e-05`，每 IQR 风险增量 HR 1.810
