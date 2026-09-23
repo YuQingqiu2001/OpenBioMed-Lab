@@ -1,7 +1,7 @@
-"""End-to-end inference from one or more CRC whole-slide images.
+"""Run CRC survival inference from one or more whole-slide images.
 
-The two branches share only the input slide list. Each branch preserves its
-historical feature contract and writes its own auditable intermediate files.
+The two branches share only the input slide list. Each branch keeps its own
+input contract and writes intermediate files under the output directory.
 """
 
 from __future__ import annotations
@@ -218,7 +218,7 @@ def _patch(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="End-to-end CRC WSI survival-risk inference")
+    parser = argparse.ArgumentParser(description="CRC WSI survival-risk inference")
     parser.add_argument("slides", nargs="+", type=Path)
     parser.add_argument("--case-id", required=True)
     parser.add_argument("--model", choices=["topology", "patch", "both"], default="both")

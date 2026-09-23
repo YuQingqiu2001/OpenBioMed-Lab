@@ -32,5 +32,5 @@ python predict.py patch slide_a.patch_cache.h5 \
   --case-id CRC_001 --output results/patch.json
 ```
 
-执行时请记住三点：同一患者的切片一起输入，MPP 只能来自扫描记录，Fig3 的结局自适应
+执行要点：同一患者的切片一起输入；MPP 只能来自扫描记录；Fig3 的结局自适应
 切点不能用于新患者。

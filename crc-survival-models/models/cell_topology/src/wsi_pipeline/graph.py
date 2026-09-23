@@ -66,7 +66,7 @@ def _physical_morphology(morph: np.ndarray, target_mpp: float) -> tuple[np.ndarr
     """Convert pixel measurements to physical, rotation-safe morphology.
 
     The orientation angle is intentionally excluded from the primary feature vector.
-    It would otherwise violate the requested rotation-invariance control unless every
+    It would otherwise break the rotation-invariance requirement unless every
     augmentation transformed the angle consistently.
     """
     morph = np.asarray(morph, dtype=np.float32)
@@ -245,8 +245,8 @@ def assign_regions(
         np.stack([mask_iy, mask_ix], axis=1), axis=0, return_counts=True
     )
     # Preserve tissue tiles with zero detected nuclei. They carry an explicit
-    # empty-tissue flag downstream and prevent detection failure from silently
-    # becoming absent geography.
+    # empty-tissue flag downstream, so a detection failure cannot silently
+    # drop tissue from the region graph.
     region_pairs, combined_inverse = np.unique(
         np.concatenate([cell_pairs, unique_mask_pairs], axis=0),
         axis=0,

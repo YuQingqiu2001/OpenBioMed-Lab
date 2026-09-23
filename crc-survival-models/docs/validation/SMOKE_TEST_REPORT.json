@@ -19,7 +19,7 @@
     "risk_group": "low",
     "historical_risk_group": "low",
     "group_match": true,
-    "note": "The sub-milliscale continuous-score difference is consistent with historical GPU versus current CPU floating-point execution."
+    "note": "The small continuous-score difference is consistent with GPU versus CPU floating-point execution."
   },
   "raw_wsi": {
     "status": "passed",
@@ -30,6 +30,6 @@
     "cell_topology_group": "low",
     "patch_feature_risk": 0.276615599397364,
     "patch_feature_group": "high",
-    "note": "Different groups are allowed because the two models measure complementary biological representations."
+    "note": "The two models use different inputs, so the same case can receive different groups."
   }
 }
