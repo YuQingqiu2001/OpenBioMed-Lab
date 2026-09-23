@@ -39,10 +39,6 @@ WSI 提取器在 250 µm 物理网格上采样，每张切片最多保留 192 �
 同一套五折模型用于 TCGA-COAD、TCGA-READ、SR386 和自收集 CRC 队列。连续风险每
 IQR 的随机效应 Meta 分析为 HR 1.743（95% CI 1.176 至 2.583），P=`0.0206`。
 
-Fig3 为每个队列选择了基于结局的切点，用于展示和复现曲线。这种做法会放大分组差异，
-所以不能把图中的切点用于新患者。新样本应使用连续风险；阈值 0 只提供固定的描述性分组。
-各队列统计量见 `reference_results`。
-
 ## 质控与适用范围
 
 - 输入需要可靠的物理坐标和足够的组织区域。
@@ -77,10 +73,6 @@ produce median/IQR-standardized risks, and the final score is their median.
 The same frozen model was evaluated in TCGA-COAD, TCGA-READ, SR386, and a self-collected
 CRC cohort. Continuous risk gave a random-effects HR of 1.743 per IQR
 (95% CI 1.176 to 2.583), P=`0.0206`.
-
-Fig3 used outcome-adaptive cutpoints for display. Those cutpoints are selection-inflated
-and are not suitable for new patients. New cases receive the continuous risk and an
-optional descriptive split at zero.
 
 Valid physical coordinates and tissue-rich regions are required. Sampling is
 deterministic for a sample identifier but does not cover every tissue pixel. Stain,

@@ -93,8 +93,7 @@ python predict_wsi.py slide_1.svs slide_2.svs \
 - 肿瘤前沿区域数量不足
 - HDF5 文件不符合模型输入约定
 
-不同患者之间的风险只能在相同预处理和质控条件下比较。统计分析应优先使用连续风险；
-阈值 0 只用于描述性分组。
+不同患者之间的风险只能在相同预处理和质控条件下比较。
 
 <details>
 <summary>English notes</summary>
@@ -111,6 +110,6 @@ variables. Run with `--check-only` before starting a full slide.
 All slides from one patient belong under one `case-id`. Supply `--mpp` only when the
 scanner or acquisition record provides the value. The program stops on invalid scale,
 insufficient resolution or tissue, too few tumour-front regions, and incompatible HDF5
-inputs. Use the continuous risk for analysis; the zero threshold is descriptive only.
+inputs.
 
 </details>

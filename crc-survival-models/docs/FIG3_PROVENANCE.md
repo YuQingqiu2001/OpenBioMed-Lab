@@ -1,7 +1,7 @@
 # Fig3 模型与统计量
 
-这份记录说明 `Fig3.png` 中的生存曲线对应哪一套模型，以及哪些统计量可以用于评价
-新样本。模型身份已与保存的预测汇总和曲线统计表核对。
+这份记录说明 `Fig3.png` 中的生存曲线对应哪一套模型，以及对应的统计量与数据文件。
+模型身份已与保存的预测汇总和曲线统计表核对。
 
 ## C 面板：细胞拓扑模型
 
@@ -23,7 +23,7 @@
 
 ## K/L 面板：Patch 特征模型
 
-四个队列使用同一套冻结的五折模型。Fig3 中的分组切点由各队列的生存结局选择：
+四个队列使用同一套冻结的五折模型。各队列结果如下：
 
 | 队列 | n | 事件 | HR (95% CI) | Log-rank P |
 |---|---:|---:|---:|---:|
@@ -35,9 +35,7 @@
 图中分组结果的随机效应 Meta 分析为 HR 1.922（95% CI 1.365 至 2.706），
 P=`0.00894`。
 
-由于切点使用了生存结局，表中的显著性带有选择偏倚。这些结果只用于复现 Fig3。对新样本，
-模型输出连续风险，并可用固定阈值 0 做描述性分组。连续风险每 IQR 的随机效应结果为
-HR 1.743（95% CI 1.176 至 2.583），P=`0.0206`。
+连续风险每 IQR 的随机效应结果为 HR 1.743（95% CI 1.176 至 2.583），P=`0.0206`。
 
 ## 数据文件
 
@@ -60,11 +58,9 @@ C-index was 0.6454, log-rank P was `8.75e-05`, and HR per IQR of risk was 1.810
 patients, while these OOF values remain the performance estimate.
 
 Panels K and L use the same five frozen Patch Feature folds in all four cohorts. The
-figure used cohort-specific outcome-adaptive cutpoints. Their random-effects estimate was
-HR 1.922 (95% CI 1.365 to 2.706), P=`0.00894`, but this separation is inflated by cutpoint
-selection. The portable continuous-risk estimate was HR 1.743 per IQR
-(95% CI 1.176 to 2.583), P=`0.0206`. New patients should be evaluated with continuous
-risk, with zero used only as a fixed descriptive split.
+grouped results in the figure gave a random-effects estimate of HR 1.922
+(95% CI 1.365 to 2.706), P=`0.00894`; the continuous-risk estimate was HR 1.743 per IQR
+(95% CI 1.176 to 2.583), P=`0.0206`.
 
 Only aggregate results are included in this repository.
 

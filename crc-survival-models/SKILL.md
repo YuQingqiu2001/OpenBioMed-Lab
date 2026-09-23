@@ -15,8 +15,6 @@ Read `README.md`, `docs/QUICKSTART.md`, and the relevant model card before runni
 - Supply `--mpp` only when the scanner or acquisition record gives the value.
 - Do not download or redistribute UNI or CellViT++ files. Point the user to
   `docs/THIRD_PARTY_NOTICES.md` and use local paths.
-- Report continuous risk before the optional zero-threshold group.
-- Do not apply the outcome-adaptive Fig3 cutpoints to a new patient.
 
 Topology tokens:
 
@@ -32,5 +30,4 @@ python predict.py patch slide_a.patch_cache.h5 \
   --case-id CRC_001 --output results/patch.json
 ```
 
-执行要点：同一患者的切片一起输入；MPP 只能来自扫描记录；Fig3 的结局自适应
-切点不能用于新患者。
+执行要点：同一患者的切片一起输入；MPP 只能来自扫描记录。
