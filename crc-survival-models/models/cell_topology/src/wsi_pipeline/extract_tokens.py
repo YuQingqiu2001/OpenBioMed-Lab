@@ -1,10 +1,4 @@
-"""Extract outcome-blind pure cell-topology region tokens from sparse WSI graphs.
-
-The Soft-WL propagation is adapted from the MIT-licensed BiGraph4TME
-implementation, replacing its dense adjacency with a sparse row-normalized
-whole-slide graph. Graph filtration and typed-subgraph summaries follow
-concepts implemented by MIT-licensed GraphCompass.
-"""
+"""Extract outcome-blind pure cell-topology region tokens from sparse WSI graphs."""
 
 from __future__ import annotations
 
