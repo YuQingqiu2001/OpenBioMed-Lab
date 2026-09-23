@@ -22,6 +22,7 @@ dependencies:
   - rasterio
   - pyvips
   - python-snappy
+  - pytest
   - pip:
       - timm==1.0.8
       - ray==2.9.3
