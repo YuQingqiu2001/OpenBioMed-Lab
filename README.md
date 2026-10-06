@@ -90,7 +90,7 @@ python scripts/init_workspace.py
 
 **验证结果（乳腺癌，Internal test × 3 基因面板 + External GSE，Median PCC）：**
 
-| 评估 | 基因面板 | OpenST | Path2Space | Δ |
+| 评估 | 基因面板 | CoVarST | Path2Space | Δ |
 |------|----------|--------|------------|---|
 | Internal test | HVG988 (Bassiouni) | **0.729** | 0.518 | +40.6% |
 | Internal test | Legacy785 | **0.617** | 0.207 | +198.1% |
@@ -101,10 +101,10 @@ python scripts/init_workspace.py
 
 ![OpenST vs Path2Space benchmark](assets/openst_path2space_ranked_median_pcc.png)
 
-所有 6 个评估设定下 OpenST 均显著优于 Path2Space，External GSE
+所有 6 个评估设定下 CoVarST（又名OpenST） 均显著优于 Path2Space，External GSE
 验证集上最低提升 33.7%，Internal test 最高提升 198.1%。
 
-📖 项目目录（即将开放）：`openst/`
+📖 项目目录（即将开放）：`CoVarST/`
 
 ---
 
