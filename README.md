@@ -79,7 +79,7 @@ python scripts/init_workspace.py
 
 ---
 
-### 2. OpenST：H&E → 空间转录组预测 `即将发布`
+### 2. CoVarST：H&E → 空间转录组预测 `即将发布`
 
 <p align="center">
   <img src="assets/OpenST_logo.png" alt="OpenST" width="360">
