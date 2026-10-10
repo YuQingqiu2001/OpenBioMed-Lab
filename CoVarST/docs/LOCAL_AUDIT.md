@@ -33,4 +33,4 @@
 
 完整 WSI 主干提取和从原始 BayesTME 计数重建参考本轮未重跑。当前细胞模块接收同切片实测粗 ST 和真实图像核，把 H&E 预测概率直接精度化的串联入口还没有验证。
 
-记录见[机器核查记录](../validation/chinese_release_recheck.json)、[细胞软件检查](../validation/software_checks.json)、[通用流程检查](../validation/generic_coarse_smoke.json)和[整合一致性](../validation/student_fidelity_summary.csv)。结果目前只保存在本地，尚未推送 GitHub。
+记录见[机器核查记录](../validation/chinese_release_recheck.json)、[细胞软件检查](../validation/software_checks.json)、[通用流程检查](../validation/generic_coarse_smoke.json)和[整合一致性](../validation/student_fidelity_summary.csv)。结果已随仓库推送到 GitHub。
