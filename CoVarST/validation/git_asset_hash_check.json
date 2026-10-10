@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "staged_model_and_reference_assets_verified": 252,
+  "cross_platform_hash_preservation": true,
+  "method": "SHA256 of Git index blob compared with frozen release manifest"
+}

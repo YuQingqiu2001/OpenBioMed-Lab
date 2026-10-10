@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "data": "synthetic software fixture only; no biological validation claim",
+  "workflow": "prepare-coarse -> frozen fitter ranks0,8 -> P_post -> X_mass",
+  "short_fit_steps": 3,
+  "validation_scope": "entry point, dimension, numerical and output-semantic integration; not learned accuracy"
+}

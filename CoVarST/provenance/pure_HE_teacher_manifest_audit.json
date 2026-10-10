@@ -1,0 +1,1001 @@
+{
+  "folds_checked": 166,
+  "records": [
+    {
+      "cancer": "bladder_cancer",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "b486a203d150f3a76e4e2ebe4884422833aba49938ad07e26ff1b64212fa20b2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "bladder_cancer",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "616a931f3f12cbb07cdc19e9a9461361d79dc19cf3dc9eaf9e218340d411716c",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "bladder_cancer",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "82b941bcd72b4eec3ba2511b99d56d3482d9e21866ed69f9d038e71236c0d9a5",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "bladder_cancer",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "188bc57fed73606d2a9cbac8ebe8f5b27ceefb4690e5c1400f014ad0c1c93da3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "bladder_cancer",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "b0d261658045802ba0bbfcbc22226cf37ba8655def42e50514d8ce84579c19fd",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "f10d1b9d8a7e76f3d7709e2e0d828d25bead015a1e722f162f71e43265541436",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "524d75ea833c4c24465e908cda86337f40e775212a2b3c6e25d611c46323a1e7",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "4311aa28dffaf3f55590e414e97f0882a1624b80c665c016e0dd3eadf9af8106",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "8abdd0f64b16908ff74ce1db40d9ea22cb1ce8563d6fe1ba9f26759c14f95973",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "2c5a997bc4ad9b466ce18e86c246f475b9248621f3c61479d2e333306b778b8d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 5,
+      "pure_HE_manifest_sha256": "ab3a09bbe8bb6d1d42f1ec4b1eda588c9e934c584a6ed138df26022876d5167d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 6,
+      "pure_HE_manifest_sha256": "4b718f80cc2ea81cc9b826a69b160ff18fb87df094c95358b76cc93da601eeb7",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 7,
+      "pure_HE_manifest_sha256": "3fceccae0b2ca41ddb5ee2e41ec3f04a8e37fd4bbcc69fe7027e3dfdf1d68a07",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 8,
+      "pure_HE_manifest_sha256": "f9b766f8754e34e87ac4c4f6d199ea879dc8f6fcf4a748c650a4b3aee8ee1524",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 9,
+      "pure_HE_manifest_sha256": "aaadfa2cfa377953a4541171b27f08639648467f2f24ae8580db46f07d2e420a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 10,
+      "pure_HE_manifest_sha256": "98bcb5208b070f105e677acfe9ffa5abcde507ba422142752da027847644e9cd",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 11,
+      "pure_HE_manifest_sha256": "bf7db0f282c778fc14437cc6aaa8ff208f1c1dad71146ba88d91040a94d18140",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 12,
+      "pure_HE_manifest_sha256": "7b047279e365c589b9a9f06440a678bdc313fef7a07ffaaa09d788f6249d87a1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 13,
+      "pure_HE_manifest_sha256": "0b278c2a20657b692d1c5e1e5cfd423902e7ff88f2c8928e80706eb1b6d6df5f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 14,
+      "pure_HE_manifest_sha256": "9cae53772e8ad034aa2957eec8318b62897dba9b414829474f5737429e72da52",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 15,
+      "pure_HE_manifest_sha256": "619da2393142f2f34904b6596730cc41942688bece861d3fa9c56f3183812a82",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 16,
+      "pure_HE_manifest_sha256": "835f2f0067a316aec784262a9cb7e1356ac538c212ec28dd23b4d55a4026f31b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 17,
+      "pure_HE_manifest_sha256": "5e101225947640beda02808887337e7d644c0cd5e3fdaca8b87c1cef51fc4872",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 18,
+      "pure_HE_manifest_sha256": "a521b7253195a3c0b8a18d3260d6dd06d4f5bdd76649d4bf5910e08b24747e39",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 19,
+      "pure_HE_manifest_sha256": "3b79d7f0b84be182903627d3d0e26f37e3dfb8365d263a84469c6350bf708c4a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 20,
+      "pure_HE_manifest_sha256": "ed90b9a65503b3eab2bc78a018b09255f206e077e616b075c475d205bab63299",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 21,
+      "pure_HE_manifest_sha256": "100f93548ab6449a62e749adde6bbf572ef0b0fb9c2b7a3a964a0fb8405ae14b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 22,
+      "pure_HE_manifest_sha256": "a96da230dd65aabaea5b6581decdfcee325818cbc822aee959a974d965d33871",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 23,
+      "pure_HE_manifest_sha256": "e5e674f6c7e9dc7caa5c576ae0e9f99f59a41a1604fb9c65953ae0994d1944e1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 24,
+      "pure_HE_manifest_sha256": "98c4eac2cd08a66355764e6aadaef7ce7ae67a8b355a03f29d891281829151fb",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 25,
+      "pure_HE_manifest_sha256": "bb4324f6b42202346e7e789b3f6913f4e4c524af9b6a2efddb15967c064ebd46",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 26,
+      "pure_HE_manifest_sha256": "6e68e4477ccc728dd9ec3d7daae119a7990cc2c8fb89b0275f9051830eabca98",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 27,
+      "pure_HE_manifest_sha256": "d635d566ebf32f3fafd621bf068d5cd55b38902bd208b96d2051da0748a0283d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 28,
+      "pure_HE_manifest_sha256": "25c73f05851e17a51b5c95d69d26251049892470e9e1e0a8b577a996e032dd16",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 29,
+      "pure_HE_manifest_sha256": "96c162ede7391ffee6b6d4844e1793ae1075b6fe7e8449c2a389b9a9327d9b69",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 30,
+      "pure_HE_manifest_sha256": "f928ce0c5d03fa40c34b3e0ea423fb9ac1d5ed5b5778f9f457f2c79d7ecdaf0f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 31,
+      "pure_HE_manifest_sha256": "fe9060198d72fb9d6b150a4cac586fb6529f6784df3c9606ea3481052562db1c",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 32,
+      "pure_HE_manifest_sha256": "043e78df844bbb016fe403425da0f7e64912bd5c3468acf948219776db544903",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 33,
+      "pure_HE_manifest_sha256": "404bc4a386646e26a5d82ca109774fe139d43392cf8f8602eeead3e840f62bc2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 34,
+      "pure_HE_manifest_sha256": "cfe4cac0bd9c220247db64785aebbff35a2ecf9ffe4fef10849ec0b17189b7b2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 35,
+      "pure_HE_manifest_sha256": "377d328743d87f331b92a6b6836bbc3fa0bba8c6417ac7b7d51d9ad1cc61dfac",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 36,
+      "pure_HE_manifest_sha256": "fea3d152d30035e7cbf1ac21837d0a11fc6a2de3a3767c12cb9eff2a9f8c0ab4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 37,
+      "pure_HE_manifest_sha256": "b7335580965690c611e3115fd504bd6d81610b73a446bbee5376e77b390a4d24",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 38,
+      "pure_HE_manifest_sha256": "f80fa5c4a9e453c031be71cc3fe09fdf4bb7392fee753d02b39ad107f61462ce",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 39,
+      "pure_HE_manifest_sha256": "abc14bb039ada6aa0ba5e75a3db68faf5119a76a8f65f3ee8dfc7554a080b782",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 40,
+      "pure_HE_manifest_sha256": "3530d78a2540400802360468c5a3c721f76e396670607a8b4e892f57db02481e",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 41,
+      "pure_HE_manifest_sha256": "ab2486e01d1bf30c2d751483a58e4dcf53c22b2417d31b24edcfa6f75d78b0b1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 42,
+      "pure_HE_manifest_sha256": "11329ec2d82b99e0eecc8bf343fff8259c2e944aa49b66cdde446f311797c8f8",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 43,
+      "pure_HE_manifest_sha256": "9c116e9a4bdbb6cf52f1c109542a3e821b8aa23e79214c2f9a8e60703cdd3c2d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 44,
+      "pure_HE_manifest_sha256": "94efa0a5948239f1d6062a75cc66c1fdcdf64acd0319df5c080d0f281200ce51",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 45,
+      "pure_HE_manifest_sha256": "137dbf00a5410db5e7f02d20657e7bdc44052b72da821be21e9c21defd84f7bb",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 46,
+      "pure_HE_manifest_sha256": "e8b98bdf2f5e99eaba012cab26bee3b4b77e2e088d7383f3ea15d97c73a6affc",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 47,
+      "pure_HE_manifest_sha256": "ccd50e8371f3b6e92b6a5858e9b75729c0b6aa6099a7fa66aad96f7a06954088",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 48,
+      "pure_HE_manifest_sha256": "ac456ae3afa9a398f64922ac71151403bdefeb0f915b02d95d5f92a4c7b66e07",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 49,
+      "pure_HE_manifest_sha256": "4a503d26000411352cf39bcf85e03c853686781e3061d54f641c5048416a5d38",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 50,
+      "pure_HE_manifest_sha256": "24f23996aad56273dd826631ecf94228b93d5a1491fb54890c4df2aeac28a9dd",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 51,
+      "pure_HE_manifest_sha256": "a6aa06df4e1c7f454f951e33a8f22b68e09159f4b72626c94d40a89364304f77",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 52,
+      "pure_HE_manifest_sha256": "8d86e03ea4ceaef8336d15615b761322a7fa5006e6de214704e8687da928ce91",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 53,
+      "pure_HE_manifest_sha256": "8fa5aa29e4e1c6417c40695eafef220eeddb81fb0e8853c74eb5ed068cf29ff9",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 54,
+      "pure_HE_manifest_sha256": "402380412d12188571912f1d1adb811a0532c5281ff0039a1e6ed6d1d7f5d17e",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 55,
+      "pure_HE_manifest_sha256": "5c4145b4c6d0e771ae86f5fe584e031ce8c8a2bce521e9b203b94d5a76f6531f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 56,
+      "pure_HE_manifest_sha256": "b40de8f9c8daa051bbbfd7b1ba88da86529dedd12b6d6c893d660da29d639f7b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 57,
+      "pure_HE_manifest_sha256": "4a174e1a7aef833f1e327be11d2c85cd9e6f86a6c2143b34015f3246a4fde393",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "breast_cancer",
+      "fold": 58,
+      "pure_HE_manifest_sha256": "18c568e9ed8436933ac653d0a30c9d833e028975378c7b0eff3c20b41fdaf0b1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "7f2e478c71609c23e925e551aeba31ab0497b1b8ddc2c132347f73617e32cc1a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "359384837ef74b86ebc46c193e480ffac1511f25ef36cff5b7d1d628220a0fca",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "a87c23ccb9bfe070c91f222cf301e76fbbda0350e6f5452a4e7cbabe08e32e6f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "c287e383dc1d8c3cf802315c38ba3e15aa490237523b94841d3bd4ac7a2aaf9b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "343c378ac7ac101bfdae3134e21c199a35500a9c68ecc4eb5f2c74bcbc29f2b6",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 5,
+      "pure_HE_manifest_sha256": "51ae8007af49cda9e9f351e01e2ef8c2ad35cf61d3336a96ccd7ed876ac50017",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 6,
+      "pure_HE_manifest_sha256": "1f517a6957af778ba27e7ff8167b85b154165febba0ad9a2b83fbdf2e6b131e0",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 7,
+      "pure_HE_manifest_sha256": "bb682560fcec198315dd563f5d282d09a33e6442a758769a658c073292809de8",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 8,
+      "pure_HE_manifest_sha256": "4c4b0c673b72f51139355f38c443a33f5dfd8d2e3cf159b8235c8465e18d6432",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 9,
+      "pure_HE_manifest_sha256": "4f1b0bae3c3919251b24413e70379f7071de94105d9120c0b343345801ea9964",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 10,
+      "pure_HE_manifest_sha256": "ce5c56b7aa64298ecb28011652583552b381ee574579105471e92882e857380a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 11,
+      "pure_HE_manifest_sha256": "e7ae26d67d4d6131d83d315e0ef89c46b9cb92b59c1f50a9b4facbb5d14a3aac",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 12,
+      "pure_HE_manifest_sha256": "69bd4e36272655acdad784945d34c58528388393b8c9b85eb29abbb3d4843cbe",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 13,
+      "pure_HE_manifest_sha256": "b6d06250e31cb8c774b5d86d72d297d92a93eaa3eedbc62f3af20426f4bf1a24",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 14,
+      "pure_HE_manifest_sha256": "137d9fd5a3d0c858d6d2de0fbec6a4c775c1837423490b3d2c0fa642a350718f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 15,
+      "pure_HE_manifest_sha256": "f3fa46455d2160a70c801bb337e8caa711eb7924e991dd64e747c6b16450df5d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 16,
+      "pure_HE_manifest_sha256": "efb20f12ef0379efefe7a7f795459e457b220963a82cafbc7d24bff624c147c0",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 17,
+      "pure_HE_manifest_sha256": "beb97a634024d4676cb5c09413d33825be3442a2293e798cda10c2dab201fd27",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 18,
+      "pure_HE_manifest_sha256": "2f9efffb85bffb000afdf4aef2ba01f6fff7e19aef4330e974f049e239b401ca",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 19,
+      "pure_HE_manifest_sha256": "6669b6214045bb41ef295e078fb660fbb94d2d32de03f6a1335078af3a8ff123",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 20,
+      "pure_HE_manifest_sha256": "9048734c8da082b18177b6c2ffd6a1a16b6b3043fcb4e4567af1894e5aa0c1d3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 21,
+      "pure_HE_manifest_sha256": "c2a794ed54e383c36ea433c473d0d397c040fef030a42d189cfcd18d6bd7e564",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 22,
+      "pure_HE_manifest_sha256": "7f13d2c21440a08280a895ecec06c1cbcb7251344799228928b5a95fb305030f",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 23,
+      "pure_HE_manifest_sha256": "e9a17e52d2a97278935807ba41dc44b4c9478e9b4ad45a8729cc7905e824b9ad",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 24,
+      "pure_HE_manifest_sha256": "f8a3d127a27eae0043a87501cdcb6b26395ca063dc2980958df2941f47b7a4d3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 25,
+      "pure_HE_manifest_sha256": "09db703556add039fe04324cab2f9f79e707e3032ea36d4f700a4889253e9556",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 26,
+      "pure_HE_manifest_sha256": "e21c234f2bc423eb90d08b7cbd017924b1f09f8dc557cf79ce0a385b15e264c2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 27,
+      "pure_HE_manifest_sha256": "5c7087fb841f7c68adc036cb7ec6328527dfe7fa4864d88b6a905ee679badef0",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 28,
+      "pure_HE_manifest_sha256": "9a1bf4a7e259e9388ed0d428c2c3b6b1d56b5d092d2cace4e3c74818be26cc6e",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 29,
+      "pure_HE_manifest_sha256": "0fb24dea526a387072bbf0042e4b77b9d54895c4f492a074f8acf68d3b42c579",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 30,
+      "pure_HE_manifest_sha256": "0d9766cf36a10d8cc72c1e4f1926c867eb04a2add444ea972cf2b381a252a949",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 31,
+      "pure_HE_manifest_sha256": "77597621091537e415b138e717c6ae3b286aa18d0a20f43dc776d0b21cec05d9",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 32,
+      "pure_HE_manifest_sha256": "4f68f61535bc27617ce54fef06be2fbfbb396fa8314208a5f0d9beb086812866",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 33,
+      "pure_HE_manifest_sha256": "977da80e9c9ec6748550974a428f90ce0fd8cf405a908e10f3dda410e042bb72",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 34,
+      "pure_HE_manifest_sha256": "fce7f10c0e961707ce898bb56f282b50d77fcf4e87b313dc64df4db3639320e6",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 35,
+      "pure_HE_manifest_sha256": "c4c909a564960f0f92ca32c00da06e857f7aad764d0d0fb33f26202f8e525791",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 36,
+      "pure_HE_manifest_sha256": "31c49bb369ba470852d570b4c55229d982908873f754f48bd0289e4857cd9a3d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 37,
+      "pure_HE_manifest_sha256": "f84e90156addb08b3c34320a1f5891b472efe0af91b883f0d65c8c98299eaef1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 38,
+      "pure_HE_manifest_sha256": "1e805773776c10f3a778d46fbeb233be0cfe21e60559315d36391497cfe34b9d",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 39,
+      "pure_HE_manifest_sha256": "c89b03802ffabc96db8dfe922490e76344998bd64e0ecc163c2b659c69e1bbb0",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 40,
+      "pure_HE_manifest_sha256": "394899e81b2771d56cb6e81db023ff22adf92e8df771164982f183ef02312501",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 41,
+      "pure_HE_manifest_sha256": "11475360f3413843f425b5a251ca8303eea79cd900ef23b4d74c3b6584c72fe9",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 42,
+      "pure_HE_manifest_sha256": "7f1c447d74503bb8f7058d51ee6aa280d8219d4d9707979540bc9fcca6b92104",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 43,
+      "pure_HE_manifest_sha256": "f64695b034fcf0a65a410ec2d28b550274862bd133beb9c1089325c921855dd7",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 44,
+      "pure_HE_manifest_sha256": "9c9c7b783beba5ae4e5e11acb2c24ddc0b7fd4922b9fe86539b6f5f2a3f9b9ee",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "colorectal_cancer",
+      "fold": 45,
+      "pure_HE_manifest_sha256": "128615f91502b16286bca3440439910b157cbef96d8fb8dd1f491b27d5fc7349",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "cutaneous_squamous_cell_carcinoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "e2629a2b9d1e20943b56203b5e8898347570e3b65f7fc052c11d1d887bc755ea",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "cutaneous_squamous_cell_carcinoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "bcdb17ee3440054d35e17f39f7ce9c355b519a3e7ce84240f78b83e3212bbeb9",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "cutaneous_squamous_cell_carcinoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "8a559d5e1835d0daf2ed51c4a127d74ea78aeaa96c9640e4c6c0d78a6158d03b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "cutaneous_squamous_cell_carcinoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "c282680c99f87a4581432f52e181bdb503993be27c5f7ef45827aeac2c5900d4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "216203142069dd02e7f06ff958fa524cbfdc8f162092a90d065dc4f4f1ced64a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "849293f193bce0795b6dcb021fba231d71d8cb6a250a6d531477b65ec6dd9e67",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "721ea21520061010b00461088b90d183a01fe7f1c0c2e103dd052ae495b08ba1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "7f754b1dd2dce2c9c409403748eba91d551d300026e0ad16259161febb1091d5",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "f91f4b5269c759c17c30f985d9945c8e2dcfa3bbcd48e588caec963439bf5eea",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 5,
+      "pure_HE_manifest_sha256": "bf7f9c5d23c1d9188c254ddd583732cf78ab8c89c2fc18327e05b55f83a02daa",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 6,
+      "pure_HE_manifest_sha256": "522f5ad09ca90a44cc3d6bb0749e8bb98a50d7e79ab93b4464c27be576f2a051",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 7,
+      "pure_HE_manifest_sha256": "74e7609408fe70a5eb8c31614c7b1dceb033c0a93f661a5a9e5b5a8f515f5ebb",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 8,
+      "pure_HE_manifest_sha256": "835c0db5629457955cb63ae8fbe248aff9ba7e1bb8892466c112355934e993b7",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 9,
+      "pure_HE_manifest_sha256": "6c0c8a66daf5ae18ae7875776c885ad1a6b4343ff8872b1637adffa1746b24a3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "ependymoma",
+      "fold": 10,
+      "pure_HE_manifest_sha256": "c3b14bdb121167536343c2019a005e701ab470f1eb81f08fc9ec19ab4c4b00b4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "a4875b8d4cace50af70a746d88e09e5ec41d11ff06e3e701785a9b9c9223ae83",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "b272934857178d6552e9ed87ce7585eefdd3357d971c19bd059f7b09afa5b522",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "6e1a5f716a60c187f6c3653c5cfcdf296b5b94f233a78d0847096eeec9906ad4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "47f1dbd9eadc6c5577511414da0c8e8236dde885854cb823e685232a81eb789e",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "7948f0fb5dc877457c98ad479a232d8b150943edfd963fcd142c78bee7a7589e",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 5,
+      "pure_HE_manifest_sha256": "ea93a0b8eed920295f92f23d1611ff584953a0ac028aa84a4b479ea67b3f3d33",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 6,
+      "pure_HE_manifest_sha256": "5d1fddfcb363ed7128da15a0fb315481bb4d5c95c0880737aff4046e9077ef59",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 7,
+      "pure_HE_manifest_sha256": "868a463778b58e640b413b6ba54460c7e2d4868ffaa554ef49a5a7a460c5c0d8",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 8,
+      "pure_HE_manifest_sha256": "25e27ee40852a0e6b252edb9ff4cbc94aaa1acb332078fb99ac13d18f5c9b0ae",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 9,
+      "pure_HE_manifest_sha256": "f1bc3489a9a6da4c1f75d047399b8b5fcb1d271146d6d81102e6e6d5752f027c",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 10,
+      "pure_HE_manifest_sha256": "e055c81ebaac666b8afda837632d8c86bf9b1be8d85ced92c17a912e44124f4a",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 11,
+      "pure_HE_manifest_sha256": "14bc3d8b590586443d90899fe98be24a644c62aaa68811248be489642c96d7e8",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 12,
+      "pure_HE_manifest_sha256": "77180385d0a43cdc25ed7ce7831231ad64357a6abe72ed5d3af8126b95529a41",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 13,
+      "pure_HE_manifest_sha256": "6301ef34bf6211d878995a058abd8df9e3d5fbee980ccd430bc755c0d7c9e4cc",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 14,
+      "pure_HE_manifest_sha256": "f54106ed42314e97adba3bc8d19aa14180e681ba0a18b4c25d45e2a21fecdf6b",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 15,
+      "pure_HE_manifest_sha256": "93b8ba75783af2c12ca151efb87c3beecd3cda54a2e3adb62ec4c1785edd51dc",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 16,
+      "pure_HE_manifest_sha256": "32cbd2837483e9674ea143b39c1eaf51f729bff0fe1a2e8496788d7b6de634c2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 17,
+      "pure_HE_manifest_sha256": "86976b0641c8989721f569cdb16bcea85a600e1e31b6302745c517645f762a22",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 18,
+      "pure_HE_manifest_sha256": "f05e9fc700cdcf1fca4bb7ee36bc0397b23bc491718e0126dac8726c16f496dd",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 19,
+      "pure_HE_manifest_sha256": "4c022bd1fed6bf27d6855e55ea24d5d9ea2e28b529e54bd118e3de95148773d4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 20,
+      "pure_HE_manifest_sha256": "ec01c49c8ac874fe6f446ed654fe1c07cfebbe52267ef82d6dbb48778876b0e3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 21,
+      "pure_HE_manifest_sha256": "388face4ef54981dfb9df668a38d499729d879ea58c90056619cce97b73b3c27",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 22,
+      "pure_HE_manifest_sha256": "0e12443c50d69498128865b590615753e440f766e55fa1c3596baa60e58f6de4",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "kidney_clear_cell_carcinoma",
+      "fold": 23,
+      "pure_HE_manifest_sha256": "7b1b0aeedd42b44783fda87253b328e05d89bba25f4e85bde82393e87285dc46",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "lung_adenocarcinoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "c9dd9f41f3e388b65912cc2f52071224bf3764808ef55beb082640aa5a6a9be3",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "lung_adenocarcinoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "ee3fb46167e6dfd3733b96e91e4ed77ab9103478902fe2c7b063d216131a41a2",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "lung_adenocarcinoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "9f41d935aefbf358e3a1f3f31b41bbf08a811b178a81af430e166b349df06f87",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "lung_adenocarcinoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "8882f29fc70b18f7fa66b2bfa82641efcce17c1757823eb76e46699423fc6eb1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "lung_adenocarcinoma",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "fdd9e8bd1894c8bf19eecaba7b8c820a757787ecb9731296c4f302ad9a5354fe",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "pancreatic_adenocarcinoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "410c0f14385f986958562ea7bf0d9f7714867ed38bf9c111b7a44eb3e3961503",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "pancreatic_adenocarcinoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "e7045da10232702b343827a13aacfdaa049753ff31890731ca2e58733406d7e1",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "pancreatic_adenocarcinoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "ac55ade97e02ac7194ca7b4bee69d0f911ddecd247db4e2396a4bb0d3cc68092",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "pancreatic_adenocarcinoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "9d5d6d17b7033a4999176098ebfe4eef7aaa3d20c98bf5ca8dbe175043948caf",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 0,
+      "pure_HE_manifest_sha256": "1878f20a9f2784cda26adb110f030cbd43cbd4bb96b860a2a85f2074f53803a0",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 1,
+      "pure_HE_manifest_sha256": "a854cce52f96c51b49a14f99bfb6523b5f4ac6768507f1e0438524922e5bff16",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 2,
+      "pure_HE_manifest_sha256": "2bb5e59abb65ea91ddf6f9edf28ab64c9c7de3535f81c9f99a26ab22a89a5516",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 3,
+      "pure_HE_manifest_sha256": "ddeb5668d69c7cc681a8e3ec45fa2497867d998046d7478a426d5d9959091a30",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 4,
+      "pure_HE_manifest_sha256": "d09ce7d033d2c74e43c2e7a3dca625331b58b47d28817d8c308b112aac7c5252",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 5,
+      "pure_HE_manifest_sha256": "e6e9bed4bf0babde91c1649a58b17666f7f546fe310cdc20226e7d64518021a9",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 6,
+      "pure_HE_manifest_sha256": "57c8601d703023e4f8ecbdf0232d098f59bd47baf165e1908977f988f07e0f39",
+      "sample_RNA_loaded": false
+    },
+    {
+      "cancer": "prostate_adenocarcinoma",
+      "fold": 7,
+      "pure_HE_manifest_sha256": "e8d28c11c84735249f80b0662a6ce1b92595c8691fcb7400645c0d41be21e220",
+      "sample_RNA_loaded": false
+    }
+  ]
+}

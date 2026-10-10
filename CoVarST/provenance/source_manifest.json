@@ -1,0 +1,1585 @@
+[
+  {
+    "file": "src/covarst/_engine/he/train_virchow2_pan_atlas_consensus_mapper.py",
+    "source_sha256": "16abc77eb4ed9c82c065b3e4bdd7134e3ff1facd8e5ee5c35b8b602832eba1c8",
+    "release_sha256": "16abc77eb4ed9c82c065b3e4bdd7134e3ff1facd8e5ee5c35b8b602832eba1c8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/he/infer_virchow2_pan_atlas_v4.py",
+    "source_sha256": "8824025e29a0a5842e2d8f56f9c1cfe5aee445df25c4303dd09e50d672c7e6bb",
+    "release_sha256": "8824025e29a0a5842e2d8f56f9c1cfe5aee445df25c4303dd09e50d672c7e6bb",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/he/evaluate_pan_atlas_v4_inference.py",
+    "source_sha256": "ae9d5ec50f926fee80dafb059b1dc57f977d940ab677669480a44036a08529cc",
+    "release_sha256": "ae9d5ec50f926fee80dafb059b1dc57f977d940ab677669480a44036a08529cc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/he/run_virchow2_bayestme_global_mapper.py",
+    "source_sha256": "5a0abfe00b38d04659fedffaebe794c5ce2e832a7f9eabbdd5460dbc83faa9ad",
+    "release_sha256": "b61c8a9c27b918c09aaeb04af38ebaf142c89e2a583ce58b573dd82c51191c58",
+    "operation": "exact-AST-subset",
+    "definitions": [
+      "_morphology_graph"
+    ]
+  },
+  {
+    "file": "src/covarst/_engine/he/run_virchow2_fseg_k64_mapper.py",
+    "source_sha256": "7fe3957de97489fac6d821bbf2d386bd8ff9cff1ea0306c2be2125c5cb5fe013",
+    "release_sha256": "e00d11830d5c7c52a77c083f2891794ad7b177e6258330f098130512e5e5484c",
+    "operation": "exact-AST-subset",
+    "definitions": [
+      "FSegGATv2",
+      "BoundedINR",
+      "_to_device_graph"
+    ]
+  },
+  {
+    "file": "src/covarst/_engine/he/openst_final/he_uni_mamba_bnn_inr.py",
+    "source_sha256": "dc0acdd9056a18052e41980fefd9cecfd95dc35790c887c0970ef14bdb8586a1",
+    "release_sha256": "6e2790b11f8765ce945ef318593fca68aa4b33f003bd419d49b3a2ef6de0b5cc",
+    "operation": "exact-AST-subset",
+    "definitions": [
+      "normalize_slide_coordinates",
+      "SineLayer"
+    ]
+  },
+  {
+    "file": "src/covarst/_engine/he/extract_hest_breast_paramnet_uni_features.py",
+    "source_sha256": "a3ef7207efbef1d0029eb826a67caca1a3705d08dbc4ce3fa67349b4028ffb90",
+    "release_sha256": "1567bfd71de7e45f7657c807152c23c45fec2775d463a15d933c43458f1b858e",
+    "operation": "exact-AST-subset",
+    "definitions": [
+      "load_paramnet",
+      "normalize_batch"
+    ]
+  },
+  {
+    "file": "src/covarst/_engine/he/virchow2_feature_utils.py",
+    "source_sha256": "bb9a2c3528b51a006e0d8c44d0115bd226bbabd6fea41e90bc5877767ede747f",
+    "release_sha256": "bb9a2c3528b51a006e0d8c44d0115bd226bbabd6fea41e90bc5877767ede747f",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/he/wsi_grid_math.py",
+    "source_sha256": "0c36c09e9b7dd37a7d10736b03f88bfd51ad01e33c817370433d652b9512187e",
+    "release_sha256": "842182b518a51af72d3f618a900922b0ac5f7fdbefa9067717c850cab0419910",
+    "operation": "exact-AST-subset",
+    "definitions": [
+      "property_float",
+      "slide_mpp",
+      "segment_tissue",
+      "mask_fraction_for_boxes",
+      "build_patch_grid"
+    ]
+  },
+  {
+    "file": "src/covarst/_engine/reference/prepare_hest_tissue_top10k.py",
+    "source_sha256": "781c82da5c69683cc7ba2167d4e1269b3f7fd19da08395820b2d685beb309a13",
+    "release_sha256": "781c82da5c69683cc7ba2167d4e1269b3f7fd19da08395820b2d685beb309a13",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/prepare_bayestme_worker_shards.py",
+    "source_sha256": "c4ddd897f75c1f6249d246e9eb0a8ea9fb9ad02165e167c186b3039ceb0375fb",
+    "release_sha256": "c4ddd897f75c1f6249d246e9eb0a8ea9fb9ad02165e167c186b3039ceb0375fb",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/run_pan_cancer_bayestme_worker.py",
+    "source_sha256": "28ecd31963fd4c65aa6792db36ac8f4e2439d0e4b76e3f7418a1a58c4b1191cb",
+    "release_sha256": "28ecd31963fd4c65aa6792db36ac8f4e2439d0e4b76e3f7418a1a58c4b1191cb",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/run_pan_cancer_consensus.py",
+    "source_sha256": "1e93fff2dfb3b537de919dd471ab7334e39dd40558ae8d7aa1d8bebf2e6eb32d",
+    "release_sha256": "1e93fff2dfb3b537de919dd471ab7334e39dd40558ae8d7aa1d8bebf2e6eb32d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/audit_pure_bayestme_top10k_completion.py",
+    "source_sha256": "479e0c429409c47fd4717693aa0c9f233a3f706bbe698d31d1e76ff1e0815af2",
+    "release_sha256": "479e0c429409c47fd4717693aa0c9f233a3f706bbe698d31d1e76ff1e0815af2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/fit_bayestme_top10k_direct_consensus_locked_split.py",
+    "source_sha256": "655765d2292cd0320032f4442eab617cb1e5e4dd524a1e594f2264c42a5f67ae",
+    "release_sha256": "655765d2292cd0320032f4442eab617cb1e5e4dd524a1e594f2264c42a5f67ae",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/fit_bayestme_top10k_rccd_consensus.py",
+    "source_sha256": "96c7965ac3102c7cc1dd0ab01e793eb8f7eb04ea1147ae2e18f4c588b49d4ab0",
+    "release_sha256": "96c7965ac3102c7cc1dd0ab01e793eb8f7eb04ea1147ae2e18f4c588b49d4ab0",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/refine_direct_consensus_spot_nmf.py",
+    "source_sha256": "004cd4ebed6a48576cb6105ccce0f733c7dd07482f1a4de901f02e0a4b3634cf",
+    "release_sha256": "004cd4ebed6a48576cb6105ccce0f733c7dd07482f1a4de901f02e0a4b3634cf",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/run_pure_upstream_bayestme_per_slide.py",
+    "source_sha256": "238989d8ed2a59edff5032a4c334408dc0668a287c4f2c106ae120b8d62291c8",
+    "release_sha256": "238989d8ed2a59edff5032a4c334408dc0668a287c4f2c106ae120b8d62291c8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/reference/upstream_pipeline/train_virchow2_pan_atlas_consensus_mapper.py",
+    "source_sha256": "206c5926d8a0471655505b167e3f233d06dc11919553fa3dc8fcda38cbb58aaf",
+    "release_sha256": "206c5926d8a0471655505b167e3f233d06dc11919553fa3dc8fcda38cbb58aaf",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/prepare_generic_hd_inputs.py",
+    "source_sha256": "bb668e874835de43b78fe30bfe8a1afae0dc9d3792f8b25e2bd9753547d3e708",
+    "release_sha256": "c274d0149c8c1417d7f3823152d7ee1c7ae0dfb104de30755251e9a4dcdf6c17",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/prepare_generic_v55_inputs.py",
+    "source_sha256": "97740c3901ed3eaf942e66a26ef2366e0e719f8b88974811189f456656bde5a2",
+    "release_sha256": "18f9434ee7d5bcaa187c9e40a580d6412db1dd76f93a00cd5407cd6c737ebf5c",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/fit_native16_bayesgraph.py",
+    "source_sha256": "bada75ab15e48a1711503bc889ae71152fa1460919a65672d27f3f8edabb00ec",
+    "release_sha256": "a3907723122a3610871bc56680e2942a2a90749aefd170a70d9f35e14fe4e54e",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/fit_generic_v55_bayesgraph.py",
+    "source_sha256": "c737cfc6a22c7682488bd6f232329606f3ecc058e8be706982c5fc1ddb219701",
+    "release_sha256": "c737cfc6a22c7682488bd6f232329606f3ecc058e8be706982c5fc1ddb219701",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/fit_bayesgraph_component_projection.py",
+    "source_sha256": "72d9aae3a434bcd1f04e33ddb0679d53f1a1feaf17a26b1755638d8ae817044e",
+    "release_sha256": "72d9aae3a434bcd1f04e33ddb0679d53f1a1feaf17a26b1755638d8ae817044e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/fit_bayesgraph_qr_memory_v3.py",
+    "source_sha256": "7f4b3d85d1f02bb4bbad390f352837f540eff9bab46c92db42fd3b5f0456b1ec",
+    "release_sha256": "7f4b3d85d1f02bb4bbad390f352837f540eff9bab46c92db42fd3b5f0456b1ec",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/validate_bayesgraph_branch.py",
+    "source_sha256": "a9e2c091084d0fcd97bb18c7775c2908197d92ba151634215d1d7809cefd6ff6",
+    "release_sha256": "a9e2c091084d0fcd97bb18c7775c2908197d92ba151634215d1d7809cefd6ff6",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/validate_generic_hd_sample.py",
+    "source_sha256": "440b9bd84933b528633a8afd93c456078c5c01c44da2a9eeddf9505735ba0808",
+    "release_sha256": "440b9bd84933b528633a8afd93c456078c5c01c44da2a9eeddf9505735ba0808",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/p1_dual_bayesgraph_panel.py",
+    "source_sha256": "ea2cde85320b749fd85bc9a4937130c9b3bb2d739db153f13c36919ef5df20bf",
+    "release_sha256": "7d451b31b678d64549ce092cd1576e0552558512fc864bbe4d26123857ba73f5",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/p1_bayesgraph_fullgene_rank_sweep.py",
+    "source_sha256": "e9b54483fcc26b699a4599f6a73db1751d10a79e5ed220b27ba5fbe2759397c6",
+    "release_sha256": "bce79259761b219b7e1ad3a6ce01209ecbfc60bfcf90bbdd2dd233eaaf524900",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/p1_visium55_mv4_panel_prototype.py",
+    "source_sha256": "e285e8e3ef5ef6540c4207ba1f484a674f6d854f693a7f2d7b08da99902abc1c",
+    "release_sha256": "2b9f6a5e2778189d52ff1e4b53af21192bcfe3ff6f74bbeab6ea4eae1f55deed",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/cell_resolved_visium55_mv3.py",
+    "source_sha256": "ab46143294b4e62acad3ed5ec385a4ddc2910368e3196f75ec0d158d2942e86c",
+    "release_sha256": "77e548fbf12ffe94517b2d9b4a31f78bb858db4d89187a5f21825fb29c3a82f9",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/spot2cell_bayesgraph_core.py",
+    "source_sha256": "e563b0a61af39cf3cfd05c2561a1274d7fa7b509bdb1758faebd1a826d4c4b26",
+    "release_sha256": "e563b0a61af39cf3cfd05c2561a1274d7fa7b509bdb1758faebd1a826d4c4b26",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/spot2cell_mv4_core.py",
+    "source_sha256": "3e186a07c7fd5e55cb0c5a1ce791aaea73dd9fcf203ae59813596a8a4f112cba",
+    "release_sha256": "3e186a07c7fd5e55cb0c5a1ce791aaea73dd9fcf203ae59813596a8a4f112cba",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/cell_resolved_v3.py",
+    "source_sha256": "01ade3ea67faf7f7bc4d7a5a45d0af97c8f3c2348dc2ec10cfa38c40773ebb9a",
+    "release_sha256": "7806f12a0f3b4072a01506a429994c0c83b154b21b4ea902a9bec83fb1d2a359",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/cell_resolved_visium55.py",
+    "source_sha256": "7b57df37f05db169a7c1ef2a506844c10da37f66ce085f59794078c81daaf731",
+    "release_sha256": "4ab2c8b2c0acc00310d9a4226b80f5c750f57c638d880ddf4dfcf4cc0bedec24",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/bayesgraph_runtime.py",
+    "source_sha256": "adb0f1fcc6356361f4c100facfc63b95d3796413d50e9b3d73e1bdf8806311c3",
+    "release_sha256": "adb0f1fcc6356361f4c100facfc63b95d3796413d50e9b3d73e1bdf8806311c3",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/component_nullspace_projector.py",
+    "source_sha256": "556e70cb3286b28bfe5f1d861d892d6fe6ea56aa63ac87187e208c468e86f03d",
+    "release_sha256": "556e70cb3286b28bfe5f1d861d892d6fe6ea56aa63ac87187e208c468e86f03d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/component_nullspace_projector_qr_memory_v3.py",
+    "source_sha256": "34978be0f385314fe19de7370e9233df6b0661819b1f31132df127ef53a0a865",
+    "release_sha256": "34978be0f385314fe19de7370e9233df6b0661819b1f31132df127ef53a0a865",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "src/covarst/_engine/cells/validate_acquired_hd.py",
+    "source_sha256": "d14fc689ba27be66ba12500ad1e5c27bae7acb82ba193aa41ac77aba91491bee",
+    "release_sha256": "53d3656f6fc4e2acde462fba4a6d50d9c7ab72605ab8b1c726b4f2bee08ef2c6",
+    "operation": "relocated-runtime-defaults"
+  },
+  {
+    "file": "src/covarst/_engine/cells/spot2cell_stinr_core.py",
+    "source_sha256": "a527ee245eecb8018a7f31d2fddd5f032640d470c0d956378662392243e64bee",
+    "release_sha256": "a527ee245eecb8018a7f31d2fddd5f032640d470c0d956378662392243e64bee",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/batch_adapter_metadata.csv",
+    "source_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "release_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/candidate_dictionary_selection.csv",
+    "source_sha256": "de572977d6988d0826ceea7ab45135bfd127d5aa9138371287334c7b6faa2efb",
+    "release_sha256": "de572977d6988d0826ceea7ab45135bfd127d5aa9138371287334c7b6faa2efb",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/consensus_program_metadata.csv",
+    "source_sha256": "b69a494a0a5971d8f02cadc26ea584faaa6aa01df0d6b508b4be1fe66defdd27",
+    "release_sha256": "b69a494a0a5971d8f02cadc26ea584faaa6aa01df0d6b508b4be1fe66defdd27",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "c6c4680ef17172f929159a22ecfb614f93633d37b6b967e6befa4faca383d595",
+    "release_sha256": "c6c4680ef17172f929159a22ecfb614f93633d37b6b967e6befa4faca383d595",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/consensus_reference_probability_10k.npy",
+    "source_sha256": "0dd2941fdf54f27aac716bac51dc6f80c7c96f25e51bfca700cd1c9f85e12b62",
+    "release_sha256": "0dd2941fdf54f27aac716bac51dc6f80c7c96f25e51bfca700cd1c9f85e12b62",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "e7e84414949502bea7066f656b550bbc3a20bd68ae7fe5988ccbdeb03db5053a",
+    "release_sha256": "e7e84414949502bea7066f656b550bbc3a20bd68ae7fe5988ccbdeb03db5053a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/final_training_history.csv",
+    "source_sha256": "1cedf6b34e2f76a1091d74963efd530a81b0b174fb5547067c9e153eb6dc8de2",
+    "release_sha256": "1cedf6b34e2f76a1091d74963efd530a81b0b174fb5547067c9e153eb6dc8de2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_order_10k.npy",
+    "source_sha256": "d906a5ca2ce346feda2a8038b745b9a38b9582a7311541de1060bc95d2224ca7",
+    "release_sha256": "d906a5ca2ce346feda2a8038b745b9a38b9582a7311541de1060bc95d2224ca7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "72381e7430280bc295d10b54ed7be7ebd19545fa698968007714c71e30288306",
+    "release_sha256": "72381e7430280bc295d10b54ed7be7ebd19545fa698968007714c71e30288306",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "cf7036d3679486b68850ca9e1511649a7952938e313e3b3d20377eee41d9273e",
+    "release_sha256": "cf7036d3679486b68850ca9e1511649a7952938e313e3b3d20377eee41d9273e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "5f5b00355beb1e34b68d395b61317e87ffa8c1ea521f3de5c28c7a78151c832d",
+    "release_sha256": "5f5b00355beb1e34b68d395b61317e87ffa8c1ea521f3de5c28c7a78151c832d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "8b59e5724f651ad2f495312a7655adea0b6681fa963d2dc649d740f4cd27d7f8",
+    "release_sha256": "8b59e5724f651ad2f495312a7655adea0b6681fa963d2dc649d740f4cd27d7f8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "6b1069626a0da01513a7a64391bdf2a6e7f95b3fdf67053ab4639ee9395f6cbe",
+    "release_sha256": "6b1069626a0da01513a7a64391bdf2a6e7f95b3fdf67053ab4639ee9395f6cbe",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_test.csv",
+    "source_sha256": "116b275a81271b52c35da3ca488ae406834a81285d463c28a30d3dc441a4905b",
+    "release_sha256": "116b275a81271b52c35da3ca488ae406834a81285d463c28a30d3dc441a4905b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_train.csv",
+    "source_sha256": "7f923ff74741225c80e3142506c389217f23db660c3ac4aa48f618ea29422042",
+    "release_sha256": "7f923ff74741225c80e3142506c389217f23db660c3ac4aa48f618ea29422042",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_pcc_10k_val.csv",
+    "source_sha256": "f2a27fd4523a68ab3dc80dfb36000b871d331a51b444df653fed85c3092a1819",
+    "release_sha256": "f2a27fd4523a68ab3dc80dfb36000b871d331a51b444df653fed85c3092a1819",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/gene_weight_10k.npy",
+    "source_sha256": "0f44bd49c1a86b27d03a935211f702691254dcea909579a8eaf66afbdfe7d4c8",
+    "release_sha256": "0f44bd49c1a86b27d03a935211f702691254dcea909579a8eaf66afbdfe7d4c8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/local_program_assignment.csv",
+    "source_sha256": "e33580e02e271f08fb4d78d1dae72fad933d072ce5eea3fc3ed3cc89e3fd0880",
+    "release_sha256": "382a2fe2365bab091238ce2c6bb34a85c00e04ad8fe8ba75bcb44cf530266a96",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/bladder_cancer/local_to_consensus_mapping.npy",
+    "source_sha256": "65355cafd457a8cc986bb41063b5efbc631daf6a50859eaedf2851c575bbaf8e",
+    "release_sha256": "65355cafd457a8cc986bb41063b5efbc631daf6a50859eaedf2851c575bbaf8e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "f045343c589833f2704b36ab5e7490b66dc50c73dd0ffbba5593d5372463c8d3",
+    "release_sha256": "f77ac8a035e1b55b2fcfdfb40afcc4666749af6817a448e2d50030a45f73e085",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/bladder_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "302716932cc4db072d7ecdcf3f8be1507731bb6065bc5d2a664ef02b04df94b6",
+    "release_sha256": "cbe87d37c9216ba3ed581252d94ed47d6c86a40caa4033ffc9882a8a83f947bb",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/bladder_cancer/spot_nmf_refinement_history.csv",
+    "source_sha256": "152b9275e9af934c9c949b9b01ee0e460ec2a3d45968f910fc509265a8d24e31",
+    "release_sha256": "152b9275e9af934c9c949b9b01ee0e460ec2a3d45968f910fc509265a8d24e31",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/bladder_cancer/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/batch_adapter_metadata.csv",
+    "source_sha256": "f2e8e3677f3fe98f91996a1b80111056060086f067e0ad27172ecf7403738b21",
+    "release_sha256": "f2e8e3677f3fe98f91996a1b80111056060086f067e0ad27172ecf7403738b21",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/batch_gene_adapters.npy",
+    "source_sha256": "e7b83731afde17a082563ebdc20c9f8f20469f1a76656ab91d42fd6e96905c33",
+    "release_sha256": "e7b83731afde17a082563ebdc20c9f8f20469f1a76656ab91d42fd6e96905c33",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/candidate_dictionary_selection.csv",
+    "source_sha256": "e9ef9eb2f1aadfc14b4cd1e03933f3e1a53b662f95de6071455a597ca39b123a",
+    "release_sha256": "e9ef9eb2f1aadfc14b4cd1e03933f3e1a53b662f95de6071455a597ca39b123a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/consensus_program_metadata.csv",
+    "source_sha256": "dfe78468f79cb6d304a02997a5e5a10408f9b2cbfefce349dfa840eb9788bbe6",
+    "release_sha256": "dfe78468f79cb6d304a02997a5e5a10408f9b2cbfefce349dfa840eb9788bbe6",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "4daff41e43c48c3d793587bdcde052985f6ec119acc525efc3e1bcdb95509b43",
+    "release_sha256": "4daff41e43c48c3d793587bdcde052985f6ec119acc525efc3e1bcdb95509b43",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/consensus_reference_probability_10k.npy",
+    "source_sha256": "1e8e3e879eb836571fe8a05c3db493511e53db1db31b64a51e2983b638c8eebd",
+    "release_sha256": "1e8e3e879eb836571fe8a05c3db493511e53db1db31b64a51e2983b638c8eebd",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "af51e0165d18011a211831454b2401fb4dcdb649f9939243c23b871bdce4d0b9",
+    "release_sha256": "af51e0165d18011a211831454b2401fb4dcdb649f9939243c23b871bdce4d0b9",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/final_training_history.csv",
+    "source_sha256": "e26676ecac20a37bae23013c6189d200a225420500ed2178bfbf582a87a362a7",
+    "release_sha256": "e26676ecac20a37bae23013c6189d200a225420500ed2178bfbf582a87a362a7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_order_10k.npy",
+    "source_sha256": "ae465722065f5b4ab089889adc7302798c866802fdf4545955e3bb7147ec21c7",
+    "release_sha256": "ae465722065f5b4ab089889adc7302798c866802fdf4545955e3bb7147ec21c7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "9be57423fef630f1fca7ae7ee926fb2dcf3d7aae45e72bdadc9ef0368a0f95a1",
+    "release_sha256": "9be57423fef630f1fca7ae7ee926fb2dcf3d7aae45e72bdadc9ef0368a0f95a1",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "0dc57226f9fcde471167873335d357d798ee2345e00b977d4e53bbf3c4413b20",
+    "release_sha256": "0dc57226f9fcde471167873335d357d798ee2345e00b977d4e53bbf3c4413b20",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "c529dd8e5c5ab63df496d122238e30388419634a8456a82ae475515a9bf1c01e",
+    "release_sha256": "c529dd8e5c5ab63df496d122238e30388419634a8456a82ae475515a9bf1c01e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "0906d70feda93d2cc800203825f6cd8cb1714aafb7e173438b95cda1f7eabbab",
+    "release_sha256": "0906d70feda93d2cc800203825f6cd8cb1714aafb7e173438b95cda1f7eabbab",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "b157490c18b58dd23452615bb3b8ab5f6e0706c28363e6fa6e0baaf8333383f8",
+    "release_sha256": "b157490c18b58dd23452615bb3b8ab5f6e0706c28363e6fa6e0baaf8333383f8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_test.csv",
+    "source_sha256": "a6f22e08d68f57042c655a1a9b22beab446da404de9f2956e91bb00bbeab3333",
+    "release_sha256": "a6f22e08d68f57042c655a1a9b22beab446da404de9f2956e91bb00bbeab3333",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_train.csv",
+    "source_sha256": "6ece24a56683569557bb76c4a4827089f8d2fac6f498e4e8b7d16b9adb1f2575",
+    "release_sha256": "6ece24a56683569557bb76c4a4827089f8d2fac6f498e4e8b7d16b9adb1f2575",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_pcc_10k_val.csv",
+    "source_sha256": "c58da180bf71152df041a5af127ba88f9faf38a58fe614a7d3f333d76168f06a",
+    "release_sha256": "c58da180bf71152df041a5af127ba88f9faf38a58fe614a7d3f333d76168f06a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/gene_weight_10k.npy",
+    "source_sha256": "7e86a1981c7e283fad02902ebbd6a3eeda5d79c7e535f95f666baf8e700c1060",
+    "release_sha256": "7e86a1981c7e283fad02902ebbd6a3eeda5d79c7e535f95f666baf8e700c1060",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/local_program_assignment.csv",
+    "source_sha256": "6a91d4da702302a09c5498ffecb69bcf2605b8888277bbd2e9c28e4316f56c6e",
+    "release_sha256": "1998b89b26efab9854b924dc6d5f90a3542b860a63b0ebf7e3fd26a18b08034e",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/breast_cancer/local_to_consensus_mapping.npy",
+    "source_sha256": "ffb34a34a9a05d4934c2adefb390ebb521d7c170e6efd76387edf452f1db6988",
+    "release_sha256": "ffb34a34a9a05d4934c2adefb390ebb521d7c170e6efd76387edf452f1db6988",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "1ef625a71d45c75e1f151e0746e87dd0d5d27f4dfe3fce7e1cca038299e230df",
+    "release_sha256": "b7ad2692d03be3ebcb4f459e82614a4680be2a6e3add4949d7861f6e48672910",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/breast_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "93e9d235adce46d5e181651a4cb98277cb044ecbf9c689c98f1ff02fa0eea696",
+    "release_sha256": "0699eda851c629077035c147fe3b91e631b678e36e31997632a174147c7f41e7",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/breast_cancer/spot_nmf_refinement_history.csv",
+    "source_sha256": "3aef14d2f0206e723189e8fa8f84e8ca20540567f96cd684810d0a052c765c50",
+    "release_sha256": "3aef14d2f0206e723189e8fa8f84e8ca20540567f96cd684810d0a052c765c50",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/breast_cancer/technology_gene_adapters.npy",
+    "source_sha256": "652ed759a74061e18508906c0670ffe564842f541fc9ca5857af5d52e58818d9",
+    "release_sha256": "652ed759a74061e18508906c0670ffe564842f541fc9ca5857af5d52e58818d9",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/batch_adapter_metadata.csv",
+    "source_sha256": "92d00706e7b9e65a701e71fe8c7420ce2f3b7c4b5c2c15b8293a36942707b942",
+    "release_sha256": "92d00706e7b9e65a701e71fe8c7420ce2f3b7c4b5c2c15b8293a36942707b942",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/batch_gene_adapters.npy",
+    "source_sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
+    "release_sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/candidate_dictionary_selection.csv",
+    "source_sha256": "fdb6dce065264da95996ebbc89cd5238338fb28c6166bc143e39ea4cc55e1bed",
+    "release_sha256": "fdb6dce065264da95996ebbc89cd5238338fb28c6166bc143e39ea4cc55e1bed",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/consensus_program_metadata.csv",
+    "source_sha256": "52c4f95b71ad90a4cb4c672c77fbfe2de94b731b63747e1a3f654b94423e8093",
+    "release_sha256": "52c4f95b71ad90a4cb4c672c77fbfe2de94b731b63747e1a3f654b94423e8093",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "6587dda8780a70aef6316ac8a8adb5bf0345bb9b746aaf5c3c794e6505c4e67b",
+    "release_sha256": "6587dda8780a70aef6316ac8a8adb5bf0345bb9b746aaf5c3c794e6505c4e67b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/consensus_reference_probability_10k.npy",
+    "source_sha256": "6137f1d28167bbb08f663a46f1a7c8613db7d06c0c6652e069affbaa7120ecf2",
+    "release_sha256": "6137f1d28167bbb08f663a46f1a7c8613db7d06c0c6652e069affbaa7120ecf2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "85681ff3e337944dbccf3d3030209fdffef61c2cb4df02b1766f8f5459e04cc7",
+    "release_sha256": "85681ff3e337944dbccf3d3030209fdffef61c2cb4df02b1766f8f5459e04cc7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/final_training_history.csv",
+    "source_sha256": "dc6b76e0c4587b371fdc3fc6c4e66c23ab3df5316cafc919100fdd60b1bf3b30",
+    "release_sha256": "dc6b76e0c4587b371fdc3fc6c4e66c23ab3df5316cafc919100fdd60b1bf3b30",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_order_10k.npy",
+    "source_sha256": "3289fef03bc2398f31085dba7813e89d15465e39f3784996522a2ff3b7a53f1c",
+    "release_sha256": "3289fef03bc2398f31085dba7813e89d15465e39f3784996522a2ff3b7a53f1c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "3a5b3977d8da1e35164562c94a367c1da2b9d4f308b582392a14af32b13397b4",
+    "release_sha256": "3a5b3977d8da1e35164562c94a367c1da2b9d4f308b582392a14af32b13397b4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "56b490b1076bdf70fe84f490170c15468265cd1c1f959959e548b3897a057f32",
+    "release_sha256": "56b490b1076bdf70fe84f490170c15468265cd1c1f959959e548b3897a057f32",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "2f89ea0702ff24d5c225ae345fa40acc3be27ddb8ce76dfeccd7496f78be3b5a",
+    "release_sha256": "2f89ea0702ff24d5c225ae345fa40acc3be27ddb8ce76dfeccd7496f78be3b5a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "d1a33c344b9ddc39036d461bb31de4b5c071c9b9a2bf23a7a36b0bf15ed3196b",
+    "release_sha256": "d1a33c344b9ddc39036d461bb31de4b5c071c9b9a2bf23a7a36b0bf15ed3196b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "068dc7d76cd656e57ee5d91273842714b378749e3bba376adeffab27414395f2",
+    "release_sha256": "068dc7d76cd656e57ee5d91273842714b378749e3bba376adeffab27414395f2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_test.csv",
+    "source_sha256": "bed7fab2d792428fbf18abd0a4bf16d1f5077f12a16118703b33dbca9fc1bccb",
+    "release_sha256": "bed7fab2d792428fbf18abd0a4bf16d1f5077f12a16118703b33dbca9fc1bccb",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_train.csv",
+    "source_sha256": "033ee46e9eb66bfce5e439502e4370b8dbf5a5d803539938d294bd67aa853286",
+    "release_sha256": "033ee46e9eb66bfce5e439502e4370b8dbf5a5d803539938d294bd67aa853286",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_pcc_10k_val.csv",
+    "source_sha256": "05c82a48a9efa399312a573520283512fc2427bb703a115e6d615b9b8d514e60",
+    "release_sha256": "05c82a48a9efa399312a573520283512fc2427bb703a115e6d615b9b8d514e60",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/gene_weight_10k.npy",
+    "source_sha256": "78133c680305c17c932da76016cb0024bc3ce4b71071904ec22f6f8e5aa472bc",
+    "release_sha256": "78133c680305c17c932da76016cb0024bc3ce4b71071904ec22f6f8e5aa472bc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/local_program_assignment.csv",
+    "source_sha256": "9bac478c841bdb29fc4edc8ac7699d5e5b61bfaba4a384262930b83bc5023986",
+    "release_sha256": "f68452af3b1ae76cf2dc9072e1644e911c4f40c5540dd3f1d101c1726c0c4a03",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/colorectal_cancer/local_to_consensus_mapping.npy",
+    "source_sha256": "0a538e5749e6fd2d410180fd268787ba3a3edf5d27f37dbb3a1465a03d1bd149",
+    "release_sha256": "0a538e5749e6fd2d410180fd268787ba3a3edf5d27f37dbb3a1465a03d1bd149",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "72875b8310de832c684303d559fb7421c2965e582d154e09c5849c67e4567f2f",
+    "release_sha256": "533947ec1a0f97a8b4ac6a73788f0f930bf1db74709f5a94b0c76a06fd5a2a87",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/colorectal_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "16b1503d422a42061270db0ca18a5fbecde1815a46df71f52e87a0023f977076",
+    "release_sha256": "613b6681cdc65ee774bd1de22f5ad00c405d99d47b0c74b2ae54aad8700d4586",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/colorectal_cancer/spot_nmf_refinement_history.csv",
+    "source_sha256": "4d965bbfb42753fc20d0296d4895ac6069b585b0952cc9cc585e4fd06ae4cf58",
+    "release_sha256": "4d965bbfb42753fc20d0296d4895ac6069b585b0952cc9cc585e4fd06ae4cf58",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/colorectal_cancer/technology_gene_adapters.npy",
+    "source_sha256": "b47284c73ff5a143569e4f2eeb4bc048bb7f7a3660ca75e93f18c92f2fd63636",
+    "release_sha256": "b47284c73ff5a143569e4f2eeb4bc048bb7f7a3660ca75e93f18c92f2fd63636",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/batch_adapter_metadata.csv",
+    "source_sha256": "e19d9ce81443bf2f64cda5ebf8b2838a5b8733a8835570ed2e697f59dcc15bd5",
+    "release_sha256": "e19d9ce81443bf2f64cda5ebf8b2838a5b8733a8835570ed2e697f59dcc15bd5",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/candidate_dictionary_selection.csv",
+    "source_sha256": "4684076007ba0846583673ca93a1b430270599343a51e9062a8643a6dd6a3303",
+    "release_sha256": "4684076007ba0846583673ca93a1b430270599343a51e9062a8643a6dd6a3303",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/consensus_program_metadata.csv",
+    "source_sha256": "cd39f634134dee32797f391eee112c0514f8bef024699a0ae078efe95c20d88e",
+    "release_sha256": "cd39f634134dee32797f391eee112c0514f8bef024699a0ae078efe95c20d88e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "240f386a319090962e654d27a08988eaea5a64c187128ef71c0811440267c3f3",
+    "release_sha256": "240f386a319090962e654d27a08988eaea5a64c187128ef71c0811440267c3f3",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "c63bfd2b5e972de6f9bbaabb8f0ae09afd95f21d656b67a099bf21eec1bf5956",
+    "release_sha256": "c63bfd2b5e972de6f9bbaabb8f0ae09afd95f21d656b67a099bf21eec1bf5956",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "646de21ca9477bb741f0053088f990a1b99c8992dabcc5482c9c15e0ae2527ec",
+    "release_sha256": "646de21ca9477bb741f0053088f990a1b99c8992dabcc5482c9c15e0ae2527ec",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/final_training_history.csv",
+    "source_sha256": "79fb0f6887da63012e46d0fc6daf2bb69ee39e322726ec608625fe14a11ea22e",
+    "release_sha256": "79fb0f6887da63012e46d0fc6daf2bb69ee39e322726ec608625fe14a11ea22e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_order_10k.npy",
+    "source_sha256": "06e3d16e24f5a58e1d7baf9e75b84cc102192637422e1f2c55f3d423cd27e340",
+    "release_sha256": "06e3d16e24f5a58e1d7baf9e75b84cc102192637422e1f2c55f3d423cd27e340",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "764a2817feaecfc4813a8bd4141c2d875b2587e7c5904dab000ba67c64509d02",
+    "release_sha256": "764a2817feaecfc4813a8bd4141c2d875b2587e7c5904dab000ba67c64509d02",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "741356d0c07b69af5bcab7c01381260669172c33d4b254ca53123a96c0670413",
+    "release_sha256": "741356d0c07b69af5bcab7c01381260669172c33d4b254ca53123a96c0670413",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "3630449677a0a6e586873463beb14013748cd96039256bbdfd880db36710fd15",
+    "release_sha256": "3630449677a0a6e586873463beb14013748cd96039256bbdfd880db36710fd15",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "4b5c5f5fd0c361f32180174b8aa886f5e59d3b063723adf43dd1e719cb61afb1",
+    "release_sha256": "4b5c5f5fd0c361f32180174b8aa886f5e59d3b063723adf43dd1e719cb61afb1",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "063b107597c2e9cd0af75918f8c98047e5682a086bd2b32832d55ede5f69121a",
+    "release_sha256": "063b107597c2e9cd0af75918f8c98047e5682a086bd2b32832d55ede5f69121a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_test.csv",
+    "source_sha256": "564b894301378035e4ccc498139d08c82c762c39c110366a7b90146a6068d775",
+    "release_sha256": "564b894301378035e4ccc498139d08c82c762c39c110366a7b90146a6068d775",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_train.csv",
+    "source_sha256": "0e7576eb2b679cea6645e59ddead317a16b6bca35e394e30cf78a34e159abd09",
+    "release_sha256": "0e7576eb2b679cea6645e59ddead317a16b6bca35e394e30cf78a34e159abd09",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_val.csv",
+    "source_sha256": "47800ec7bc8d43f9e039051c44d6caa0de22d91fd96e1e1ac7c3011939ef4378",
+    "release_sha256": "47800ec7bc8d43f9e039051c44d6caa0de22d91fd96e1e1ac7c3011939ef4378",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/gene_weight_10k.npy",
+    "source_sha256": "f8764895fd1ebcdd2db16f49619254d1a9529d0a814c5959b764734e1b40daf4",
+    "release_sha256": "f8764895fd1ebcdd2db16f49619254d1a9529d0a814c5959b764734e1b40daf4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/local_program_assignment.csv",
+    "source_sha256": "5a9b67f0645b1cdac805b6955c12ffb8b6dfb9e3d700abc7eb79f8c29a57fd51",
+    "release_sha256": "ba94c421268e289c8f8a6f1389e0df6021191d1261538d40a5055a539f53952c",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/local_to_consensus_mapping.npy",
+    "source_sha256": "a8ec6a64efaa4204fe90038363520ce6e71f7effe68d07f19eac1ef4fcb5af35",
+    "release_sha256": "a8ec6a64efaa4204fe90038363520ce6e71f7effe68d07f19eac1ef4fcb5af35",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "15943b4ae083e2cee05ed04114e1482af84cc35ad4690abf1328280273ab097c",
+    "release_sha256": "f74f2d96883233e0b1a04be202b7beb6221ea650234b6cc4152de657835fe364",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "966348f081f002e1b0d94f10799f4c4cbc1add0786025db0aa0075a5e819d10a",
+    "release_sha256": "04862c78c6741faa37427dff6853bc6ccfc68a758577a9ad8393f70466c9295b",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "da7899cbb12579ccd1591370f1b89ebd1a4f941bfd7d574e752c10bd2020aafc",
+    "release_sha256": "da7899cbb12579ccd1591370f1b89ebd1a4f941bfd7d574e752c10bd2020aafc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/cutaneous_squamous_cell_carcinoma/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/batch_adapter_metadata.csv",
+    "source_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "release_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/candidate_dictionary_selection.csv",
+    "source_sha256": "52dc3b07a313d4bbd9dbf5e1295ad36e1bd42577af5aeb0158c5daa26abde1e8",
+    "release_sha256": "52dc3b07a313d4bbd9dbf5e1295ad36e1bd42577af5aeb0158c5daa26abde1e8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/consensus_program_metadata.csv",
+    "source_sha256": "fb6a999bac9ae594c3540040f1b8b0511f0eb4f8d7ce263d415d591bf4941340",
+    "release_sha256": "fb6a999bac9ae594c3540040f1b8b0511f0eb4f8d7ce263d415d591bf4941340",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "1119da09499d04b066841fd539a1099b31a8d8545a84c07dfeab6e9da9c51c09",
+    "release_sha256": "1119da09499d04b066841fd539a1099b31a8d8545a84c07dfeab6e9da9c51c09",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "9fe32bcc7cf5b129934546f5a8ca86a2b42c2dd3e232e213586cec4927ed140a",
+    "release_sha256": "9fe32bcc7cf5b129934546f5a8ca86a2b42c2dd3e232e213586cec4927ed140a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "9d9fc666424c0501e8a00291500662c595de725e641f1f3a0579c2de731cee3e",
+    "release_sha256": "9d9fc666424c0501e8a00291500662c595de725e641f1f3a0579c2de731cee3e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/final_training_history.csv",
+    "source_sha256": "3be5ae5bd6fd183faf5874a318c78e07aebd9e92f9157129bdd9ddd1cdc24c70",
+    "release_sha256": "3be5ae5bd6fd183faf5874a318c78e07aebd9e92f9157129bdd9ddd1cdc24c70",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_order_10k.npy",
+    "source_sha256": "4d6ab630210bddfddc8d0e8ec480cd763b7630319efb00f9aeee107fba32e83f",
+    "release_sha256": "4d6ab630210bddfddc8d0e8ec480cd763b7630319efb00f9aeee107fba32e83f",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "ab5ec405d75cb7e35a5652f6e84d26a9efbda47a9781ec03bda54afd2b1e9947",
+    "release_sha256": "ab5ec405d75cb7e35a5652f6e84d26a9efbda47a9781ec03bda54afd2b1e9947",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "e3cf9db87c0512ebbf7fac30becbb2d53cec1fa31d83070d5cb019a27fd5c6b3",
+    "release_sha256": "e3cf9db87c0512ebbf7fac30becbb2d53cec1fa31d83070d5cb019a27fd5c6b3",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "877e722ed8d2842e044eb55dbe5187fdf9bf822a57c023e1f780afed4f14eb72",
+    "release_sha256": "877e722ed8d2842e044eb55dbe5187fdf9bf822a57c023e1f780afed4f14eb72",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "194b5ff16ed3619ff3f1e2e39c6c5b7a5268a1c6803609f162213275a70162c7",
+    "release_sha256": "194b5ff16ed3619ff3f1e2e39c6c5b7a5268a1c6803609f162213275a70162c7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "0e62692b5885260147d69adeb3e2d7a59cde444d4785506bd690cab9122fd39b",
+    "release_sha256": "0e62692b5885260147d69adeb3e2d7a59cde444d4785506bd690cab9122fd39b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_test.csv",
+    "source_sha256": "e8eb66954a11196c7f0a9e540f6b1b21494647646f1793d4da9b8d91534764bf",
+    "release_sha256": "e8eb66954a11196c7f0a9e540f6b1b21494647646f1793d4da9b8d91534764bf",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_train.csv",
+    "source_sha256": "2472e443009d053de7a4bb98baa84107c0b2721e00a6c1fc80e475c130ea3ad4",
+    "release_sha256": "2472e443009d053de7a4bb98baa84107c0b2721e00a6c1fc80e475c130ea3ad4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_pcc_10k_val.csv",
+    "source_sha256": "7e27c14663de68b6ac17f41397069f7bc4061bed1b77de31346f7cb81a67f7cd",
+    "release_sha256": "7e27c14663de68b6ac17f41397069f7bc4061bed1b77de31346f7cb81a67f7cd",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/gene_weight_10k.npy",
+    "source_sha256": "c59e8546e87250af47e584f5f42d2c432dc2ee511eeca0fa66f8e6be62b5c113",
+    "release_sha256": "c59e8546e87250af47e584f5f42d2c432dc2ee511eeca0fa66f8e6be62b5c113",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/local_program_assignment.csv",
+    "source_sha256": "7cffe751483bde3beb19746458b639523c359da58acd1264a53281f5e6ac6b11",
+    "release_sha256": "887acc268963a5ae3d9dbebecf2252cda6771c2c67dfbc3d3e805c9e94b3a9ef",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/ependymoma/local_to_consensus_mapping.npy",
+    "source_sha256": "7465a5c6ddb976df40f13678d37505c2ddb69e801063537e9f790c9d53f72645",
+    "release_sha256": "7465a5c6ddb976df40f13678d37505c2ddb69e801063537e9f790c9d53f72645",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "e9a2c29da6f807b8a6a9e95b62a4c3bd0387f9ffc47f23aa6759ab0b23d45ff1",
+    "release_sha256": "a971c433c28d7ba61bf4694ac3c9692dbd896f85073a6664ce9765db2a790e01",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/ependymoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "646c0d03db7c25b2ad06239251c0ba4ec93fb35fb6387478fa1217aa83f4db31",
+    "release_sha256": "d68b2f535bd9e2e1548abf630e9ff51845f794c18ec1bd87e2ec4882b0499049",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/ependymoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "00169221716b78d7ee45df23b367e10e7f045a8c70254e6bf9e31a64d0c9dd29",
+    "release_sha256": "00169221716b78d7ee45df23b367e10e7f045a8c70254e6bf9e31a64d0c9dd29",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/ependymoma/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/batch_adapter_metadata.csv",
+    "source_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "release_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/candidate_dictionary_selection.csv",
+    "source_sha256": "28c04cfb29e5c98785dcd28fe576d3b2e843b34474cbe158f2b26ffec1b81b60",
+    "release_sha256": "28c04cfb29e5c98785dcd28fe576d3b2e843b34474cbe158f2b26ffec1b81b60",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/consensus_program_metadata.csv",
+    "source_sha256": "1cf7b67ae0e01e7300e18103886a086ed3feb18ec40977c2f4ad431802c728f1",
+    "release_sha256": "1cf7b67ae0e01e7300e18103886a086ed3feb18ec40977c2f4ad431802c728f1",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "967fe105e0e148c48125de51e6471cf5e502dc8030681d31ab84dd72d5f0345a",
+    "release_sha256": "967fe105e0e148c48125de51e6471cf5e502dc8030681d31ab84dd72d5f0345a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "d67101828d4a39047ee7d1532d62ad69231b81cccd527eb2426d53ff41350d57",
+    "release_sha256": "d67101828d4a39047ee7d1532d62ad69231b81cccd527eb2426d53ff41350d57",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "aebc71dea2f0aa3543559b06983b700b53012662d513e3f766615c454471a645",
+    "release_sha256": "aebc71dea2f0aa3543559b06983b700b53012662d513e3f766615c454471a645",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/final_training_history.csv",
+    "source_sha256": "1af399fbd4735346630b82b826181aa5ef8ca5b4873225f0c5c935ecb2dd6e36",
+    "release_sha256": "1af399fbd4735346630b82b826181aa5ef8ca5b4873225f0c5c935ecb2dd6e36",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_order_10k.npy",
+    "source_sha256": "1cbc9d39df1e5918ae379670c8bd3b7bc2fa112bd7480f9bfc8bd0b6bd4066a2",
+    "release_sha256": "1cbc9d39df1e5918ae379670c8bd3b7bc2fa112bd7480f9bfc8bd0b6bd4066a2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "d52ab5ca820e76df25f4de2bbd427e5393ab3782c05b5c87a50b699360192555",
+    "release_sha256": "d52ab5ca820e76df25f4de2bbd427e5393ab3782c05b5c87a50b699360192555",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "17d64888871b11720370243be80268e9a6367d28b7f0aa6006b5a93f6eb18a7c",
+    "release_sha256": "17d64888871b11720370243be80268e9a6367d28b7f0aa6006b5a93f6eb18a7c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "c284612bdd88c8236abe2ff8c27d369be55fec46270cadc71ce1bc8e8aaab5b9",
+    "release_sha256": "c284612bdd88c8236abe2ff8c27d369be55fec46270cadc71ce1bc8e8aaab5b9",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "55dc0aeef7d347cb5bfc8e5fdf49da5b78fc2845e1c8583e9f3c90ad30627227",
+    "release_sha256": "55dc0aeef7d347cb5bfc8e5fdf49da5b78fc2845e1c8583e9f3c90ad30627227",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "1dfb78517f498f15bf8ef682aaad4523a81c24cbf30dc0b556cd37282d86461e",
+    "release_sha256": "1dfb78517f498f15bf8ef682aaad4523a81c24cbf30dc0b556cd37282d86461e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_test.csv",
+    "source_sha256": "53d75f727a4ce81b28be9c5f0d24d2f2e840af641506ab9581c88fd9ccf6b851",
+    "release_sha256": "53d75f727a4ce81b28be9c5f0d24d2f2e840af641506ab9581c88fd9ccf6b851",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_train.csv",
+    "source_sha256": "6c78e6ccb2dd14e4a8aae6c11ee2d3e3f96110c6f85feda07322adb6034f129e",
+    "release_sha256": "6c78e6ccb2dd14e4a8aae6c11ee2d3e3f96110c6f85feda07322adb6034f129e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_val.csv",
+    "source_sha256": "32249034f4d7ecb8afa7687b74e9d2a65a6d04fbd88fb0bd8ad93defe9319a1a",
+    "release_sha256": "32249034f4d7ecb8afa7687b74e9d2a65a6d04fbd88fb0bd8ad93defe9319a1a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/gene_weight_10k.npy",
+    "source_sha256": "f79a0a81b30d7355d43a8cb25338f0c5257a28ab060e8e2460225a98f128c19b",
+    "release_sha256": "f79a0a81b30d7355d43a8cb25338f0c5257a28ab060e8e2460225a98f128c19b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/local_program_assignment.csv",
+    "source_sha256": "4a311be2e25f1a2be4ce01b4af3147e4dcd2b01903aaee0b4bbfb96afc089f5d",
+    "release_sha256": "abd15b4d25f6431af4150599ac269fb42cb005b7b10f42816351471841dd6c64",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/local_to_consensus_mapping.npy",
+    "source_sha256": "5bf302c44c2cb079023017df0dd76c2f24a7feec995ac5ff8d36e0d95e29f3d8",
+    "release_sha256": "5bf302c44c2cb079023017df0dd76c2f24a7feec995ac5ff8d36e0d95e29f3d8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "b4d6ebfd8217282444f0ae57d327bd7e93683deed335967f4b03ef37e26afa53",
+    "release_sha256": "4101ee6109b749651e2b8c22aa17f4cd7f39c4ab6a30f0a55ffa44642d373eb8",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "0816bc04d46a7867535e1a96e2a24dbd7855e596cb1cda167e01f66c286d1161",
+    "release_sha256": "1dec84f186e5d8b8b6806705f6c40b51240689e7720ca0fb0afe6b128b44941c",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "15a099cbe305df897aee8243b5172048f1b17a308ec53cb09f754da6c6783459",
+    "release_sha256": "15a099cbe305df897aee8243b5172048f1b17a308ec53cb09f754da6c6783459",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/kidney_clear_cell_carcinoma/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/batch_adapter_metadata.csv",
+    "source_sha256": "bd9bff0a6ecab5904af9a94ee322750862f37bd62cb994e38c6cc3e41ff8aa39",
+    "release_sha256": "bd9bff0a6ecab5904af9a94ee322750862f37bd62cb994e38c6cc3e41ff8aa39",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/candidate_dictionary_selection.csv",
+    "source_sha256": "134d0c50ffdeb5adb9790a975c4a2111dff487116f96941b1f3a377965535b67",
+    "release_sha256": "134d0c50ffdeb5adb9790a975c4a2111dff487116f96941b1f3a377965535b67",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/consensus_program_metadata.csv",
+    "source_sha256": "32dc2fc6db0c92dca4e7516b6638bc40ecf6048529dbd1ddf04ca1a7c841ef09",
+    "release_sha256": "32dc2fc6db0c92dca4e7516b6638bc40ecf6048529dbd1ddf04ca1a7c841ef09",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "c86482eb0b9a9af2319d60ed1c44f01cbf3c67f61d4adf3353feb1dab0756bf0",
+    "release_sha256": "c86482eb0b9a9af2319d60ed1c44f01cbf3c67f61d4adf3353feb1dab0756bf0",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "7c5719b74bdd4d0c25f262d05aa151a5283ca0f05d25cf6abeb02a17991d799a",
+    "release_sha256": "7c5719b74bdd4d0c25f262d05aa151a5283ca0f05d25cf6abeb02a17991d799a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "9a9dd9f3cdf2d6e769c61737245f40b5fefcd4472821be4f5b88659c44bdda4c",
+    "release_sha256": "9a9dd9f3cdf2d6e769c61737245f40b5fefcd4472821be4f5b88659c44bdda4c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/final_training_history.csv",
+    "source_sha256": "37a67a85f2524f830db5632534a82be8a3df5b113ef5ae07e796e891e9b204d3",
+    "release_sha256": "37a67a85f2524f830db5632534a82be8a3df5b113ef5ae07e796e891e9b204d3",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_order_10k.npy",
+    "source_sha256": "532a9a0f841203c800b7a493f52e6ee5957f504e4d14b62f0eea199b47878609",
+    "release_sha256": "532a9a0f841203c800b7a493f52e6ee5957f504e4d14b62f0eea199b47878609",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "909617cff0f43db792190cd61c29d7c1e14a508fb1b0bc84d7ad5977c5de3626",
+    "release_sha256": "909617cff0f43db792190cd61c29d7c1e14a508fb1b0bc84d7ad5977c5de3626",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "32e28df52a3484d31dd859c09e7eb77d611375e6b14043226e481e2d94e6a0d1",
+    "release_sha256": "32e28df52a3484d31dd859c09e7eb77d611375e6b14043226e481e2d94e6a0d1",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "28b78c9e5a7415e1bcd4c198d3d00481a257e82ee521db421b609fbee6b007c0",
+    "release_sha256": "28b78c9e5a7415e1bcd4c198d3d00481a257e82ee521db421b609fbee6b007c0",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "619d8bf6f65edf42c45ae31bd02c9fd2a00d0cdacd381687dfaa82782703addc",
+    "release_sha256": "619d8bf6f65edf42c45ae31bd02c9fd2a00d0cdacd381687dfaa82782703addc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "da6c11456f752f820fe1c0b4251fc6ec9dea510134c90586029d32b73d4ccce9",
+    "release_sha256": "da6c11456f752f820fe1c0b4251fc6ec9dea510134c90586029d32b73d4ccce9",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_test.csv",
+    "source_sha256": "f766bc30da65c135c8e3363d4ff5279c82b30aebd60b0e5b6991c40f21252e9b",
+    "release_sha256": "f766bc30da65c135c8e3363d4ff5279c82b30aebd60b0e5b6991c40f21252e9b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_train.csv",
+    "source_sha256": "ddfa535de1a075032c1ef18fd3b9090aee0062962693c1f247639e2002811241",
+    "release_sha256": "ddfa535de1a075032c1ef18fd3b9090aee0062962693c1f247639e2002811241",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_pcc_10k_val.csv",
+    "source_sha256": "d4768fde3ebb3123a5a80db3c89613cfd339964a071b68b45c57c37d7e10e785",
+    "release_sha256": "d4768fde3ebb3123a5a80db3c89613cfd339964a071b68b45c57c37d7e10e785",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/gene_weight_10k.npy",
+    "source_sha256": "4455aa7183364eb1316a6546784cb45291cd686266bccccf748f15b3e848318a",
+    "release_sha256": "4455aa7183364eb1316a6546784cb45291cd686266bccccf748f15b3e848318a",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/local_program_assignment.csv",
+    "source_sha256": "5e6e1f9b96f7f3dc0dce80a832d6b25bfde0144b17e183137ee03a95f07dff28",
+    "release_sha256": "0fc92817187eaf0cf0b4696d20a663c2e18c392292e38d04ea255764d88194f5",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/local_to_consensus_mapping.npy",
+    "source_sha256": "cdfab4a6f18cab3cc3fb02259178851a98a02e2a13a3ec8f4aeed3378e9d922d",
+    "release_sha256": "cdfab4a6f18cab3cc3fb02259178851a98a02e2a13a3ec8f4aeed3378e9d922d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "a58c29e491fad69c12217e96effe4079660e18d1af0c3a5bbb55b0c395c71f6f",
+    "release_sha256": "53fff6bc2b99140f6ceecfc97d30e76f3677d15c24318e6036c50ed5227974ae",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "3e9abc3b4ea786b2aaa09c1dd7d984d936de6717fb945c53bdc0d3a2abdbfa3c",
+    "release_sha256": "e9f5d861756b52d9f59739bc1393c938a454644a0e4dc7d399122661e4ccd19c",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "e3c8fed467496423957e8d7ec86ccfc8e63e6c3f29ff144311938be4ed1717a4",
+    "release_sha256": "e3c8fed467496423957e8d7ec86ccfc8e63e6c3f29ff144311938be4ed1717a4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/lung_adenocarcinoma/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/batch_adapter_metadata.csv",
+    "source_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "release_sha256": "987b0a4c386d5e8efe3389a10a361f1390b4dcf9057b3d5a818e3235bd220696",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/batch_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/candidate_dictionary_selection.csv",
+    "source_sha256": "38395f5a1b3d1a84f8fac0b8587b65dd4186130a6b87a6be4d5480bea5215add",
+    "release_sha256": "38395f5a1b3d1a84f8fac0b8587b65dd4186130a6b87a6be4d5480bea5215add",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/consensus_program_metadata.csv",
+    "source_sha256": "0ebeb48aacda58fd3a1ee7b8c6a1b998841f35b09be80477d48953bf1da51880",
+    "release_sha256": "0ebeb48aacda58fd3a1ee7b8c6a1b998841f35b09be80477d48953bf1da51880",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "685d6986d4bbfdd8006d75d7633c65be31107b1116b1a7c95a294d0ed0e9026c",
+    "release_sha256": "685d6986d4bbfdd8006d75d7633c65be31107b1116b1a7c95a294d0ed0e9026c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "f1aedd615805cca83efbc4d728a101bfc2cf0418b09655b846b9989cdd344ab6",
+    "release_sha256": "f1aedd615805cca83efbc4d728a101bfc2cf0418b09655b846b9989cdd344ab6",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "98785e3dc3d55206a4f53f269e51f3b3d71da75a346b20803228b27873f64ed8",
+    "release_sha256": "98785e3dc3d55206a4f53f269e51f3b3d71da75a346b20803228b27873f64ed8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/final_training_history.csv",
+    "source_sha256": "09e686f6e443e44fc0097407d2d499dc91ba230fcd7a07a5650c54842a13a405",
+    "release_sha256": "09e686f6e443e44fc0097407d2d499dc91ba230fcd7a07a5650c54842a13a405",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_order_10k.npy",
+    "source_sha256": "97223eff1cd696408ec91fc872d93cfe805ba8166bebfcb7aa28a3468ca656e4",
+    "release_sha256": "97223eff1cd696408ec91fc872d93cfe805ba8166bebfcb7aa28a3468ca656e4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "85b2b7374882272d42e269fe9b182d2b4829af2ec6db6f760186aee008df4787",
+    "release_sha256": "85b2b7374882272d42e269fe9b182d2b4829af2ec6db6f760186aee008df4787",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "3b6d3b68d8ef4197b1307fee9533f75a3143348e758a17bb8a938e9b1a07830e",
+    "release_sha256": "3b6d3b68d8ef4197b1307fee9533f75a3143348e758a17bb8a938e9b1a07830e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "3aa9592cb9ed09ca77706cec328a84be89f187de416b1d978bf8c7d6455ad92c",
+    "release_sha256": "3aa9592cb9ed09ca77706cec328a84be89f187de416b1d978bf8c7d6455ad92c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "572a47983b747721c0716016279634adf4cbcb91500c8c2002bf1d416505ac0e",
+    "release_sha256": "572a47983b747721c0716016279634adf4cbcb91500c8c2002bf1d416505ac0e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "cfa11aea70ad60611d4b52fa4bdf10c21ed1e022d53ba30a8932728148359389",
+    "release_sha256": "cfa11aea70ad60611d4b52fa4bdf10c21ed1e022d53ba30a8932728148359389",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_test.csv",
+    "source_sha256": "33e9b3133876ddace21cedc3fc7f968069867bfa72a40b629218e4972378bec3",
+    "release_sha256": "33e9b3133876ddace21cedc3fc7f968069867bfa72a40b629218e4972378bec3",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_train.csv",
+    "source_sha256": "f10923ef5a7562dfa7606767747761ed485ff9e15546fb859bce3b66d8d807ea",
+    "release_sha256": "f10923ef5a7562dfa7606767747761ed485ff9e15546fb859bce3b66d8d807ea",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_val.csv",
+    "source_sha256": "e45b4050889806ee5d1848ee2d941ab3a1c9e1621b036c07c4869d9290fe28e6",
+    "release_sha256": "e45b4050889806ee5d1848ee2d941ab3a1c9e1621b036c07c4869d9290fe28e6",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/gene_weight_10k.npy",
+    "source_sha256": "e298eae8077d9715b5ec959864f914df4f19a6687b7732e3c301b4b5acfe11f8",
+    "release_sha256": "e298eae8077d9715b5ec959864f914df4f19a6687b7732e3c301b4b5acfe11f8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/local_program_assignment.csv",
+    "source_sha256": "51c91c80e232c6444d270a8630c1fff7e3853fb44a241d4d4ca90aa0b0eb8475",
+    "release_sha256": "fc30cc6add063f34a7f93f859759d0a5f37cba87d3453319b683a665e8d86a45",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/local_to_consensus_mapping.npy",
+    "source_sha256": "8382e6ef27fb80904afb0584e9aacd9fbf7b56f92f5b3b0a8a040e3585b58d39",
+    "release_sha256": "8382e6ef27fb80904afb0584e9aacd9fbf7b56f92f5b3b0a8a040e3585b58d39",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "8ac7885a91640a4c33208dea22f93c3168f5958fdfa661c49176db9a3371bef5",
+    "release_sha256": "c4570d2da2959d812629250921d8e08b6ed99331d32ec36564326a6650be16ee",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "3f16b6a28f0bc9f8517c1d684fff822f1acc5d9296c1ecd2e290685e6290ab84",
+    "release_sha256": "8c1b7e52ea4417ddac035c075bff7aa6bd4d3034cc6df051e195f2cc25d44896",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "23b3d72faf3faf3ed91891f261456d5d1117224ae1aa7ffe2c7ff698307c1033",
+    "release_sha256": "23b3d72faf3faf3ed91891f261456d5d1117224ae1aa7ffe2c7ff698307c1033",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/pancreatic_adenocarcinoma/technology_gene_adapters.npy",
+    "source_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "release_sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/batch_adapter_metadata.csv",
+    "source_sha256": "92d00706e7b9e65a701e71fe8c7420ce2f3b7c4b5c2c15b8293a36942707b942",
+    "release_sha256": "92d00706e7b9e65a701e71fe8c7420ce2f3b7c4b5c2c15b8293a36942707b942",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/batch_gene_adapters.npy",
+    "source_sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
+    "release_sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/candidate_dictionary_selection.csv",
+    "source_sha256": "52c11a464cadc34e0a4275543298eeafffdcbd59fe5ef01c0c6fc4cff2fec99d",
+    "release_sha256": "52c11a464cadc34e0a4275543298eeafffdcbd59fe5ef01c0c6fc4cff2fec99d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/consensus_program_metadata.csv",
+    "source_sha256": "8a345c82cfd83e4f6fd4b3613244cc2aa986610da13b31b7df04fed87f176de4",
+    "release_sha256": "8a345c82cfd83e4f6fd4b3613244cc2aa986610da13b31b7df04fed87f176de4",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/consensus_reference_logcp10k_10k.npy",
+    "source_sha256": "c62f7b276164f8a52df1c7a67c897e9e90c20bba0e817d9129ca07e9c99bd7ed",
+    "release_sha256": "c62f7b276164f8a52df1c7a67c897e9e90c20bba0e817d9129ca07e9c99bd7ed",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/consensus_reference_probability_10k.npy",
+    "source_sha256": "9e1e2f2d74fde75167e65c1d0f31c66ce720e51d9cd24b43574c077ec5b6e59d",
+    "release_sha256": "9e1e2f2d74fde75167e65c1d0f31c66ce720e51d9cd24b43574c077ec5b6e59d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/consensus_reference_probability_by_batch_10k.npy",
+    "source_sha256": "6053ec46639c385faf7721a47120fcd1046c2d3a0dc57511aa1c56c0f5a3ca3b",
+    "release_sha256": "6053ec46639c385faf7721a47120fcd1046c2d3a0dc57511aa1c56c0f5a3ca3b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/final_training_history.csv",
+    "source_sha256": "75006868e91d06ac3d8815f9b5f2220c75b7c223958a71c12cf49266e0054dda",
+    "release_sha256": "75006868e91d06ac3d8815f9b5f2220c75b7c223958a71c12cf49266e0054dda",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_order_10k.npy",
+    "source_sha256": "72d418c16ab8e6e01c374a3a02e23757e1805f518b11ec702532e3c31a49ea7e",
+    "release_sha256": "72d418c16ab8e6e01c374a3a02e23757e1805f518b11ec702532e3c31a49ea7e",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
+    "source_sha256": "c64ea6d6d512977b7293ebc20dc9f19d209567931e5aa1b837c1186afa79aabd",
+    "release_sha256": "c64ea6d6d512977b7293ebc20dc9f19d209567931e5aa1b837c1186afa79aabd",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
+    "source_sha256": "c2c27a3f6049b3a6203cdb2bd58e61894038290fa353ae2f5c9ed81e4d483a5b",
+    "release_sha256": "c2c27a3f6049b3a6203cdb2bd58e61894038290fa353ae2f5c9ed81e4d483a5b",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
+    "source_sha256": "93721a07a7fa25842a40b580e8c1670d6280cef3f1e84db095ab965d95b7423f",
+    "release_sha256": "93721a07a7fa25842a40b580e8c1670d6280cef3f1e84db095ab965d95b7423f",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
+    "source_sha256": "f2fe310d2d9886a80e97d02ef0f4abe925f333ce4774dec539c8de9a48b114d0",
+    "release_sha256": "f2fe310d2d9886a80e97d02ef0f4abe925f333ce4774dec539c8de9a48b114d0",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
+    "source_sha256": "df274837ac1ea753b9f1ebdcb592c44f2f145d8b832d90fe34ef0a5e8aed9de9",
+    "release_sha256": "df274837ac1ea753b9f1ebdcb592c44f2f145d8b832d90fe34ef0a5e8aed9de9",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_test.csv",
+    "source_sha256": "e0a2ae59d00bc6086cc55260537de4c9e56ed7ea46632670eefc067dd64c1ff5",
+    "release_sha256": "e0a2ae59d00bc6086cc55260537de4c9e56ed7ea46632670eefc067dd64c1ff5",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_train.csv",
+    "source_sha256": "09ea3a057dd5afc8bb63b32de4771a49f3abc37bcf1ad0b3450797b3988b9f53",
+    "release_sha256": "09ea3a057dd5afc8bb63b32de4771a49f3abc37bcf1ad0b3450797b3988b9f53",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_pcc_10k_val.csv",
+    "source_sha256": "1694bf6caa88f947bfc64925e369f4a2bd729850f5895f1b413a7a09016ac586",
+    "release_sha256": "1694bf6caa88f947bfc64925e369f4a2bd729850f5895f1b413a7a09016ac586",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/gene_weight_10k.npy",
+    "source_sha256": "b52c8414dc40270d9116bd8391546f3c806a63b1e289d541ab65e381401ab8e5",
+    "release_sha256": "b52c8414dc40270d9116bd8391546f3c806a63b1e289d541ab65e381401ab8e5",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/local_program_assignment.csv",
+    "source_sha256": "d1eeb0f0df58df4a10d4bc51d56d9231e9793a4a035b8ce1affcedd3d0089609",
+    "release_sha256": "b2765df2844afefe98bccca9452bcd1c86e1e472dc0277409d503078d981cde3",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/local_to_consensus_mapping.npy",
+    "source_sha256": "4b6a8043e474fec9428bf4218769f93c9ce9fcb4c5548109ad77026e8baef8f2",
+    "release_sha256": "4b6a8043e474fec9428bf4218769f93c9ce9fcb4c5548109ad77026e8baef8f2",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/reconstruction_metrics_by_slide.csv",
+    "source_sha256": "081ef4f7114001d9bdf2d12c221d59ef42ed06cffa2c57b85f3ea31f88478007",
+    "release_sha256": "5a84638068b3702c4e51e51bb7558cbef732e206811d8fb59abe7c58ede2c21e",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
+    "source_sha256": "ef6b01ee08b06a8bf86c0b8d0d3af246c48644a68ed303b9f10d3041e9e40fd7",
+    "release_sha256": "c7a715520b4711b3ab19be51408e12112b4d95362eb7eced2a8aa69c9a6e10db",
+    "operation": "relocated-path-metadata-numeric-values-unchanged"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/spot_nmf_refinement_history.csv",
+    "source_sha256": "0984e702966fc88538bfb577a453feee4c544ea9b8531abbf2d1c9d934893cf7",
+    "release_sha256": "0984e702966fc88538bfb577a453feee4c544ea9b8531abbf2d1c9d934893cf7",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "references/prostate_adenocarcinoma/technology_gene_adapters.npy",
+    "source_sha256": "f9e2a8d1b5208d584c25858fce8cc5dcd4e74b050b22d53b8e37bc71d666ba55",
+    "release_sha256": "f9e2a8d1b5208d584c25858fce8cc5dcd4e74b050b22d53b8e37bc71d666ba55",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "configs/marker_catalog.json",
+    "source_sha256": "d6109e1668c8bb40a38dde3a1d8ee0fd70e64514fba504d3e02dbf7f43c464d8",
+    "release_sha256": "d6109e1668c8bb40a38dde3a1d8ee0fd70e64514fba504d3e02dbf7f43c464d8",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "provenance/reference_registry.csv",
+    "source_sha256": "4c7f60281191c3b9fa8fdd8f54f2e54f2f75087078768609a1dd947909ab06c8",
+    "release_sha256": "2db69b67ccd2ee79d3a9f3ee76d8720ba008c8766999cb31e5671dc01d2fdee5",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "provenance/original_teacher_LOO_metrics.csv",
+    "source_sha256": "b070e48c4462bfe5db1f21b144cab5226e10dc8762f4ead4395a9d43a44a4a2a",
+    "release_sha256": "f73e1c676459efa5383b92dafae6e126759d4d1b6d7f382349fc864c3f83d09d",
+    "operation": "exact-copy"
+  },
+  {
+    "file": "provenance/teacher_alignment_audit.csv",
+    "source_sha256": "527bb927820669e02fdc55adc53ca8dceb5e7eeaa9b922b601d64b7bff4d4499",
+    "release_sha256": "124aea0eba0f22c1be16a0680b37a9babd074a3f6beed59ae0b391c023db865f",
+    "operation": "exact-copy"
+  }
+]

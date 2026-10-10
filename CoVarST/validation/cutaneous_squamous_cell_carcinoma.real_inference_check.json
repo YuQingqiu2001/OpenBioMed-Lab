@@ -1,0 +1,16 @@
+{
+  "cancer": "cutaneous_squamous_cell_carcinoma",
+  "status": "passed",
+  "real_slide": "HEST:NCBI759",
+  "full_feature_slide_spots": 449,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5222809,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 0.0,
+  "max_expression_row_sum_error": 1.7458387446822599e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "664980c7d50fbf1a147b61b941c8fba2b1564669e37f47bb8577d466835db836",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 2.4153764247894287
+}

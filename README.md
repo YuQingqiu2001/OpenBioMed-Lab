@@ -79,32 +79,18 @@ python scripts/init_workspace.py
 
 ---
 
-### 2. CoVarST：H&E → 空间转录组预测 `即将发布`
+### 2. CoVarST：H&E → spot 空转 → 细胞精度化
 
-<p align="center">
-  <img src="assets/OpenST_logo.png" alt="OpenST" width="360">
-</p>
+[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [本地发布状态](CoVarST/docs/RELEASE_STATUS.md)
 
-从常规 H&E 染色切片直接预测全转录组空间表达分布。经过两次算法迭代，
-模型已稳定可靠，性能全面超越 Cell 期刊发表的 Path2Space（[Schott et al., 2024](https://www.cell.com/cell/fulltext/S0092-8674(26)00458-7)）。
+公开包包含三部分：独立局部 Programs 到癌种统一固定参考矩阵的构建；
+九个癌种各一个整合后 checkpoint 与 H&E 到 spot 表达推理；
+仅用当前粗分辨率 ST 的 RNA、结合真实图像细胞核的参考无关精度化。
 
-**验证结果（乳腺癌，Internal test × 3 基因面板 + External GSE，Median PCC）：**
-
-| 评估 | 基因面板 | CoVarST | Path2Space | Δ |
-|------|----------|--------|------------|---|
-| Internal test | HVG988 (Bassiouni) | **0.729** | 0.518 | +40.6% |
-| Internal test | Legacy785 | **0.617** | 0.207 | +198.1% |
-| Internal test | Top14068 | **0.559** | 0.266 | +110.2% |
-| External GSE | HVG988 (Bassiouni) | **0.524** | 0.392 | +33.7% |
-| External GSE | Legacy785 | **0.415** | 0.161 | +157.8% |
-| External GSE | Top14068 | **0.372** | 0.213 | +75.0% |
-
-![OpenST vs Path2Space benchmark](assets/openst_path2space_ranked_median_pcc.png)
-
-所有 6 个评估设定下 CoVarST（又名OpenST） 均显著优于 Path2Space，External GSE
-验证集上最低提升 33.7%，Internal test 最高提升 198.1%。
-
-📖 项目目录（即将开放）：`CoVarST/`
+模型整合保持原网络容量，通过同癌种多折预测概率的集成蒸馏得到单一部署模型。
+原始患者级交叉验证统计和整合模型的教师一致性结果分别记录，
+通过发布门槛的癌种见项目 manifest。第三方 ParamNet、Virchow2 与 CellViT++
+仅链接官方项目，不复制其权重。
 
 ---
 
@@ -127,7 +113,7 @@ python scripts/init_workspace.py
 | # | 子项目 | 说明 |
 |---|--------|------|
 | 4 | 常规生物学/医学数据运行 | 常见生物医学数据格式的读取、处理、可视化流水线 |
-| 5 | OpenST 泛癌扩展 | 从乳腺癌扩展到 10+ 癌种的 H&E→空间转录组预测 |
+| 5 | CoVarST 独立验证与扩展 | 对整合部署模型开展独立验证并扩展癌种 |
 
 ---
 

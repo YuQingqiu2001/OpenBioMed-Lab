@@ -1,0 +1,70 @@
+{
+  "cancer": "lung_adenocarcinoma",
+  "programs": 48,
+  "input_features": 2560,
+  "teacher_folds": 5,
+  "parameter_count": 5253661,
+  "capacity_unchanged": true,
+  "distillation": {
+    "method": "same_capacity_ensemble_probability_distillation_v1",
+    "tissue": "lung_adenocarcinoma",
+    "epochs_max": 150,
+    "learning_rate": 5e-05,
+    "seed": 20261010,
+    "teacher_folds": 5,
+    "target_contract": {
+      "method": "equal_weight_probability_ensemble_v1",
+      "teacher_folds": 5,
+      "tissue": "lung_adenocarcinoma",
+      "reference_sha256": "7c5719b74bdd4d0c25f262d05aa151a5283ca0f05d25cf6abeb02a17991d799a",
+      "gene_order_sha256": "532a9a0f841203c800b7a493f52e6ee5957f504e4d14b62f0eea199b47878609",
+      "teacher_checkpoint_sha256": [
+        "a5685b5e23d838e91592bc02c05f785d86cb09da3d3f749144f57c82a19cff02",
+        "39f255ae93da263a6e66dc659a09aed1fc907a36c279faf95c44fbbd3a1a33bc",
+        "ef183f29c7eb677cec8f72758e023d769b07d5709b442d6a2b2908556497bbcd",
+        "e7e7ced7030554f0ceb56a57a5386f45cd7f6ac17ac93a5d91c5fd1c3acf792e",
+        "f7978df7e67e12721c8888f6005e49d34ef6231d4525bb4dfcd124ebb159336f"
+      ],
+      "input": "H&E features and coordinates only",
+      "aggregation": "arithmetic mean of softmax Program probabilities after accepted INR correction",
+      "student_validation": "deployment teacher fidelity only; not independent biological validation",
+      "code_sha256": "56890df636a7fed82444162e11b8655426f0c43332c95f5ce5c3298af104a143"
+    },
+    "reference_sha256": "7c5719b74bdd4d0c25f262d05aa151a5283ca0f05d25cf6abeb02a17991d799a",
+    "gene_order_sha256": "532a9a0f841203c800b7a493f52e6ee5957f504e4d14b62f0eea199b47878609",
+    "trainer_sha256": "7b1fa25ec8fac95bc779ea347a3473693289699f10d9424aa8a262a6a78250f9",
+    "architecture_unchanged": true,
+    "parameter_count_unchanged": true,
+    "initial_teacher_sha256": "a5685b5e23d838e91592bc02c05f785d86cb09da3d3f749144f57c82a19cff02",
+    "all_eligible_spots_used": 9425,
+    "validation_interpretation": "same-cancer deployment ensemble imitation on consolidation inputs, not independent biological or clinical validation",
+    "teacher_ensemble_may_have_seen_consolidation_patients": true,
+    "student_raw_RNA_read": false,
+    "checkpoint_scope": "H&E-to-Program mapper only; fixed reference matrix distributed separately",
+    "student_INR": false,
+    "gate": {
+      "rna_jsd_max": 0.05,
+      "composition_jsd_max": 0.05,
+      "expression_gene_pcc_min": 0.9,
+      "expression_spot_cosine_min": 0.98,
+      "spatial_gradient_cosine_min": 0.85
+    }
+  },
+  "fidelity": {
+    "rna_jsd": 0.009312083944678307,
+    "composition_jsd": 0.009364220686256886,
+    "expression_gene_pcc_median": 0.9589336454868317,
+    "expression_log_huber": 0.0002788663973743678,
+    "expression_spot_cosine_median": 0.9994522213935852,
+    "spatial_theta_gradient_cosine": 0.864647073010502,
+    "selection_loss": 0.17555550891751248,
+    "slides": 5,
+    "patients": 5,
+    "spots": 9425,
+    "passed": true,
+    "epoch": 15,
+    "scope": "same-cancer deployment ensemble imitation on consolidation inputs, not independent biological or clinical validation"
+  },
+  "clinical_validation": "Not established for the consolidated student",
+  "third_party_backbones_included": false
+}

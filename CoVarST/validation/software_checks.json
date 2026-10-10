@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "test_data": "explicit synthetic software fixtures only, not study figures or biological validation",
+  "source_compile": true,
+  "frozen_engine_imports": true,
+  "P_post_all_gene_normalization": true,
+  "X_mass_spot_gene_conservation_and_unassigned_mass": true,
+  "strict_nullspace_oracle": true,
+  "generic_coarse_preparation_contract": true,
+  "external_RNA_reference_rejected": true,
+  "projector": "(measurement, values, tolerance=1e-09)"
+}

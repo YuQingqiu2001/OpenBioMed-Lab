@@ -1,0 +1,16 @@
+{
+  "cancer": "pancreatic_adenocarcinoma",
+  "status": "passed",
+  "real_slide": "HEST:NCBI569",
+  "full_feature_slide_spots": 3493,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5253661,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 2.9802322387695312e-08,
+  "max_expression_row_sum_error": 1.5154137145145796e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "0fe3c9dd5ded99d9e68e5fcc4df16e08a88909c5ab439558b081b5d5ed36ac3d",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 9.218881368637085
+}

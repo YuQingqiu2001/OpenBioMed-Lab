@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "cancer_checkpoints": 9,
+  "original_teacher_folds": 166,
+  "checkpoints_per_cancer": 1,
+  "reference_panels": 9,
+  "real_full_slide_runtime_checks": 9,
+  "gene_count_per_panel": 10000,
+  "consolidation_fidelity_gates": "all passed",
+  "generic_coarse_software_smoke_ranks": [
+    0,
+    8
+  ],
+  "original_source_files_preserved": true,
+  "external_single_cell_reference_for_cell_fit": false,
+  "third_party_weights_bundled": false,
+  "remote_push": false,
+  "independent_biological_validation": "outstanding"
+}

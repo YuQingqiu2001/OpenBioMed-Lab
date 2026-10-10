@@ -1,0 +1,16 @@
+{
+  "cancer": "ependymoma",
+  "status": "passed",
+  "real_slide": "HEST:NCBI633",
+  "full_feature_slide_spots": 2983,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5212525,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 9.313225746154785e-09,
+  "max_expression_row_sum_error": 1.6922967915888876e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "fe21ef426f969941f0a3c1872d92745199395d50c0ff7de0c73a89bea4424b72",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 8.371211051940918
+}

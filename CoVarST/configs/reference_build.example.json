@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "project": "hest_pan_cancer_pure_bayestme_top10k",
+  "metadata": "DATA/HEST_v1_3_0.csv",
+  "h5ad_root": "DATA/st",
+  "marker_catalog": "configs/marker_catalog.json",
+  "output_root": "WORK/reference_build",
+  "code_root": "src/covarst/_engine/reference",
+  "python": {
+    "model": "python",
+    "bayestme": "BAYESTME_PYTHON"
+  },
+  "panel": {
+    "genes": 10000,
+    "species": "Homo sapiens",
+    "exclude_gene_patterns": [
+      "^MT-",
+      "^RPS[0-9]",
+      "^RPL[0-9]"
+    ],
+    "selection": "mandatory tissue and universal TME markers observed in any eligible slide are fixed first; common-gene equal-slide-weight logCP10K variance rank fills to 10000; assay-missing marker entries are explicit audited zeros"
+  },
+  "bayestme": {
+    "workers": 8,
+    "threads_per_worker": 2,
+    "k_min": 2,
+    "k_max": 12,
+    "selection_steps": 1000,
+    "selection_samples": 4,
+    "selection_splits": 5,
+    "final_steps": 10000,
+    "final_samples": 32,
+    "spatial_smoothing": 100.0,
+    "seed": 260900
+  },
+  "consensus": {
+    "preferred_programs": 40,
+    "maximum_programs": 48,
+    "minimum_programs": 32,
+    "selection_tolerance": 0.002,
+    "candidate_epochs": 180,
+    "mapping_epochs": 140,
+    "final_epochs": 260,
+    "spot_nmf_steps": 3200,
+    "spots_per_step": 192,
+    "genes_per_step": 2048,
+    "gate_balanced_gene_pcc": 0.75,
+    "seed_locked": 260903,
+    "seed_refine": 260904
+  },
+  "tissues": [
+    {
+      "key": "colorectal_cancer",
+      "oncotree_code": "COAD",
+      "include_technologies": [
+        "Visium",
+        "Visium HD"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "kidney_clear_cell_carcinoma",
+      "oncotree_code": "SCCRCC",
+      "include_technologies": [
+        "Visium"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "ependymoma",
+      "oncotree_code": "EPM",
+      "include_technologies": [
+        "Visium"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "cutaneous_squamous_cell_carcinoma",
+      "oncotree_code": "CSCC",
+      "include_technologies": [
+        "Spatial Transcriptomics"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "prostate_adenocarcinoma",
+      "oncotree_code": "PRAD",
+      "include_technologies": [
+        "Visium",
+        "Visium HD"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "lung_adenocarcinoma",
+      "oncotree_code": "LUAD",
+      "include_technologies": [
+        "Visium HD"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "pancreatic_adenocarcinoma",
+      "oncotree_code": "PAAD",
+      "include_technologies": [
+        "Visium"
+      ],
+      "allow_targeted_assay": false
+    },
+    {
+      "key": "bladder_cancer",
+      "oncotree_code": "BLCA",
+      "include_technologies": [
+        "Visium"
+      ],
+      "allow_targeted_assay": false
+    }
+  ]
+}

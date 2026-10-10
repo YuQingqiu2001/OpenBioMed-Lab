@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "command": "prepare-reference-counts",
+      "help_passed": true
+    },
+    {
+      "command": "compress-programs",
+      "help_passed": true
+    },
+    {
+      "command": "fit-fixed-reference",
+      "help_passed": true
+    },
+    {
+      "command": "refine-reference",
+      "help_passed": true
+    },
+    {
+      "command": "train-he",
+      "help_passed": true
+    },
+    {
+      "command": "prepare-native16",
+      "help_passed": true
+    },
+    {
+      "command": "prepare-virtual55",
+      "help_passed": true
+    },
+    {
+      "command": "fit-native16",
+      "help_passed": true
+    },
+    {
+      "command": "fit-virtual55",
+      "help_passed": true
+    }
+  ],
+  "BayesTME_entrypoint": "separately verified in BayesTME 1.0.0 environment"
+}

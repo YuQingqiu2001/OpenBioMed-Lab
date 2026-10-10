@@ -1,0 +1,13 @@
+slide_position,slide_index,sample_id,source,patient,technology,batch,slide_dir,spots,local_k,split,gene_pcc_median,spot_logcp10k_cosine_median,spot_logcp10k_cosine_q05
+0,0,NCBI759,HEST,Patient 10,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/000__NCBI759,462,11,val,0.9952116012573242,0.9979988685050254,0.9969549726929764
+1,1,NCBI760,HEST,Patient 10,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/001__NCBI760,621,12,val,0.9940714836120605,0.9979874306840015,0.9966850367593421
+2,2,NCBI761,HEST,Patient 10,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/002__NCBI761,608,12,val,0.9968950748443604,0.9979869580645203,0.9947647101938333
+3,3,NCBI762,HEST,Patient 9,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/003__NCBI762,1182,12,test,0.9990764856338501,0.9991029615748097,0.9985042691510404
+4,4,NCBI763,HEST,Patient 9,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/004__NCBI763,1071,12,test,0.9968429803848267,0.9986166316165044,0.9972713273643987
+5,5,NCBI764,HEST,Patient 9,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/005__NCBI764,1145,12,test,0.9973644018173218,0.998669116395551,0.9979546043285346
+6,6,NCBI765,HEST,Patient 5,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/006__NCBI765,521,12,train,0.9973717927932739,0.9989181452155708,0.9967921636020926
+7,7,NCBI766,HEST,Patient 5,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/007__NCBI766,521,12,train,0.9964317083358765,0.9997257855381474,0.9993893122144214
+8,8,NCBI767,HEST,Patient 5,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/008__NCBI767,590,12,train,0.9953199625015259,0.9988370849041257,0.9982005656149741
+9,9,NCBI768,HEST,Patient 2,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/009__NCBI768,638,12,train,0.9967933893203735,0.9991590709345671,0.9981561872382209
+10,10,NCBI769,HEST,Patient 2,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/010__NCBI769,646,12,train,0.9957951307296753,0.9988208310557696,0.9981312491503203
+11,11,NCBI770,HEST,Patient 2,Spatial Transcriptomics,HEST|Spatial Transcriptomics,original-artifact/011__NCBI770,666,12,train,0.9960381388664246,0.9988921257287162,0.9976524270693021

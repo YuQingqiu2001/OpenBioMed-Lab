@@ -1,0 +1,30 @@
+[
+  {
+    "file": "src/covarst/_engine/consolidation/distill_final_models.py",
+    "original_build_recipe_sha256": "45b385b57037f9e49c93191c9c53c91f93ceec9580a2316f7959a07e5db02ee2",
+    "release_sha256": "df9826f8277388296787e98bd343e1d179691e94271b4e821a23c3ac064b73a0",
+    "operation": "portable-roots-and-gate-aware-candidate-selection",
+    "same_numerical_losses_and_architecture": true
+  },
+  {
+    "file": "src/covarst/_engine/consolidation/ensemble_targets.py",
+    "original_build_recipe_sha256": "56890df636a7fed82444162e11b8655426f0c43332c95f5ce5c3298af104a143",
+    "release_sha256": "90d551d3f44567984996ce86c801341da525b4580ed9b7c3972877a83e7616a6",
+    "operation": "portable-roots-and-gate-aware-candidate-selection",
+    "same_numerical_losses_and_architecture": true
+  },
+  {
+    "file": "src/covarst/_engine/consolidation/prepare_distillation.py",
+    "original_build_recipe_sha256": "2ae0ee8861daf4552815b31ea85a886670e74b2cd9b2d6b4d237fba594771c55",
+    "release_sha256": "6cd92d2a4a4b4a45040d36dbccae11373646c588976f0718c6224922c1fb6a51",
+    "operation": "portable-roots-and-gate-aware-candidate-selection",
+    "same_numerical_losses_and_architecture": true
+  },
+  {
+    "file": "src/covarst/_engine/consolidation/train_ensemble_student.py",
+    "original_build_recipe_sha256": "7b1fa25ec8fac95bc779ea347a3473693289699f10d9424aa8a262a6a78250f9",
+    "release_sha256": "8d123adc6552c1ba95c9695f3df2494eafaa8b11a0f2bb14bbb16bcaaf80ca1f",
+    "operation": "portable-roots-and-gate-aware-candidate-selection",
+    "same_numerical_losses_and_architecture": true
+  }
+]

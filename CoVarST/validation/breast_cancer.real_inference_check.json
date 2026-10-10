@@ -1,0 +1,16 @@
+{
+  "cancer": "breast_cancer",
+  "status": "passed",
+  "real_slide": "GSE210616:GSM6433585_092A",
+  "full_feature_slide_spots": 1289,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5243893,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 0.0,
+  "max_expression_row_sum_error": 1.6164040061994456e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "c84e2c079dfdabca71b65d2a993fd197f15f2d22df3774a8d8d119da885d258b",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 4.9182798862457275
+}

@@ -1,0 +1,3 @@
+# Preserve scientific asset and source hashes on Windows and Unix checkouts.
+* -text whitespace=cr-at-eol
+*.md text eol=lf

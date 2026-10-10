@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "covarst"
+version = "1.0.0"
+description = "Cancer-specific H&E to spatial RNA and reference-free spot-to-cell reconstruction"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.26,<2", "scipy>=1.10", "pandas>=2.2", "torch>=2.6,<2.8", "torch-geometric>=2.6,<2.7", "h5py>=3.10", "scikit-learn>=1.4", "anndata>=0.10,<0.11", "tqdm"]
+
+[project.optional-dependencies]
+wsi = ["timm==0.9.16", "safetensors", "openslide-python>=1.3", "opencv-python", "Pillow>=10"]
+hd = ["pyarrow>=15"]
+
+[project.scripts]
+covarst = "covarst.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

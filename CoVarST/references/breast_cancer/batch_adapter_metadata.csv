@@ -1,0 +1,6 @@
+batch_index,batch,technology_index,technology
+0,GSE210616|Visium,1,Visium
+1,GSE213688|Visium,1,Visium
+2,HEST|Spatial Transcriptomics,0,Spatial Transcriptomics
+3,HEST|Visium,1,Visium
+4,HEST|Visium HD,2,Visium HD

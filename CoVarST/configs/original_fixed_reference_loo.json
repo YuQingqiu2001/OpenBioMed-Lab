@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "protocol": "fixed_cohort_consensus_patient_leave_one_out_fseggatv2_v1",
+  "reference_mode": "fixed_cohort_consensus",
+  "output_root": "WORK/mapper_training",
+  "scripts_root": "src/covarst/_engine/he",
+  "python": "python",
+  "openst_source": "src/covarst/_engine/he",
+  "minimum_feature_coverage": 0.84,
+  "validation_fraction": 0.15,
+  "seed": 270814,
+  "mapper": {
+    "loss_genes": 10000,
+    "epochs": 55,
+    "patience": 12,
+    "inr_epochs": 6,
+    "hidden": 256,
+    "graph_layers": 1,
+    "context_graph_layers": 1,
+    "graph_heads": 4,
+    "neighbors": 6,
+    "context_neighbors": 18,
+    "program_group_method": "morphology",
+    "learning_rate": 0.0002,
+    "inr_learning_rate": 0.0005,
+    "rna_jsd_weight": 0.7,
+    "composition_jsd_weight": 0.45,
+    "theta_pcc_weight": 1.5,
+    "expression_log_weight": 2.0,
+    "gene_pcc_weight": 4.0,
+    "bulk_weight": 0.15,
+    "gradient_weight": 0.5,
+    "consistency_weight": 0.05,
+    "entropy_weight": 0.05,
+    "group_jsd_weight": 0.4,
+    "program_type_weight": 0.2,
+    "support_weight": 0.55,
+    "edge_weight": 0.25,
+    "domain_weight": 0.03,
+    "support_mass": 0.95
+  },
+  "tissues": [
+    {
+      "key": "breast_cancer",
+      "fixed_programs": 44,
+      "fixed_consensus_dir": "references/breast_cancer",
+      "queue_dir": "WORK/breast_cancer/local_bayestme",
+      "master_spot_index": "WORK/breast_cancer/master_spot_index.csv",
+      "feature_manifest": "WORK/breast_cancer/feature_manifest.csv"
+    },
+    {
+      "key": "colorectal_cancer",
+      "fixed_programs": 44,
+      "fixed_consensus_dir": "references/colorectal_cancer",
+      "queue_dir": "WORK/colorectal_cancer/local_bayestme",
+      "master_spot_index": "WORK/colorectal_cancer/master_spot_index.csv",
+      "feature_manifest": "WORK/colorectal_cancer/feature_manifest.csv"
+    },
+    {
+      "key": "kidney_clear_cell_carcinoma",
+      "fixed_programs": 48,
+      "fixed_consensus_dir": "references/kidney_clear_cell_carcinoma",
+      "queue_dir": "WORK/kidney_clear_cell_carcinoma/local_bayestme",
+      "master_spot_index": "WORK/kidney_clear_cell_carcinoma/master_spot_index.csv",
+      "feature_manifest": "WORK/kidney_clear_cell_carcinoma/feature_manifest.csv"
+    },
+    {
+      "key": "ependymoma",
+      "fixed_programs": 32,
+      "fixed_consensus_dir": "references/ependymoma",
+      "queue_dir": "WORK/ependymoma/local_bayestme",
+      "master_spot_index": "WORK/ependymoma/master_spot_index.csv",
+      "feature_manifest": "WORK/ependymoma/feature_manifest.csv"
+    },
+    {
+      "key": "cutaneous_squamous_cell_carcinoma",
+      "fixed_programs": 36,
+      "fixed_consensus_dir": "references/cutaneous_squamous_cell_carcinoma",
+      "queue_dir": "WORK/cutaneous_squamous_cell_carcinoma/local_bayestme",
+      "master_spot_index": "WORK/cutaneous_squamous_cell_carcinoma/master_spot_index.csv",
+      "feature_manifest": "WORK/cutaneous_squamous_cell_carcinoma/feature_manifest.csv"
+    },
+    {
+      "key": "prostate_adenocarcinoma",
+      "fixed_programs": 48,
+      "fixed_consensus_dir": "references/prostate_adenocarcinoma",
+      "queue_dir": "WORK/prostate_adenocarcinoma/local_bayestme",
+      "master_spot_index": "WORK/prostate_adenocarcinoma/master_spot_index.csv",
+      "feature_manifest": "WORK/prostate_adenocarcinoma/feature_manifest.csv"
+    },
+    {
+      "key": "lung_adenocarcinoma",
+      "fixed_programs": 48,
+      "fixed_consensus_dir": "references/lung_adenocarcinoma",
+      "queue_dir": "WORK/lung_adenocarcinoma/local_bayestme",
+      "master_spot_index": "WORK/lung_adenocarcinoma/master_spot_index.csv",
+      "feature_manifest": "WORK/lung_adenocarcinoma/feature_manifest.csv"
+    },
+    {
+      "key": "pancreatic_adenocarcinoma",
+      "fixed_programs": 48,
+      "fixed_consensus_dir": "references/pancreatic_adenocarcinoma",
+      "queue_dir": "WORK/pancreatic_adenocarcinoma/local_bayestme",
+      "master_spot_index": "WORK/pancreatic_adenocarcinoma/master_spot_index.csv",
+      "feature_manifest": "WORK/pancreatic_adenocarcinoma/feature_manifest.csv"
+    },
+    {
+      "key": "bladder_cancer",
+      "fixed_programs": 48,
+      "fixed_consensus_dir": "references/bladder_cancer",
+      "queue_dir": "WORK/bladder_cancer/local_bayestme",
+      "master_spot_index": "WORK/bladder_cancer/master_spot_index.csv",
+      "feature_manifest": "WORK/bladder_cancer/feature_manifest.csv"
+    }
+  ]
+}

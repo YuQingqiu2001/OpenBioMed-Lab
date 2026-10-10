@@ -1,0 +1,5 @@
+slide_position,slide_index,sample_id,source,patient,technology,batch,slide_dir,spots,local_k,split,gene_pcc_median,spot_logcp10k_cosine_median,spot_logcp10k_cosine_q05
+0,0,NCBI569,HEST,sample:NCBI569,Visium,HEST|Visium,original-artifact/000__NCBI569,3493,12,test,0.9997895359992981,0.9999690579966398,0.9999350381230204
+1,1,NCBI570,HEST,sample:NCBI570,Visium,HEST|Visium,original-artifact/001__NCBI570,3216,12,train,0.9984136819839478,0.9999645064969755,0.9998696024996886
+2,2,NCBI571,HEST,sample:NCBI571,Visium,HEST|Visium,original-artifact/002__NCBI571,2498,12,train,0.9999276399612427,0.9999848804509655,0.9999770305888125
+3,3,NCBI572,HEST,sample:NCBI572,Visium,HEST|Visium,original-artifact/003__NCBI572,3794,12,val,0.9998307228088379,0.9999784659344337,0.9999405814476565

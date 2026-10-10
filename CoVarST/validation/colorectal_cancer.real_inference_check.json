@@ -1,0 +1,16 @@
+{
+  "cancer": "colorectal_cancer",
+  "status": "passed",
+  "real_slide": "HEST:TENX156",
+  "full_feature_slide_spots": 2035,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5243506,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 0.0,
+  "max_expression_row_sum_error": 1.737303136906121e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "cb8ab34595384fd5a73b4f9f2b682729f665d79ba0e987e47ddfcf0d5960b8fc",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 5.699109077453613
+}

@@ -1,0 +1,16 @@
+{
+  "cancer": "lung_adenocarcinoma",
+  "status": "passed",
+  "real_slide": "HEST:TENX163",
+  "full_feature_slide_spots": 2431,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5253661,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 2.2351741790771484e-08,
+  "max_expression_row_sum_error": 1.7896945792017505e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "d1304842fdd4d2130b6a20c4b938f87e1615c8e9b318afc86fa9271455790e1e",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 7.310763835906982
+}

@@ -1,0 +1,16 @@
+{
+  "cancer": "prostate_adenocarcinoma",
+  "status": "passed",
+  "real_slide": "HEST:INT25",
+  "full_feature_slide_spots": 3687,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5253790,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 1.1175870895385742e-08,
+  "max_expression_row_sum_error": 1.8641776478034444e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "3d443f7c0bb1cc227ac7b2aac74eb3a88807ef60a7ef56bf16d54d024d310956",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 9.414651155471802
+}

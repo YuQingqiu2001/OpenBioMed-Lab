@@ -1,0 +1,16 @@
+{
+  "cancer": "bladder_cancer",
+  "status": "passed",
+  "real_slide": "HEST:NCBI603",
+  "full_feature_slide_spots": 767,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5253661,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 0.0,
+  "max_expression_row_sum_error": 1.3265344023238868e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "8bd5104eae1188ee02c99e81456a89c91edea71b950b00c294f5e2cfbaf00641",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 3.7133259773254395
+}

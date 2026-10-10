@@ -1,0 +1,16 @@
+{
+  "cancer": "kidney_clear_cell_carcinoma",
+  "status": "passed",
+  "real_slide": "HEST:INT24",
+  "full_feature_slide_spots": 4483,
+  "all_genes": 10000,
+  "strict_model_state_load": true,
+  "parameter_count": 5253661,
+  "gene_program_reference_order": true,
+  "max_decode_absolute_error": 2.9802322387695312e-08,
+  "max_expression_row_sum_error": 1.9145613805449102e-07,
+  "no_sample_RNA_loaded": true,
+  "checkpoint_sha256": "e2635b1e7824a49464d4661c989a4bd14013957edd2928d2165b27bca71de9d9",
+  "interpretation": "Full real-slide numerical/runtime check, not independent biological validation",
+  "seconds": 11.398926258087158
+}

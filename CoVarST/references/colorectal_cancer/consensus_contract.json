@@ -1,0 +1,64 @@
+{
+  "method": "bayestme_top10k_direct_local_inverse_spot_nmf_all177_v1",
+  "objective": "free theta44 and shared W44 directly reconstruct every pre-integration theta_local @ W_local",
+  "input_consensus_dir": "source-artifact/02a_locked_consensus",
+  "program_count_locked_before_refinement": 44,
+  "slides_entering_production_fit": 53,
+  "spots_entering_production_fit": 164020,
+  "genes": 10000,
+  "batch_calibration": "bounded technology and centered source-by-technology gene adapters",
+  "spot_level_theta_is_free": true,
+  "theta_composition_semantics": "retained local-composition mapping from the K44 parent; RNA theta is spot-refined",
+  "recovery_against_original_local_inverse": {
+    "train": {
+      "slides": 32,
+      "spots": 105279,
+      "patient_source_balanced_gene_pcc_median": 0.856150209903717,
+      "by_source_patient_balanced_gene_pcc_median": {
+        "HEST": 0.856150209903717
+      },
+      "per_slide_gene_pcc_median": 0.9309667944908142,
+      "per_slide_spot_cosine_median": 0.9890962592845454
+    },
+    "val": {
+      "slides": 11,
+      "spots": 33565,
+      "patient_source_balanced_gene_pcc_median": 0.8456792831420898,
+      "by_source_patient_balanced_gene_pcc_median": {
+        "HEST": 0.8456792831420898
+      },
+      "per_slide_gene_pcc_median": 0.9122117757797241,
+      "per_slide_spot_cosine_median": 0.9881430573049106
+    },
+    "test": {
+      "slides": 10,
+      "spots": 25176,
+      "patient_source_balanced_gene_pcc_median": 0.8238921165466309,
+      "by_source_patient_balanced_gene_pcc_median": {
+        "HEST": 0.8238921165466309
+      },
+      "per_slide_gene_pcc_median": 0.9203651547431946,
+      "per_slide_spot_cosine_median": 0.9819939326297062
+    },
+    "all177": {
+      "slides": 53,
+      "spots": 164020,
+      "patient_source_balanced_gene_pcc_median": 0.8398668766021729,
+      "by_source_patient_balanced_gene_pcc_median": {
+        "HEST": 0.8398668766021729
+      },
+      "per_slide_gene_pcc_median": 0.9290809631347656,
+      "per_slide_spot_cosine_median": 0.9881430573049106
+    }
+  },
+  "gate_balanced_gene_pcc": 0.75,
+  "production_ready": true,
+  "reference_hellinger_squared_drift_mean": 0.031111812219023705,
+  "theta_kl_drift_mean": 0.01272841077297926,
+  "reference_row_sum_maximum_error": 1.7881393432617188e-07,
+  "theta_row_sum_maximum_error": 3.5762786865234375e-07,
+  "reference_nonnegative": true,
+  "theta_nonnegative": true,
+  "reference_sha256": "6137f1d28167bbb08f663a46f1a7c8613db7d06c0c6652e069affbaa7120ecf2",
+  "theta_sha256": "955ba2c46592b9667c2ce18fde7cff3cdad8c9ec86be766f391c2a580eb0d06a"
+}
