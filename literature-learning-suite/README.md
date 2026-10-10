@@ -1,6 +1,6 @@
 # Literature Learning Suite
 
-> 从研究问题到知识图谱的完整文献认知操作系统——不是文献管理工具，而是文献**思考**工具。
+> 从研究问题到知识图谱的完整文献认知操作系统，用来**思考**文献，而不是管理文献。
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.3.0-green.svg)](VERSION)
@@ -30,9 +30,9 @@
 **Literature Learning Suite**（以下简称 LLS）是一套自包含的学术文献深度分析系统。
 它的核心任务不是"文献存在哪里"（Zotero、EndNote 已经解决了这个问题），而是：
 
-> **怎么读**——如何从一篇论文中系统性地提取出结构化的、可验证的、可关联的知识
+> **怎么读**：如何从一篇论文中系统性地提取出结构化的、可验证的、可关联的知识
 >
-> **怎么想**——如何评估证据强度、发现隐藏假设、建立跨论文的语义关联
+> **怎么想**：如何评估证据强度、发现隐藏假设、建立跨论文的语义关联
 
 LLS 将文献阅读从"手动标记 + 写几句总结"升级为**7 层结构化解剖**，
 将分散的论文转化为一个**可查询、可遍历、可自检的知识图谱**。
@@ -56,7 +56,7 @@ LLS 将文献阅读从"手动标记 + 写几句总结"升级为**7 层结构化�
 
 ### 问题 1：文献阅读停留在表面
 
-大多数研究者读论文的方式：看标题 → 读摘要 → 标记"有用" → 写两句话。这种浅层处理无法捕捉：
+大多数研究者读论文的方式：看标题、读摘要、标记"有用"、写两句话。这种浅层处理无法捕捉：
 
 - 论文的**深层逻辑结构**（他们为什么这样设计实验？）
 - 论文**没有明说**的假设和限制
@@ -80,7 +80,7 @@ LLS 将文献阅读从"手动标记 + 写几句总结"升级为**7 层结构化�
 
 ### 问题 3：证据评估靠"感觉"
 
-"这是 Nature 的论文，所以证据强"——期刊声望不等于证据质量。
+"这是 Nature 的论文，所以证据强"，但期刊声望不等于证据质量。
 
 **LLS 的解决方案**：内置标准化证据评分标准（`assets/data/evidence-rubric.json`），
 基于偏倚风险、样本量、对照质量、可重复性等维度评分。
@@ -93,7 +93,7 @@ LLS 将文献阅读从"手动标记 + 写几句总结"升级为**7 层结构化�
 
 **LLS 的解决方案**：所有分析结果以 NDJSON 格式持久化到知识图谱中。
 `kg.py search` 支持全文检索，`build_network.py` 生成交互式网络图，
-`export_citations.py` 导出 BibTeX——知识是可查询、可遍历、可复用的。
+`export_citations.py` 导出 BibTeX，让知识可查询、可遍历、可复用。
 
 ---
 
@@ -382,7 +382,7 @@ python scripts/init_workspace.py
 python scripts/literature_search.py pubmed "CRISPR screen cancer" -n 5
 ```
 
-**无需额外配置**。打包的基因字典、通路术语和期刊指标开箱即用。
+**无需额外配置**。基因字典、通路术语和期刊指标随包提供。
 不需要安装数据库引擎、不需要申请 API 密钥（PubMed 直连）、不需要 Bioconductor。
 
 ---
@@ -393,14 +393,14 @@ python scripts/literature_search.py pubmed "CRISPR screen cancer" -n 5
 
 ### 为什么是 7 层
 
-传统阅读：看标题 → 读摘要 → 标记 → 写两句。这种浅层处理**无法捕捉**：
+传统阅读无非看标题、读摘要、做个标记、写两句。这种浅层处理**无法捕捉**：
 
 - 论文的深层逻辑（实验为什么这样设计？隐含假设是什么？）
 - 多条证据链的独立性（5 条 C-E-S 链要求从不同角度审视同一篇论文）
 - 证据的真实强度（p 值 ≠ 效果量，统计显著 ≠ 临床显著）
 - 跨论文的隐含关联（共享分子机制、隐藏范式共鸣）
 
-7 层协议的每一层都要求产出**实质性内容**——只改标签不写内容 = 空壳 S，会被自检系统检出。
+7 层协议的每一层都要求产出**实质性内容**，只改标签不写内容就是空壳 S，会被自检系统检出。
 
 ### 七层速览
 
@@ -410,7 +410,7 @@ python scripts/literature_search.py pubmed "CRISPR screen cancer" -n 5
 | T2 | 核心科学问题 | 它要回答什么？拆成 ≥5 个可检验子问题 |
 | T3 | 主张-证据-综合链 | 每一条主张有什么具体证据支撑？≥5 条独立链 |
 | T4 | 分子机制级联 | 从触发到表型的完整因果链，精确到修饰位点 |
-| T5 | 隐藏组织轴 | 论文**没有明写**的深层规律——你发现了什么？ |
+| T5 | 隐藏组织轴 | 论文**没有明写**的深层规律，你发现了什么？ |
 | T6 | 概念创新图景 | 新概念？推翻的旧观点？方法学突破？边界在哪？ |
 | T7 | 跨文献关联 | 和哪些论文有什么实质关系？为什么？≥5 条 |
 
@@ -425,7 +425,7 @@ python scripts/literature_search.py pubmed "CRISPR screen cancer" -n 5
 
 **空壳 S（差）**：
 > Claim：发现了新的生物标志物。
-> Evidence：作者证明了。（≤20 字 → 空壳检测触发）
+> Evidence：作者证明了。（≤20 字即触发空壳检测）
 
 ### T5 示例
 
@@ -433,7 +433,7 @@ python scripts/literature_search.py pubmed "CRISPR screen cancer" -n 5
 > Interpretation：该研究**隐含地**将"边缘"而非"核心"定义为疾病决定性区室，
 > 这解释了为什么核心基因特征的预后价值反而更低。
 
-T5 考察的是你**自己**的发现能力——不是复述 Discussion。
+T5 考察的是你**自己**的发现能力，而不是复述 Discussion。
 
 ### 空壳检测
 
@@ -569,7 +569,7 @@ mcp_servers:
 
 | 文件 | 说明 |
 |------|------|
-| [SKILL.md](SKILL.md) | AI Agent 操作协议——Agent 加载此文件了解完整操作流程 |
+| [SKILL.md](SKILL.md) | AI Agent 操作协议，Agent 加载此文件了解完整操作流程 |
 | [references/](references/) | 25+ 篇方法论文档（数据模型、深层分析、边生成、全文获取、排障等） |
 | [assets/schemas/](assets/schemas/) | JSON Schema（paper/concept/edge/query/monitor/workspace/journal） |
 | [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md) | 第三方数据归属说明 |
@@ -696,5 +696,3 @@ literature-learning-suite/
 ---
 
 > **Literature Learning Suite v1.3.0** · CC BY-NC-SA 4.0
->
-> 从研究问题到知识图谱。不是管理文献，是理解文献。

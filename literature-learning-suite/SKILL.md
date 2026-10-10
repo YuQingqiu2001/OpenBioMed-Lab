@@ -16,7 +16,7 @@ dictionaries and journal metrics work immediately.
 
 **v1.3 changes:**  S-tier 7-layer analysis protocol with empty-shell
 detection, 5-strategy semantic edge generation (v3.1), 10-dimension quality
-selfcheck, comprehensive error-prevention guide, platform-neutral paths,
+selfcheck, error-prevention guide, platform-neutral paths,
 removed all host-specific assumptions.
 
 ---
@@ -926,7 +926,7 @@ Attribution and regeneration commands are in `THIRD_PARTY_DATA.md`.
 
 ## MCP Integration
 
-The suite works without MCP, but MCP can enhance agent workflows:
+The suite works without MCP, but MCP can extend agent workflows:
 
 - **PubMed MCP**: search + PMC full text retrieval.
 - **arXiv MCP**: search, download, citation graphs, topic watches.
