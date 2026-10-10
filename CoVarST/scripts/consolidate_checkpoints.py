@@ -1,19 +1,19 @@
-"""Optional reproducible consolidation from a local original study tree.
+"""从本地原始研究目录复现权重整合。
 
-Original teachers and original H&E features are not distributed. Nothing is
-downloaded. The work directory must be separate from the read-only study root.
+公开包不附带原始教师与 H&E 特征，不自动下载。
+输出工作目录必须位于只读原始研究目录之外。
 """
 from pathlib import Path
 import argparse,os,runpy,sys
 
 def main():
  p=argparse.ArgumentParser(description=__doc__)
- p.add_argument('--study-root',type=Path,required=True,help='Frozen study tree with references/, checkpoints/checkpoint_registry.csv and runs/')
- p.add_argument('--work-root',type=Path,required=True,help='Fresh local consolidation workspace; holds target caches and student candidates')
- p.add_argument('--phase',choices=['cache','targets','student'],required=True)
+ p.add_argument('--study-root',type=Path,required=True,help='冻结研究目录，含 references/、checkpoints/checkpoint_registry.csv 和 runs/')
+ p.add_argument('--work-root',type=Path,required=True,help='独立整合工作目录，保存目标缓存与学生候选')
+ p.add_argument('--phase',choices=['cache','targets','student'],required=True,help='cache 整理输入，targets 集成目标，student 训练与选择')
  a,remaining=p.parse_known_args()
  study=a.study_root.resolve();work=a.work_root.resolve()
- if study==work or study in work.parents:raise ValueError('Keep consolidation outputs outside the original scientific study tree')
+ if study==work or study in work.parents:raise ValueError('整合输出必须位于原始研究目录之外')
  os.environ['COVARST_STUDY_ROOT']=str(study);os.environ['COVARST_BUILD_ROOT']=str(work)
  root=Path(__file__).resolve().parents[1];sys.path.insert(0,str(root/'src'))
  from covarst.runtime import activate,ENGINE

@@ -79,9 +79,9 @@
         "8509e5c9eb0dd91b59baa27ee5850d8ae2e17fdba973ce1c8a72d51e119e4a3a",
         "d85368be23461d93ac22dd8c3e9855871c82c285ba4e316146756f4e476fbba2"
       ],
-      "input": "H&E features and coordinates only",
-      "aggregation": "arithmetic mean of softmax Program probabilities after accepted INR correction",
-      "student_validation": "deployment teacher fidelity only; not independent biological validation",
+      "input": "仅 H&E 图像特征和坐标",
+      "aggregation": "接受的 INR 修正后，对 Program softmax 概率做等权算术平均",
+      "student_validation": "仅检查部署模型对教师的一致性，不属于独立生物学验证",
       "code_sha256": "56890df636a7fed82444162e11b8655426f0c43332c95f5ce5c3298af104a143"
     },
     "reference_sha256": "1e8e3e879eb836571fe8a05c3db493511e53db1db31b64a51e2983b638c8eebd",
@@ -91,10 +91,10 @@
     "parameter_count_unchanged": true,
     "initial_teacher_sha256": "4ba8f85e91afcbdf78bcfe21f756e1e6023a441764a6df57f9ca2809111aab85",
     "all_eligible_spots_used": 164560,
-    "validation_interpretation": "same-cancer deployment ensemble imitation on consolidation inputs, not independent biological or clinical validation",
+    "validation_interpretation": "整合输入上拟合同癌种教师集成，不属于独立生物学或临床验证",
     "teacher_ensemble_may_have_seen_consolidation_patients": true,
     "student_raw_RNA_read": false,
-    "checkpoint_scope": "H&E-to-Program mapper only; fixed reference matrix distributed separately",
+    "checkpoint_scope": "仅包含 H&E 到 Program 映射器；固定参考矩阵在配套目录提供",
     "student_INR": false,
     "gate": {
       "rna_jsd_max": 0.05,
@@ -117,8 +117,8 @@
     "spots": 164560,
     "passed": true,
     "epoch": 5,
-    "scope": "same-cancer deployment ensemble imitation on consolidation inputs, not independent biological or clinical validation"
+    "scope": "整合输入上拟合同癌种教师集成，不属于独立生物学或临床验证"
   },
-  "clinical_validation": "Not established for the consolidated student",
+  "clinical_validation": "整合学生尚未建立独立临床验证",
   "third_party_backbones_included": false
 }

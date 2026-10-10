@@ -1,16 +1,16 @@
 ---
 name: covarst
-description: Run CoVarST fixed cancer references, H&E-to-spot inference and same-section reference-free spot-to-cell reconstruction.
+description: 使用 CoVarST 构建癌种固定参考、执行 H&E 到 spot 级空间转录组推理，并仅以同切片粗分辨率 RNA 重建细胞级表达。
 ---
 
-# CoVarST operating contract
+# CoVarST 运行规范
 
-Read README.md and the relevant docs/ method/input schema before execution. Inspect `models/manifest.json`, run `verify-assets`, and select the exact cancer key. Never mix a checkpoint with another Program/gene order or reconstruct the fixed reference during inference.
+执行前阅读 [README.md](README.md) 和对应方法、输入规范。检查 `models/manifest.json`，运行 `verify-assets` 并选择准确癌种。权重必须与对应 Program 顺序、基因顺序和参考配套，推理阶段不能临时重建参考。
 
-Use an existing compatible environment. Installation or download requires the human user's authorization. This skill itself does not authorize messaging, publication, external uploads or dependency installation. Infer-spots accepts image features and coordinates only. Third-party weights are user-supplied and follow their official licenses.
+使用已有兼容环境。安装或下载需要用户授权。本规范不授予消息发送、发布、外部上传或依赖安装权限。`infer-spots` 只接收图像特征与坐标，不读取样本 RNA。第三方权重由用户从官方来源提供，遵守各自许可。
 
-For coarse ST reconstruction, use only current-section coarse RNA counts and real registered image nuclei. Never load external scRNA-seq, existing inferred cell expression or fine-resolution evaluation RNA into fitting/model selection. Preserve physical geometry, broad image class order, unassigned coarse mass and all-gene probability normalization. Continuous Program ranks are not cell types.
+细胞重建只使用当前切片的实测粗 RNA 和真实配准细胞核。禁止将外部 scRNA-seq、既有推断细胞表达或精细评估 RNA 用于拟合和选模。保留物理捕获几何、五类图像类别顺序、无核 spot 的未分配质量和全基因概率归一化。类内连续变化轴的秩不代表细胞类型数量。
 
-Use fresh output paths, record input hashes, and inspect complete markers/logs before claiming completion. Report student ensemble fidelity separately from the original LOO teacher scores. Conservation is an accounting result; biological cell-expression accuracy requires independent validation.
+使用新输出路径，记录输入哈希，检查完成标记和日志后再报告完成。学生对教师集成的一致性与原始教师患者留一成绩分开报告。计数守恒是核账结果，细胞表达真实性需要独立验证。
 
-Commands and schemas: docs/QUICKSTART.md, docs/HE_TO_SPOTS.md, docs/REFERENCE_PROGRAMS.md and docs/SPOT_TO_CELL.md.
+命令见[使用指南](docs/QUICKSTART.md)、[H&E 推理](docs/HE_TO_SPOTS.md)、[参考构建](docs/REFERENCE_PROGRAMS.md)和[细胞重建](docs/SPOT_TO_CELL.md)。本地构建任务不会自动推送远端。

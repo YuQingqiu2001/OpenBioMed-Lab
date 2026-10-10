@@ -1,29 +1,31 @@
-# Local release status
+# 本地发布状态
 
-Nine cancer-specific consolidated checkpoints are complete and saved locally. Each cancer has exactly one `model_checkpoint.pt`, its matching Program group index and a model card. All nine satisfy every declared consolidation fidelity gate. Total mapper weight size is 189,067,520 bytes (189.1 MB); each mapper retains its original network capacity.
+九癌种整合权重已完成。每癌种一个 `model_checkpoint.pt`、配套分组索引和模型说明；总权重 189,067,520 字节（189.1 MB），原网络容量保留，九个模型全部满足五项一致性门槛。
 
-No remote push or GitHub release has been performed. The original 166 teacher checkpoints and all third-party weights remain outside this public subproject. Nine fixed references, the three workflow entry points, portable consolidation recipes and Chinese/English documentation are included.
+尚未推送 GitHub 或创建远程发布。166 个原教师和第三方权重在公开包之外。九套固定参考、三个模块的运行入口、可移植整合脚本与中文说明已包含。
 
-## Consolidation fidelity
+## 整合一致性
 
-These patient/source-balanced statistics compare students with their same-cancer teacher ensemble on deployment consolidation inputs. They are not independent biological or clinical performance measurements. Original LOO teacher scores remain separately recorded in provenance/.
+以下按患者/来源平衡，比较学生与同癌种教师集成在整合输入上的一致性。独立生物学/临床性能未由该表验证。原教师留一成绩在 `provenance/` 单独记录。
 
-| Cancer | K | Teachers | Epoch | RNA JSD | Gene PCC | Spatial gradient cosine |
-|---|---:|---:|---:|---:|---:|---:|
-| bladder_cancer | 48 | 5 | 100 | 0.0008 | 0.9634 | 0.8512 |
-| breast_cancer | 44 | 59 | 5 | 0.0052 | 0.9811 | 0.9318 |
-| colorectal_cancer | 44 | 46 | 5 | 0.0121 | 0.9755 | 0.9003 |
-| cutaneous_squamous_cell_carcinoma | 36 | 4 | 5 | 0.0167 | 0.9709 | 0.9187 |
-| ependymoma | 32 | 11 | 5 | 0.0105 | 0.9660 | 0.8579 |
-| kidney_clear_cell_carcinoma | 48 | 24 | 5 | 0.0160 | 0.9680 | 0.8665 |
-| lung_adenocarcinoma | 48 | 5 | 15 | 0.0093 | 0.9589 | 0.8646 |
-| pancreatic_adenocarcinoma | 48 | 4 | 60 | 0.0024 | 0.9691 | 0.8550 |
-| prostate_adenocarcinoma | 48 | 8 | 25 | 0.0072 | 0.9737 | 0.8620 |
+| 癌种 | K | 教师数 | RNA JSD | 组成 JSD | 基因 PCC | spot 余弦 | 空间梯度余弦 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 膀胱癌 | 48 | 5 | 0.0008 | 0.0006 | 0.9634 | 1.0000 | 0.8512 |
+| 乳腺癌 | 44 | 59 | 0.0052 | 0.0045 | 0.9811 | 0.9995 | 0.9318 |
+| 结直肠癌 | 44 | 46 | 0.0121 | 0.0114 | 0.9755 | 0.9989 | 0.9003 |
+| 皮肤鳞状细胞癌 | 36 | 4 | 0.0167 | 0.0118 | 0.9709 | 0.9989 | 0.9187 |
+| 室管膜瘤 | 32 | 11 | 0.0105 | 0.0070 | 0.9660 | 0.9994 | 0.8579 |
+| 肾透明细胞癌 | 48 | 24 | 0.0160 | 0.0130 | 0.9680 | 0.9989 | 0.8665 |
+| 肺腺癌 | 48 | 5 | 0.0093 | 0.0094 | 0.9589 | 0.9995 | 0.8646 |
+| 胰腺癌 | 48 | 4 | 0.0024 | 0.0025 | 0.9691 | 0.9998 | 0.8550 |
+| 前列腺癌 | 48 | 8 | 0.0072 | 0.0048 | 0.9737 | 0.9994 | 0.8620 |
 
-Full values: [student_fidelity_summary.csv](../validation/student_fidelity_summary.csv). Per-slide results and input/teacher/reference hashes accompany the package. Consolidation used all 302 eligible slides, 166 patients and 498,060 spots.
+门槛依次为 ≤0.05、≤0.05、≥0.90、≥0.98、≥0.85。完整精度及选定轮次见[一致性汇总](../validation/student_fidelity_summary.csv)。逐切片记录和输入/教师/参考哈希附带在包内。使用 302 张切片、166 患者、498,060 spots。
 
-## Verification scope
+## 核查范围
 
-Software checks cover engine imports, generic-coarse input packing, rejection of external RNA references, all-gene probability normalization, conserved-mass accounting and the strict nullspace projector against an independent SVD oracle. Real-data checks run each final checkpoint on one complete original feature slide, strictly load model state and verify all 10,000 decoded genes and exact gene/reference order. See [release_verification.json](../validation/release_verification.json) and [software_checks.json](../validation/software_checks.json).
+本轮重新执行九个权重的完整真实特征切片推理，检查全部 10,000 基因、严格状态加载和精确基因/参考顺序；记录见[本轮核查](LOCAL_AUDIT.md)与[机器记录](../validation/chinese_release_recheck.json)。
 
-Raw WSI extraction reuses the frozen tissue-grid, ParamNet and Virchow2 functions; the packaging validation did not rerun full WSI backbone extraction or retrain reference construction from raw BayesTME counts. The arbitrary-coarse adapter has software/input-contract validation and does not inherit independent biological acceptance. Independent patient-cohort and cell-expression validation remain outstanding.
+软件检查包含导入、通用粗 ST 打包、外部 RNA 拒绝、全基因归一化、含未分配质量的守恒，以及独立 SVD 对照的严格零空间投影。通用完整连接检查覆盖秩 0 和 8，测试输入为明确的合成软件小样本。
+
+没有重跑完整 WSI 主干提取或从原始 BayesTME 计数重训参考。任意粗 ST 适配器仍仅具软件/输入规范检查，不能继承独立生物学接受。学生新患者和细胞表达真实性需另行验证。

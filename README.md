@@ -79,17 +79,19 @@ python scripts/init_workspace.py
 
 ---
 
-### 2. CoVarST：H&E → spot 空转 → 细胞精度化
+### 2. CoVarST：癌种参考、H&E 空间转录组推理与细胞表达重建
 
-[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [本地发布状态](CoVarST/docs/RELEASE_STATUS.md)
+[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [本地发布状态](CoVarST/docs/RELEASE_STATUS.md) | [核查报告](CoVarST/docs/LOCAL_AUDIT.md)
 
 公开包包含三部分：独立局部 Programs 到癌种统一固定参考矩阵的构建；
-九个癌种各一个整合后 checkpoint 与 H&E 到 spot 表达推理；
-仅用当前粗分辨率 ST 的 RNA、结合真实图像细胞核的参考无关精度化。
+九个癌种各一个整合模型权重与 H&E 到 spot 表达推理；
+仅用同切片实测粗分辨率 ST 的 RNA、结合真实图像细胞核的细胞级重建。
+
+H&E 推理输出表达概率；当前细胞模块接收实测粗计数，不能直接以预测概率替代。
 
 模型整合保持原网络容量，通过同癌种多折预测概率的集成蒸馏得到单一部署模型。
 原始患者级交叉验证统计和整合模型的教师一致性结果分别记录，
-通过发布门槛的癌种见项目 manifest。第三方 ParamNet、Virchow2 与 CellViT++
+九癌种均通过整合一致性门槛，资产见项目发布清单。第三方 ParamNet、Virchow2 与 CellViT++
 仅链接官方项目，不复制其权重。
 
 ---

@@ -59,8 +59,8 @@
   "files": [
     {
       "file": "models/bladder_cancer/model_card.json",
-      "sha256": "7ef2195d1e59ebb15d54b292a3ecaaa14f6a9e5f74e01b8494591cae42c05ad7",
-      "bytes": 3266
+      "sha256": "0ad35f6b5e433a8c1f99a79227399ddfabe9d6ab208e681bfcf450e6f8a3b96e",
+      "bytes": 3200
     },
     {
       "file": "models/bladder_cancer/model_checkpoint.pt",
@@ -74,8 +74,8 @@
     },
     {
       "file": "models/breast_cancer/model_card.json",
-      "sha256": "0245161279b0101348284ad69d432db00d14417f791917ac899806d3373c0153",
-      "bytes": 7374
+      "sha256": "182743657e62e2fba1d3d2742bb647eb9c8dd3f25c6325c5c8f3b4354a54ff81",
+      "bytes": 7308
     },
     {
       "file": "models/breast_cancer/model_checkpoint.pt",
@@ -89,8 +89,8 @@
     },
     {
       "file": "models/colorectal_cancer/model_card.json",
-      "sha256": "0479210f240f161e1f161906bcb72c2d06eb4ffd9329153a886ad64f2816eeb4",
-      "bytes": 6397
+      "sha256": "2a27e4af6953b3e344d7aa4b45741368e4bd36416239ef79976a001fa4238799",
+      "bytes": 6331
     },
     {
       "file": "models/colorectal_cancer/model_checkpoint.pt",
@@ -104,8 +104,8 @@
     },
     {
       "file": "models/cutaneous_squamous_cell_carcinoma/model_card.json",
-      "sha256": "7cd56ca6d9343c95898661319c64e5811f387bcde572c8365df761656c929800",
-      "bytes": 3245
+      "sha256": "a03acdc42677af1797ccd0e69dcda5613c78364be8b28ddb4dbcb34a9453d892",
+      "bytes": 3179
     },
     {
       "file": "models/cutaneous_squamous_cell_carcinoma/model_checkpoint.pt",
@@ -119,8 +119,8 @@
     },
     {
       "file": "models/ependymoma/model_card.json",
-      "sha256": "b2071c88454ec241c94c46453191ec516f1b24fc9001f4cfd491b1b45d41a4ec",
-      "bytes": 3714
+      "sha256": "43c717af8b85a8a56e9299f3b1396b1aad9bcb93d3da7f7fe67ef22cac122f75",
+      "bytes": 3648
     },
     {
       "file": "models/ependymoma/model_checkpoint.pt",
@@ -134,8 +134,8 @@
     },
     {
       "file": "models/kidney_clear_cell_carcinoma/model_card.json",
-      "sha256": "44060e5e1185ea0607ab91dcdebcdbe58c97ef10597c6fadc97c4cd947c8fb19",
-      "bytes": 4753
+      "sha256": "05d5e956c80cad92c70cf43d47b720e60de71bd04f94e37b0c4ac3b0b4e2def9",
+      "bytes": 4687
     },
     {
       "file": "models/kidney_clear_cell_carcinoma/model_checkpoint.pt",
@@ -149,8 +149,8 @@
     },
     {
       "file": "models/lung_adenocarcinoma/model_card.json",
-      "sha256": "d98dc379597b8e46539b2796238cccab585302038a02dcd9fabd78108ceb534b",
-      "bytes": 3278
+      "sha256": "cd8fed9bb14db1772e63c48954fa950b237e95a2948f4816cef0763bfba7351e",
+      "bytes": 3212
     },
     {
       "file": "models/lung_adenocarcinoma/model_checkpoint.pt",
@@ -164,8 +164,8 @@
     },
     {
       "file": "models/pancreatic_adenocarcinoma/model_card.json",
-      "sha256": "6ab76a8f6cfaa18a350d34e27fc24ed7e13862c1ad75fe395a7c5d45bdc81a9f",
-      "bytes": 3226
+      "sha256": "f88cf08c0a835b173e5d6c0103b8778b7ad2296ef0b1875542d5e75a97621f2c",
+      "bytes": 3160
     },
     {
       "file": "models/pancreatic_adenocarcinoma/model_checkpoint.pt",
@@ -179,8 +179,8 @@
     },
     {
       "file": "models/prostate_adenocarcinoma/model_card.json",
-      "sha256": "0009cc519517e7a2ab89ddfb7044fadce060a444f94f2713e75ba262a8ad68c3",
-      "bytes": 3522
+      "sha256": "34b94ef650452ce998894014bcac82e2d28ac828139eed0146941b7f596e85db",
+      "bytes": 3456
     },
     {
       "file": "models/prostate_adenocarcinoma/model_checkpoint.pt",

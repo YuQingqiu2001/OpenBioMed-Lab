@@ -1,11 +1,11 @@
 {
-  "public_files": 359,
-  "public_bytes": 272584261,
+  "public_files_excluding_inventory_report": 364,
+  "public_bytes_excluding_inventory_report": 272596919,
   "cancer_references": 9,
   "published_cancer_checkpoints": 9,
   "original_teacher_checkpoint_files": 0,
   "third_party_checkpoint_files": 0,
   "maximum_file_bytes": 21048896,
-  "historical_engine_text_with_author_path": [],
-  "remote_push_performed": false
+  "remote_push_performed": false,
+  "snapshot_note": "排除本清单自身及运行产生的 __pycache__；数值为本轮中文化核查完成时的本地文件快照"
 }

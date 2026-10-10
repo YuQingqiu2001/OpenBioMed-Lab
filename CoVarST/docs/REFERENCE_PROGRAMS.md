@@ -1,30 +1,42 @@
-# From independent local Programs to a cancer reference
+# 独立 Programs 如何形成癌种统一参考
 
-The final artifact is `references/CANCER/consensus_reference_probability_10k.npy`, W with shape K × 10,000. Each row is a gene probability distribution. `gene_order_10k.npy`, batch adapters and Program order are immutable model assets. Both the original teachers and the consolidated cancer student decode theta through that same W.
+最终文件为 `references/CANCER/consensus_reference_probability_10k.npy`，记作 W，形状为 K × 10,000，每行是一个 Program 的基因概率分布。`gene_order_10k.npy`、Program 顺序和批次适配器都是冻结资产。教师和学生共用该参考解码 `theta_rna @ W`。
 
-1. Pool measured raw-count slides by cancer. Build a cancer-specific 10,000-gene panel using marker coverage followed by equal-slide logCP10K-variance HVGs. Exclude mitochondrial, RPS and RPL genes as in the final configuration. Save exact original gene IDs/order and slide provenance; do not replace counts by normalized values for BayesTME.
-2. Run unmodified upstream BayesTME 1.0.0 separately on each slide with local K in 2–12. Preserve the local posterior theta and local gene basis W. These local Programs are not shared identities across slides.
-3. Fit soft local-to-consensus mappings and candidate shared dictionaries. The final cancer candidate set is 32, 36, 40, 44, 48, with preferred K=40. Select among candidates within 0.002 of the best validation gene PCC, preferring the size nearest 40. Preserve the candidate scores and selected mapping. The RCCD helper provides mapping machinery; the final locked-split direct-consensus entry point applies the recorded candidate-selection rule.
-4. Jointly refine the selected shared W, free spot theta and bounded technology/source×technology adapters. The final objective combines logCP10K Huber loss, gene PCC, cosine and a weak theta anchor. This refinement is not accurately described as merely averaging local bases or as a new KL-NMF fit. Adapter variation is tied to platform/batch metadata, not patient identities.
-5. Freeze K, W, Program order, gene order and adapter arrays with hashes. Train and evaluate image mappers against this reference without rebuilding it per fold.
+## 最终构建步骤
 
-| Cancer key | Fixed K |
-|---|---:|
-| bladder_cancer | 48 |
-| breast_cancer | 44 |
-| colorectal_cancer | 44 |
-| cutaneous_squamous_cell_carcinoma | 36 |
-| ependymoma | 32 |
-| kidney_clear_cell_carcinoma | 48 |
-| lung_adenocarcinoma | 48 |
-| pancreatic_adenocarcinoma | 48 |
-| prostate_adenocarcinoma | 48 |
+1. 按癌种整理实测原始计数。先覆盖标记基因，再按切片等权 logCP10K 方差选择高变基因，构建 10,000 基因面板。按最终配置排除线粒体、RPS 和 RPL 基因，保存原始基因标识、顺序和切片来源。BayesTME 必须接收原始计数。
+2. 每张切片独立运行原版 BayesTME 1.0.0，局部 K 范围为 2–12，保留后验 theta 和局部基因基底 W。不同切片的局部编号没有天然对应关系。
+3. 拟合局部到共识的软映射和共享字典。最终候选数为 **32、36、40、44、48**，偏好数为 40。在验证基因 PCC 距最优不超过 **0.002** 的候选中优先选择最接近 40 的规模，保存成绩与映射。RCCD 提供映射机制，最终锁定划分的直接共识入口执行选择规则。
+4. 联合细化共享 W、自由 spot theta 及有界技术/来源×技术适配器。目标结合 logCP10K Huber 损失、基因 PCC、余弦和弱 theta 锚定，不能简写为局部基底平均或新 KL-NMF。适配器按平台/批次登记，不按患者身份设置。
+5. 冻结 K、W、Program 和基因顺序、适配器数组及哈希，再训练和评估图像映射器，不逐留一折重建参考。
 
-The nine references total 396 Programs. The breast preparation followed its historical breast-specific input lineage; its frozen 44-Program assets are included. The generic preparation example covers the eight later cancer batches, and is an input template rather than a claim that all nine original data pipelines used identical paths.
+## 已发布参考
 
-## Executable recipes and records
+| 癌种 | 癌种标识 | 固定 K | 权重数 |
+|---|---|---:|---:|
+| 膀胱癌 | `bladder_cancer` | 48 | 1 |
+| 乳腺癌 | `breast_cancer` | 44 | 1 |
+| 结直肠癌 | `colorectal_cancer` | 44 | 1 |
+| 皮肤鳞状细胞癌 | `cutaneous_squamous_cell_carcinoma` | 36 | 1 |
+| 室管膜瘤 | `ependymoma` | 32 | 1 |
+| 肾透明细胞癌 | `kidney_clear_cell_carcinoma` | 48 | 1 |
+| 肺腺癌 | `lung_adenocarcinoma` | 48 | 1 |
+| 胰腺癌 | `pancreatic_adenocarcinoma` | 48 | 1 |
+| 前列腺癌 | `prostate_adenocarcinoma` | 48 | 1 |
 
-`prepare-reference-counts`, `deconvolve-local`, `fit-fixed-reference`, `refine-reference` and `train-he` expose the frozen upstream CLIs. Their `--help` describes required measured-count queues, spot-index tables, split manifests and output directories. Use explicit candidates:
+共 396 个 Programs。乳腺癌保留历史专用输入流程和 44 Program 资产；通用计数预处理示例覆盖后续八癌种，是输入模板，不能据此声称九癌种原始路径完全相同。
+
+## 入口与核对文件
+
+| 命令 | 工作 |
+|---|---|
+| `prepare-reference-counts` | 原始计数与癌种基因面板 |
+| `deconvolve-local` | 逐切片原版 BayesTME 分解 |
+| `fit-fixed-reference` | 锁定划分下拟合并选择共识字典 |
+| `refine-reference` | 最终联合细化 |
+| `train-he` | 在固定参考下训练图像模型 |
+
+各入口的 `--help` 给出计数队列、spot 索引、划分清单和输出目录参数。最终入口显式设置：
 
 ```bash
 python -m covarst fit-fixed-reference --queue-dir WORK/local_bayes \
@@ -33,8 +45,19 @@ python -m covarst fit-fixed-reference --queue-dir WORK/local_bayes \
   --target-programs 40 --selection-tolerance 0.002
 ```
 
-`compress-programs` exposes the earlier RCCD-only helper for reproducibility; its development defaults are not the final recipe. Use the locked-split direct-consensus recipe above for final candidate selection, then the recorded joint refinement. Exact per-cancer configuration and historical selection/refinement summaries accompany each frozen reference. `local_to_consensus_mapping.npy`, `local_program_assignment.csv`, `candidate_dictionary_selection.csv` and `consensus_contract.json` make the compression auditable. Patient theta targets are deliberately excluded from the public package.
+`compress-programs` 是早期仅 RCCD 辅助入口，其开发默认值不是最终方案。最终选择使用上例，再执行对应联合细化。每癌种参考附带历史候选选择、细化摘要和配置。
 
-## Evaluation scope
+| 文件 | 内容 |
+|---|---|
+| `local_to_consensus_mapping.npy` | 局部到共识映射 |
+| `local_program_assignment.csv` | 局部分配记录 |
+| `candidate_dictionary_selection.csv` | 候选规模选择依据 |
+| `consensus_contract.json` | 参考构建约定 |
+| `consensus_reference_probability_10k.npy` | 中性参考 W |
+| `gene_order_10k.npy` | 精确基因顺序 |
 
-The historical fixed reference was constructed using the full available cancer RNA cohort before leave-one-patient-out image-mapper evaluation. The reference is therefore transductive. The original LOO results characterize image generalization conditional on that fixed reference and do not establish fully RNA-independent reference generalization. Consolidating teachers does not change this boundary.
+患者 theta 目标未公开；重建需要自行提供原始数据。
+
+## 评估范围
+
+历史固定参考在图像模型患者留一评估前使用了全部可用癌种 RNA，因此是队列条件下的传导式参考。原始成绩描述固定参考下的图像泛化，不代表参考对全新 RNA 队列的完全独立泛化。教师整合不改变这一范围。

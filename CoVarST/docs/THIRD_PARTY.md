@@ -1,15 +1,15 @@
-# Third-party software and weights
+# 第三方软件与权重
 
-Obtain third-party source and checkpoints from their official projects. No copies of their weights are included here and no automatic downloads occur.
+从官方项目获取源码和权重。本包不附带第三方权重，不自动下载。
 
-| Component | Role | Official source |
+| 组件 | 用途 | 官方来源 |
 |---|---|---|
-| BayesTME 1.0.0 | Independent raw-count local Program decomposition | https://github.com/tansey-lab/bayestme |
-| ParamNet | H&E stain normalization | https://github.com/khtao/ParamNet |
-| Virchow2 | CLS + mean patch-token image features | https://huggingface.co/paige-ai/Virchow2 |
-| CellViT++ | Real image nucleus segmentation and features | https://github.com/TIO-IKIM/CellViT-plus-plus |
-| torch-geometric | GATv2 graph operations | https://github.com/pyg-team/pytorch_geometric |
+| BayesTME 1.0.0 | 逐切片原始计数 Program 分解 | [BayesTME](https://github.com/tansey-lab/bayestme) |
+| ParamNet | H&E 染色标准化 | [ParamNet](https://github.com/khtao/ParamNet) |
+| Virchow2 | CLS 与图块 token 均值特征 | [Virchow2](https://huggingface.co/paige-ai/Virchow2) |
+| CellViT++ | 真实细胞核分割与特征 | [CellViT++](https://github.com/TIO-IKIM/CellViT-plus-plus) |
+| torch-geometric | GATv2 图运算 | [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) |
 
-Virchow2 access and use follow its model card/license. This package's license does not grant rights to any third-party checkpoint. ParamNet input root must contain the original `source.model.ParamNet` implementation and `checkpoints/ParamNet-Uni.pt`. Virchow2 root must contain its official compatible state. Follow CellViT++ documentation to produce a genuinely registered nucleus census; its class conventions must be mapped explicitly to the input schema.
+Virchow2 的访问和使用遵循官方模型说明/许可，本包许可不授予第三方权重额外使用权。ParamNet 根目录需有 `source.model.ParamNet` 和 `checkpoints/ParamNet-Uni.pt`；Virchow2 根目录需提供官方兼容权重。按 CellViT++ 文档生成实际配准核普查，将类别显式映射到本包五类规范。
 
-The copied engine files are this study's original mathematical implementation/adapters. `provenance/source_manifest.json` records exact source hashes and where release packaging retains exact AST subsets or relocates runtime defaults. Historical source names are preserved internally for model compatibility.
+`_engine` 为本研究的数学实现和适配代码。`provenance/source_manifest.json` 记录完整复制、精确语法树子集与路径调整的来源哈希，内部历史名称因兼容性保留，公开名统一为 CoVarST。

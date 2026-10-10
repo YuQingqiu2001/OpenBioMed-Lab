@@ -1,26 +1,33 @@
-# One unchanged-capacity checkpoint per cancer
+# 每癌种一个原容量整合模型
 
-The original final study contains 166 leave-one-patient-out mapper checkpoints. The release consolidates these into nine deployable cancer-specific students. It does not reduce hidden width, quantize weights, average raw network weights or bundle the old models behind a hidden ensemble.
+原研究有 166 个患者留一图像模型，本包整合为九癌种各一个部署模型。隐藏宽度、网络容量与数值精度保留，部署只加载一个模型。
 
-For each same-cancer slide, every original teacher runs H&E-only inference in the same fixed Program coordinate system. Its accepted bounded INR correction is applied when present. RNA and composition softmax probabilities are averaged equally across all cancer folds. Averaging probabilities is valid here because all teachers share the same frozen W, Program order and 10,000-gene order.
+## 整合过程
 
-One student with the original mapper capacity is initialized from a declared teacher checkpoint and trained on these frozen probability targets. The objective matches RNA/composition distributions, per-Program centered variation and local spatial differences. Every eligible slide and spot enters consolidation; features and geometry are exact barcode-aligned study inputs. Measured RNA is not newly read by the distillation pipeline, although teachers and fixed references were originally trained using RNA.
+1. 全部同癌种教师在每张合格切片、同一冻结 Program 坐标系上执行 H&E 推理，有接受的有界 INR 修正时先应用修正。
+2. 对 RNA 与组成 softmax 概率分别跨折等权算术平均。教师共用 W、Program 和 10,000 基因顺序，概率可以对应；不直接平均网络参数。
+3. 从登记教师初始化原容量学生，匹配概率分布、每 Program 中心化变化和局部空间差分。所有合格切片和 spots 参与，特征/坐标按原始条码精确对齐。
+4. 候选必须同时满足全部门槛，再按综合损失选择权重。失败候选不进入公开目录。
 
-The initial teacher-target cache covers 302 eligible slides, 166 patients and 498,060 spots. One of the historical 303 slides was excluded by the original feature-coverage boundary. No scientific training-spot sampling is introduced by packaging. The teacher checkpoints and feature matrices remain local and are not included in the public package.
+共 302 张切片、166 位患者、498,060 spots；历史 303 张中一张因原特征覆盖边界排除。封装没有新增训练 spot 抽样。蒸馏不重新读取实测 RNA，教师和固定参考的原始训练使用过 RNA。教师、特征和目标缓存保留本地，不公开分发。
 
-## Fidelity gates
+## 一致性门槛
 
-The release requires patient/source-balanced mean RNA JSD ≤0.05, composition JSD ≤0.05, decoded-expression gene PCC ≥0.90, decoded spot cosine ≥0.98 and spatial theta-gradient cosine ≥0.85. All 10,000 genes enter decoded fidelity evaluation. Metrics and their balancing unit are recorded per slide and per cancer. Candidate selection enforces all gates, including the spatial gate, before preferring the lowest aggregate loss.
+| 指标 | 门槛 |
+|---|---:|
+| RNA JSD | ≤ 0.05 |
+| 组成 JSD | ≤ 0.05 |
+| 解码基因 PCC | ≥ 0.90 |
+| 解码 spot 余弦 | ≥ 0.98 |
+| 空间 theta 梯度余弦 | ≥ 0.85 |
 
-These are engineering consolidation gates measured against the ensemble on deployment consolidation inputs. Many teachers saw a given patient's RNA during their original training. The gates do not constitute a new held-out biological evaluation, do not prove noninferiority to original teachers on new patients and do not authorize reusing original LOO scores as student results.
+解码评估覆盖全 10,000 基因。逐切片记录后按患者/来源平衡汇总，详见 `validation/` 和各癌种 `model_card.json`。选模同时检查五项，包括空间梯度。
 
-Original metrics remain in `provenance/original_teacher_LOO_metrics.csv`; student results remain in `validation/` and per-cancer `model_card.json`. A model's Program/gene/reference hashes, architecture parameters, teacher fold count, training/selection contract and fidelity results accompany its checkpoint. A failed candidate is kept outside `models/`.
+这是整合输入上的教师集成拟合一致性。部分教师训练见过对应患者 RNA，不能作为新留出患者评估、证明新患者非劣效或继承教师成绩。原始成绩见 `provenance/original_teacher_LOO_metrics.csv`，学生一致性见 `validation/student_fidelity_summary.csv`。权重记录参考/基因哈希、架构、教师数、训练/选模约定和结果，独立患者与临床验证仍需另行完成。
 
-Independent patient-cohort validation of each consolidated student is still needed before assigning it biological or clinical performance claims.
+## 本地复现
 
-## Reproduce consolidation locally
-
-The optional portable recipe expects the original frozen study layout with its registry, all original teacher checkpoints, completed patient-out inference/spot-index files and registered H&E feature files. These large source inputs are not redistributed. Outputs go to a separate fresh workspace.
+需要完整原研究目录：教师注册表、全部教师权重、已完成患者留一推理/spot 索引和登记图像特征。这些原始输入不在公开包中，输出必须位于原研究目录之外。
 
 ```bash
 python scripts/consolidate_checkpoints.py --study-root ORIGINAL_STUDY --work-root WORK/consolidation --phase cache
@@ -28,4 +35,10 @@ python scripts/consolidate_checkpoints.py --study-root ORIGINAL_STUDY --work-roo
 python scripts/consolidate_checkpoints.py --study-root ORIGINAL_STUDY --work-root WORK/consolidation --phase student
 ```
 
-Run `targets` to completion before `student` when reproducibility and bounded resource sharing matter. The optional recipe preserves numerical losses and original architecture, relocates author paths, and retains a candidate satisfying every fidelity gate. Randomness/device arithmetic can prevent byte-identical checkpoints. Release weights remain identified by their actual recorded hashes and validation results.
+| 阶段 | 工作 |
+|---|---|
+| `cache` | 整理精确教师、特征和合格切片 |
+| `targets` | 同癌种全教师概率目标 |
+| `student` | 原容量训练、门槛检查和选择 |
+
+先完成 `targets` 再训练。可移植实现保留损失与架构，调整作者路径，保留满足全部门槛的候选。随机性和设备运算可能使重训权重字节不同，发布模型以实际哈希和检查结果为准。

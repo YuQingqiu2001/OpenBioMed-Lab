@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "covarst"
 version = "1.0.0"
-description = "Cancer-specific H&E to spatial RNA and reference-free spot-to-cell reconstruction"
+description = "癌种特定的 H&E 空间转录组推理与无外部单细胞参考的细胞级重建"
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.26,<2", "scipy>=1.10", "pandas>=2.2", "torch>=2.6,<2.8", "torch-geometric>=2.6,<2.7", "h5py>=3.10", "scikit-learn>=1.4", "anndata>=0.10,<0.11", "tqdm"]
 

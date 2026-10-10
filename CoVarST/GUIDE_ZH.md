@@ -1,22 +1,18 @@
-# CoVarST 本地发布包
+# CoVarST 中文阅读导引
 
-这个包展示最终方案的三部分：独立 Programs 到癌种统一参考矩阵；H&E 到 spot 空转；仅以当前粗分辨率 ST 作为 RNA 来源的细胞精度化。
+先读[项目首页](README.md)，再按任务选择说明：
 
-每个癌种只发布一个整合后的 H&E mapper checkpoint，共九个。它们保持原网络容量，在同一癌种所有折的预测概率均值上做集成蒸馏。166 个原始交叉验证权重不放进公开包。已通过整合一致性门槛的权重才进入 `models/`，状态见 [RELEASE_STATUS](docs/RELEASE_STATUS.md)。
+| 工作 | 对应文档 |
+|---|---|
+| 运行已有癌种模型 | [使用指南](docs/QUICKSTART.md)、[H&E 推理](docs/HE_TO_SPOTS.md) |
+| 理解或重建参考矩阵 | [参考矩阵构建](docs/REFERENCE_PROGRAMS.md) |
+| 理解每癌种一个权重的整合过程 | [模型整合](docs/MODEL_CONSOLIDATION.md) |
+| 从实测粗 ST 重建细胞表达 | [细胞输入规范与输出](docs/SPOT_TO_CELL.md) |
+| 获取第三方权重 | [官方来源](docs/THIRD_PARTY.md) |
+| 核对完成程度和检查证据 | [发布状态](docs/RELEASE_STATUS.md)、[本轮核查](docs/LOCAL_AUDIT.md) |
 
-在已有环境中运行：
+每癌种发布一个原容量学生，共九个。目标来自同癌种全部原始教师在图像输入上的概率均值。原始 166 个交叉验证权重不进入公开包。
 
-```bash
-cd CoVarST
-export PYTHONPATH="$PWD/src"
-python -m covarst verify-assets
-python -m covarst infer-spots --cancer colorectal_cancer --features DATA/slide.npz --output WORK/slide.h5 --device cuda
-```
+细胞模块可用真实 H&E 细胞核的位置、形态和特征，RNA 谱与连续变化轴必须从当前实测粗 ST 拟合。外部 scRNA-seq、已有细胞表达及评估用 2 μm 表达不能参与拟合或选模。`P_post` 用于推断表达结构分析，`X_mass` 用于捕获计数核账。
 
-`features` 输入必须是原流程的 ParamNet 标准化、Virchow2 CLS + patch mean 拼接所得 2560 维特征，NPZ 包含 `features`、`coords`、`barcode`。原始 H&E 输入可用 `extract-wsi`，第三方模型目录由用户明确提供，不自动下载。
-
-细胞精度化允许使用真实 H&E 细胞核的位置、形态和特征，RNA profiles 和连续 Programs 均从当前低分辨率 ST 重新拟合，不能传入外部 scRNA-seq、已有细胞表达或用于评估的 2 μm 表达。细胞概率用于表达结构分析；守恒分配 `X_mass` 用于计数核账，两者的含义不同。
-
-参考矩阵固定后才执行历史患者级 LOO；参考本身利用过全队列 RNA，因此这是固定参考下的预测评估，不能宣称严格 RNA 完全独立。新整合模型的统计是对教师集成的拟合一致性，不复用历史模型的 PCC 作为新模型成绩。细胞表达生物学真实性也需要独立验证。
-
-[完整命令](docs/QUICKSTART.md) · [参考矩阵构建](docs/REFERENCE_PROGRAMS.md) · [细胞模块输入规范](docs/SPOT_TO_CELL.md)
+文档、公开命令帮助与模型说明以中文为主。代码标识、字段、官方名称和原始溯源记录保持原样。冻结研究脚本的原始帮助可能保留英文，其用途和最终参数在中文文档中说明。
