@@ -1,17 +1,16 @@
 # CRC Survival Models
 
-两套结直肠癌（CRC）病理生存风险模型：输入全切片图像（WSI）或已提取的特征文件，
-输出连续的总体生存相对风险。`Fig3` 生存曲线由这两套模型生成。
+两套结直肠癌（CRC）病理生存模型，输入全切片图像（WSI）或已提取的特征文件，输出连续的总体生存相对风险。仓库内含权重、推理代码、模型卡和 `Fig3` 的统计量。
 
-| 模型 | 输入 | 主要思路 |
+| 模型 | 输入 | 方法 |
 |---|---|---|
-| Cell Topology | 带细胞类型的空间邻接图 | 比较全组织和肿瘤前沿的细胞拓扑，不读取图像颜色、原始形态、临床变量或微生物数据 |
+| Cell Topology | 带细胞类型的空间邻接图 | 分别在全组织和肿瘤前沿上计算图特征，两个分支等权平均。不读取图像颜色、原始形态、临床变量或微生物数据 |
 | Patch Feature | 病理 Patch 表征及空间邻域 | 联合局部表征梯度、肿瘤核心、侵袭前沿和瘤周结构，由五折模型给出患者风险 |
 
 两套模型都输出连续的总体生存相对风险。`risk >= 0` 记为高风险，`risk < 0`
 记为低风险。这个分组只是固定阈值下的描述，不是生存概率、剩余寿命或治疗建议。
 
-## 快速开始
+## 安装
 
 ```bash
 git clone https://github.com/YuQingqiu2001/OpenBioMed-Lab.git
@@ -21,14 +20,7 @@ conda activate crc-survival
 python predict.py validate-install
 ```
 
-已有特征文件时，直接打分：
-
-```bash
-python predict.py topology slide_a.topology_tokens.h5 slide_b.topology_tokens.h5 \
-  --case-id CRC_001 --output results/topology.json
-```
-
-`validate-install` 只检查本项目自带的生存模型。原始 WSI 流程还需要用户在本地准备
+`validate-install` 检查本项目自带的生存模型和目录结构。原始 WSI 流程还需要用户在本地准备
 CellViT++ 和 UNI 相关文件，见[外部依赖说明](docs/THIRD_PARTY_NOTICES.md)。本仓库不复制
 这两个项目的源码或权重。
 
@@ -101,7 +93,7 @@ result = predict(
 两个函数都接受可选的权重目录参数（细胞拓扑为 `model_dir`，Patch 为 `weights_dir`），
 默认使用各自 `weights/` 目录中的随附权重。
 
-## 输出说明
+## 输出
 
 `predict.py topology` 输出：
 
@@ -138,17 +130,17 @@ results/CRC_001/
 - 结构检查：`python -m pytest tests/ -q`
 - 安装校验：`python predict.py validate-install`，加 `--raw-wsi` 可额外检查本地
   CellViT++ 与 UNI 路径
-- 验证记录：`docs/validation/` 保留两次真实运行的完整数值，可用来核对运行环境：
+- 运行记录：`docs/validation/` 保留两次真实运行的完整数值，可用来核对运行环境：
   - 304 MB 结直肠癌 SVS 端到端：细胞拓扑 risk `-0.3449`（low）、Patch risk `0.2766`
     （high）。两套模型使用不同输入，同一病例可以落入不同分组。
   - Patch 模型 CPU 复跑与 GPU 记录值的连续分数差约 0.0006，分组一致；这一量级的
     差异来自浮点执行环境。
 
-## Fig3 结果
+## Fig3 统计量
 
-细胞拓扑模型的 Fig3 结果来自嵌套五折 OOF 预测：431 名患者、92 个事件，
-C-index 0.6454，log-rank P=`8.75e-05`，每 IQR 风险增量 HR 1.810
-（95% CI 1.329 至 2.464）。
+`Fig3` 的生存曲线由这两套模型生成。细胞拓扑模型的结果来自嵌套五折 OOF 预测：
+431 名患者、92 个事件，C-index 0.6454，log-rank P=`8.75e-05`，每 IQR 风险增量
+HR 1.810（95% CI 1.329 至 2.464）。
 
 Patch 模型在四个队列上的连续风险随机效应 Meta 分析为 HR 1.743
 （95% CI 1.176 至 2.583），P=`0.0206`。各队列统计量见
@@ -182,7 +174,7 @@ crc-survival-models/
 
 ## 许可与引用
 
-本子项目采用 **CC BY-NC-SA 4.0**（署名—非商业性使用—相同方式共享）许可，完整文本见
+本子项目采用 **CC BY-NC-SA 4.0**（署名-非商业使用-相同方式共享）许可，完整文本见
 [LICENSE](LICENSE)；许可只覆盖仓库原创代码、文档和随附模型，不改变用户另行取得的
 UNI 或 CellViT++ 材料的许可证。使用请注明来源并引用本仓库；论文信息发表后在此补充。
 
