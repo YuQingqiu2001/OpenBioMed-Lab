@@ -203,11 +203,6 @@
       "bytes": 40128
     },
     {
-      "file": "references/bladder_cancer/candidate_dictionary_selection.csv",
-      "sha256": "de572977d6988d0826ceea7ab45135bfd127d5aa9138371287334c7b6faa2efb",
-      "bytes": 953
-    },
-    {
       "file": "references/bladder_cancer/consensus_contract.json",
       "sha256": "b15d732d75a60cd546793cf5d3bd42daf976bc35cce0eee0248dbec8ca99e229",
       "bytes": 2585
@@ -233,54 +228,9 @@
       "bytes": 1920128
     },
     {
-      "file": "references/bladder_cancer/final_training_history.csv",
-      "sha256": "1cedf6b34e2f76a1091d74963efd530a81b0b174fb5547067c9e153eb6dc8de2",
-      "bytes": 41814
-    },
-    {
       "file": "references/bladder_cancer/gene_order_10k.npy",
       "sha256": "d906a5ca2ce346feda2a8038b745b9a38b9582a7311541de1060bc95d2224ca7",
       "bytes": 440128
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "72381e7430280bc295d10b54ed7be7ebd19545fa698968007714c71e30288306",
-      "bytes": 215241
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "cf7036d3679486b68850ca9e1511649a7952938e313e3b3d20377eee41d9273e",
-      "bytes": 215360
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "5f5b00355beb1e34b68d395b61317e87ffa8c1ea521f3de5c28c7a78151c832d",
-      "bytes": 215287
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "8b59e5724f651ad2f495312a7655adea0b6681fa963d2dc649d740f4cd27d7f8",
-      "bytes": 215309
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "6b1069626a0da01513a7a64391bdf2a6e7f95b3fdf67053ab4639ee9395f6cbe",
-      "bytes": 215243
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_test.csv",
-      "sha256": "116b275a81271b52c35da3ca488ae406834a81285d463c28a30d3dc441a4905b",
-      "bytes": 216427
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_train.csv",
-      "sha256": "7f923ff74741225c80e3142506c389217f23db660c3ac4aa48f618ea29422042",
-      "bytes": 215455
-    },
-    {
-      "file": "references/bladder_cancer/gene_pcc_10k_val.csv",
-      "sha256": "f2a27fd4523a68ab3dc80dfb36000b871d331a51b444df653fed85c3092a1819",
-      "bytes": 216478
     },
     {
       "file": "references/bladder_cancer/gene_weight_10k.npy",
@@ -298,21 +248,6 @@
       "bytes": 13376
     },
     {
-      "file": "references/bladder_cancer/reconstruction_metrics_by_slide.csv",
-      "sha256": "f77ac8a035e1b55b2fcfdfb40afcc4666749af6817a448e2d50030a45f73e085",
-      "bytes": 2012
-    },
-    {
-      "file": "references/bladder_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "cbe87d37c9216ba3ed581252d94ed47d6c86a40caa4033ffc9882a8a83f947bb",
-      "bytes": 1055
-    },
-    {
-      "file": "references/bladder_cancer/spot_nmf_refinement_history.csv",
-      "sha256": "152b9275e9af934c9c949b9b01ee0e460ec2a3d45968f910fc509265a8d24e31",
-      "bytes": 3819
-    },
-    {
       "file": "references/bladder_cancer/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -326,11 +261,6 @@
       "file": "references/breast_cancer/batch_gene_adapters.npy",
       "sha256": "e7b83731afde17a082563ebdc20c9f8f20469f1a76656ab91d42fd6e96905c33",
       "bytes": 200128
-    },
-    {
-      "file": "references/breast_cancer/candidate_dictionary_selection.csv",
-      "sha256": "e9ef9eb2f1aadfc14b4cd1e03933f3e1a53b662f95de6071455a597ca39b123a",
-      "bytes": 874
     },
     {
       "file": "references/breast_cancer/consensus_contract.json",
@@ -358,54 +288,9 @@
       "bytes": 8800128
     },
     {
-      "file": "references/breast_cancer/final_training_history.csv",
-      "sha256": "e26676ecac20a37bae23013c6189d200a225420500ed2178bfbf582a87a362a7",
-      "bytes": 43200
-    },
-    {
       "file": "references/breast_cancer/gene_order_10k.npy",
       "sha256": "ae465722065f5b4ab089889adc7302798c866802fdf4545955e3bb7147ec21c7",
       "bytes": 600128
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "9be57423fef630f1fca7ae7ee926fb2dcf3d7aae45e72bdadc9ef0368a0f95a1",
-      "bytes": 221969
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "0dc57226f9fcde471167873335d357d798ee2345e00b977d4e53bbf3c4413b20",
-      "bytes": 221480
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "c529dd8e5c5ab63df496d122238e30388419634a8456a82ae475515a9bf1c01e",
-      "bytes": 221952
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "0906d70feda93d2cc800203825f6cd8cb1714aafb7e173438b95cda1f7eabbab",
-      "bytes": 221642
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "b157490c18b58dd23452615bb3b8ab5f6e0706c28363e6fa6e0baaf8333383f8",
-      "bytes": 221684
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_test.csv",
-      "sha256": "a6f22e08d68f57042c655a1a9b22beab446da404de9f2956e91bb00bbeab3333",
-      "bytes": 222685
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_train.csv",
-      "sha256": "6ece24a56683569557bb76c4a4827089f8d2fac6f498e4e8b7d16b9adb1f2575",
-      "bytes": 221881
-    },
-    {
-      "file": "references/breast_cancer/gene_pcc_10k_val.csv",
-      "sha256": "c58da180bf71152df041a5af127ba88f9faf38a58fe614a7d3f333d76168f06a",
-      "bytes": 222720
     },
     {
       "file": "references/breast_cancer/gene_weight_10k.npy",
@@ -423,21 +308,6 @@
       "bytes": 331184
     },
     {
-      "file": "references/breast_cancer/reconstruction_metrics_by_slide.csv",
-      "sha256": "b7ad2692d03be3ebcb4f459e82614a4680be2a6e3add4949d7861f6e48672910",
-      "bytes": 58827
-    },
-    {
-      "file": "references/breast_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "0699eda851c629077035c147fe3b91e631b678e36e31997632a174147c7f41e7",
-      "bytes": 36354
-    },
-    {
-      "file": "references/breast_cancer/spot_nmf_refinement_history.csv",
-      "sha256": "3aef14d2f0206e723189e8fa8f84e8ca20540567f96cd684810d0a052c765c50",
-      "bytes": 4263
-    },
-    {
       "file": "references/breast_cancer/technology_gene_adapters.npy",
       "sha256": "652ed759a74061e18508906c0670ffe564842f541fc9ca5857af5d52e58818d9",
       "bytes": 120128
@@ -451,11 +321,6 @@
       "file": "references/colorectal_cancer/batch_gene_adapters.npy",
       "sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
       "bytes": 80128
-    },
-    {
-      "file": "references/colorectal_cancer/candidate_dictionary_selection.csv",
-      "sha256": "fdb6dce065264da95996ebbc89cd5238338fb28c6166bc143e39ea4cc55e1bed",
-      "bytes": 790
     },
     {
       "file": "references/colorectal_cancer/consensus_contract.json",
@@ -483,54 +348,9 @@
       "bytes": 3520128
     },
     {
-      "file": "references/colorectal_cancer/final_training_history.csv",
-      "sha256": "dc6b76e0c4587b371fdc3fc6c4e66c23ab3df5316cafc919100fdd60b1bf3b30",
-      "bytes": 39503
-    },
-    {
       "file": "references/colorectal_cancer/gene_order_10k.npy",
       "sha256": "3289fef03bc2398f31085dba7813e89d15465e39f3784996522a2ff3b7a53f1c",
       "bytes": 440128
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "3a5b3977d8da1e35164562c94a367c1da2b9d4f308b582392a14af32b13397b4",
-      "bytes": 215816
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "56b490b1076bdf70fe84f490170c15468265cd1c1f959959e548b3897a057f32",
-      "bytes": 215507
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "2f89ea0702ff24d5c225ae345fa40acc3be27ddb8ce76dfeccd7496f78be3b5a",
-      "bytes": 215555
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "d1a33c344b9ddc39036d461bb31de4b5c071c9b9a2bf23a7a36b0bf15ed3196b",
-      "bytes": 215507
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "068dc7d76cd656e57ee5d91273842714b378749e3bba376adeffab27414395f2",
-      "bytes": 215513
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_test.csv",
-      "sha256": "bed7fab2d792428fbf18abd0a4bf16d1f5077f12a16118703b33dbca9fc1bccb",
-      "bytes": 216893
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_train.csv",
-      "sha256": "033ee46e9eb66bfce5e439502e4370b8dbf5a5d803539938d294bd67aa853286",
-      "bytes": 215696
-    },
-    {
-      "file": "references/colorectal_cancer/gene_pcc_10k_val.csv",
-      "sha256": "05c82a48a9efa399312a573520283512fc2427bb703a115e6d615b9b8d514e60",
-      "bytes": 216587
     },
     {
       "file": "references/colorectal_cancer/gene_weight_10k.npy",
@@ -548,21 +368,6 @@
       "bytes": 111360
     },
     {
-      "file": "references/colorectal_cancer/reconstruction_metrics_by_slide.csv",
-      "sha256": "533947ec1a0f97a8b4ac6a73788f0f930bf1db74709f5a94b0c76a06fd5a2a87",
-      "bytes": 15135
-    },
-    {
-      "file": "references/colorectal_cancer/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "613b6681cdc65ee774bd1de22f5ad00c405d99d47b0c74b2ae54aad8700d4586",
-      "bytes": 8173
-    },
-    {
-      "file": "references/colorectal_cancer/spot_nmf_refinement_history.csv",
-      "sha256": "4d965bbfb42753fc20d0296d4895ac6069b585b0952cc9cc585e4fd06ae4cf58",
-      "bytes": 4257
-    },
-    {
       "file": "references/colorectal_cancer/technology_gene_adapters.npy",
       "sha256": "b47284c73ff5a143569e4f2eeb4bc048bb7f7a3660ca75e93f18c92f2fd63636",
       "bytes": 80128
@@ -576,11 +381,6 @@
       "file": "references/cutaneous_squamous_cell_carcinoma/batch_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/candidate_dictionary_selection.csv",
-      "sha256": "4684076007ba0846583673ca93a1b430270599343a51e9062a8643a6dd6a3303",
-      "bytes": 794
     },
     {
       "file": "references/cutaneous_squamous_cell_carcinoma/consensus_contract.json",
@@ -608,54 +408,9 @@
       "bytes": 1440128
     },
     {
-      "file": "references/cutaneous_squamous_cell_carcinoma/final_training_history.csv",
-      "sha256": "79fb0f6887da63012e46d0fc6daf2bb69ee39e322726ec608625fe14a11ea22e",
-      "bytes": 41375
-    },
-    {
       "file": "references/cutaneous_squamous_cell_carcinoma/gene_order_10k.npy",
       "sha256": "06e3d16e24f5a58e1d7baf9e75b84cc102192637422e1f2c55f3d423cd27e340",
       "bytes": 680128
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "764a2817feaecfc4813a8bd4141c2d875b2587e7c5904dab000ba67c64509d02",
-      "bytes": 215830
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "741356d0c07b69af5bcab7c01381260669172c33d4b254ca53123a96c0670413",
-      "bytes": 215869
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "3630449677a0a6e586873463beb14013748cd96039256bbdfd880db36710fd15",
-      "bytes": 215802
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "4b5c5f5fd0c361f32180174b8aa886f5e59d3b063723adf43dd1e719cb61afb1",
-      "bytes": 215716
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "063b107597c2e9cd0af75918f8c98047e5682a086bd2b32832d55ede5f69121a",
-      "bytes": 215892
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_test.csv",
-      "sha256": "564b894301378035e4ccc498139d08c82c762c39c110366a7b90146a6068d775",
-      "bytes": 216435
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_train.csv",
-      "sha256": "0e7576eb2b679cea6645e59ddead317a16b6bca35e394e30cf78a34e159abd09",
-      "bytes": 215743
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/gene_pcc_10k_val.csv",
-      "sha256": "47800ec7bc8d43f9e039051c44d6caa0de22d91fd96e1e1ac7c3011939ef4378",
-      "bytes": 216284
     },
     {
       "file": "references/cutaneous_squamous_cell_carcinoma/gene_weight_10k.npy",
@@ -673,21 +428,6 @@
       "bytes": 20720
     },
     {
-      "file": "references/cutaneous_squamous_cell_carcinoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "f74f2d96883233e0b1a04be202b7beb6221ea650234b6cc4152de657835fe364",
-      "bytes": 4128
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "04862c78c6741faa37427dff6853bc6ccfc68a758577a9ad8393f70466c9295b",
-      "bytes": 2353
-    },
-    {
-      "file": "references/cutaneous_squamous_cell_carcinoma/spot_nmf_refinement_history.csv",
-      "sha256": "da7899cbb12579ccd1591370f1b89ebd1a4f941bfd7d574e752c10bd2020aafc",
-      "bytes": 3749
-    },
-    {
       "file": "references/cutaneous_squamous_cell_carcinoma/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -701,11 +441,6 @@
       "file": "references/ependymoma/batch_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
-    },
-    {
-      "file": "references/ependymoma/candidate_dictionary_selection.csv",
-      "sha256": "52dc3b07a313d4bbd9dbf5e1295ad36e1bd42577af5aeb0158c5daa26abde1e8",
-      "bytes": 790
     },
     {
       "file": "references/ependymoma/consensus_contract.json",
@@ -733,54 +468,9 @@
       "bytes": 1280128
     },
     {
-      "file": "references/ependymoma/final_training_history.csv",
-      "sha256": "3be5ae5bd6fd183faf5874a318c78e07aebd9e92f9157129bdd9ddd1cdc24c70",
-      "bytes": 36807
-    },
-    {
       "file": "references/ependymoma/gene_order_10k.npy",
       "sha256": "4d6ab630210bddfddc8d0e8ec480cd763b7630319efb00f9aeee107fba32e83f",
       "bytes": 480128
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "ab5ec405d75cb7e35a5652f6e84d26a9efbda47a9781ec03bda54afd2b1e9947",
-      "bytes": 216674
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "e3cf9db87c0512ebbf7fac30becbb2d53cec1fa31d83070d5cb019a27fd5c6b3",
-      "bytes": 216493
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "877e722ed8d2842e044eb55dbe5187fdf9bf822a57c023e1f780afed4f14eb72",
-      "bytes": 216564
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "194b5ff16ed3619ff3f1e2e39c6c5b7a5268a1c6803609f162213275a70162c7",
-      "bytes": 216403
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "0e62692b5885260147d69adeb3e2d7a59cde444d4785506bd690cab9122fd39b",
-      "bytes": 216609
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_test.csv",
-      "sha256": "e8eb66954a11196c7f0a9e540f6b1b21494647646f1793d4da9b8d91534764bf",
-      "bytes": 217459
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_train.csv",
-      "sha256": "2472e443009d053de7a4bb98baa84107c0b2721e00a6c1fc80e475c130ea3ad4",
-      "bytes": 216558
-    },
-    {
-      "file": "references/ependymoma/gene_pcc_10k_val.csv",
-      "sha256": "7e27c14663de68b6ac17f41397069f7bc4061bed1b77de31346f7cb81a67f7cd",
-      "bytes": 218540
     },
     {
       "file": "references/ependymoma/gene_weight_10k.npy",
@@ -798,21 +488,6 @@
       "bytes": 21504
     },
     {
-      "file": "references/ependymoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "a971c433c28d7ba61bf4694ac3c9692dbd896f85073a6664ce9765db2a790e01",
-      "bytes": 4314
-    },
-    {
-      "file": "references/ependymoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "d68b2f535bd9e2e1548abf630e9ff51845f794c18ec1bd87e2ec4882b0499049",
-      "bytes": 2279
-    },
-    {
-      "file": "references/ependymoma/spot_nmf_refinement_history.csv",
-      "sha256": "00169221716b78d7ee45df23b367e10e7f045a8c70254e6bf9e31a64d0c9dd29",
-      "bytes": 3714
-    },
-    {
       "file": "references/ependymoma/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -826,11 +501,6 @@
       "file": "references/kidney_clear_cell_carcinoma/batch_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/candidate_dictionary_selection.csv",
-      "sha256": "28c04cfb29e5c98785dcd28fe576d3b2e843b34474cbe158f2b26ffec1b81b60",
-      "bytes": 792
     },
     {
       "file": "references/kidney_clear_cell_carcinoma/consensus_contract.json",
@@ -858,54 +528,9 @@
       "bytes": 1920128
     },
     {
-      "file": "references/kidney_clear_cell_carcinoma/final_training_history.csv",
-      "sha256": "1af399fbd4735346630b82b826181aa5ef8ca5b4873225f0c5c935ecb2dd6e36",
-      "bytes": 36011
-    },
-    {
       "file": "references/kidney_clear_cell_carcinoma/gene_order_10k.npy",
       "sha256": "1cbc9d39df1e5918ae379670c8bd3b7bc2fa112bd7480f9bfc8bd0b6bd4066a2",
       "bytes": 440128
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "d52ab5ca820e76df25f4de2bbd427e5393ab3782c05b5c87a50b699360192555",
-      "bytes": 215490
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "17d64888871b11720370243be80268e9a6367d28b7f0aa6006b5a93f6eb18a7c",
-      "bytes": 215398
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "c284612bdd88c8236abe2ff8c27d369be55fec46270cadc71ce1bc8e8aaab5b9",
-      "bytes": 215426
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "55dc0aeef7d347cb5bfc8e5fdf49da5b78fc2845e1c8583e9f3c90ad30627227",
-      "bytes": 215461
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "1dfb78517f498f15bf8ef682aaad4523a81c24cbf30dc0b556cd37282d86461e",
-      "bytes": 215388
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_test.csv",
-      "sha256": "53d75f727a4ce81b28be9c5f0d24d2f2e840af641506ab9581c88fd9ccf6b851",
-      "bytes": 217932
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_train.csv",
-      "sha256": "6c78e6ccb2dd14e4a8aae6c11ee2d3e3f96110c6f85feda07322adb6034f129e",
-      "bytes": 215429
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/gene_pcc_10k_val.csv",
-      "sha256": "32249034f4d7ecb8afa7687b74e9d2a65a6d04fbd88fb0bd8ad93defe9319a1a",
-      "bytes": 217013
     },
     {
       "file": "references/kidney_clear_cell_carcinoma/gene_weight_10k.npy",
@@ -923,21 +548,6 @@
       "bytes": 55040
     },
     {
-      "file": "references/kidney_clear_cell_carcinoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "4101ee6109b749651e2b8c22aa17f4cd7f39c4ab6a30f0a55ffa44642d373eb8",
-      "bytes": 6958
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "1dec84f186e5d8b8b6806705f6c40b51240689e7720ca0fb0afe6b128b44941c",
-      "bytes": 3655
-    },
-    {
-      "file": "references/kidney_clear_cell_carcinoma/spot_nmf_refinement_history.csv",
-      "sha256": "15a099cbe305df897aee8243b5172048f1b17a308ec53cb09f754da6c6783459",
-      "bytes": 3708
-    },
-    {
       "file": "references/kidney_clear_cell_carcinoma/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -951,11 +561,6 @@
       "file": "references/lung_adenocarcinoma/batch_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
-    },
-    {
-      "file": "references/lung_adenocarcinoma/candidate_dictionary_selection.csv",
-      "sha256": "134d0c50ffdeb5adb9790a975c4a2111dff487116f96941b1f3a377965535b67",
-      "bytes": 926
     },
     {
       "file": "references/lung_adenocarcinoma/consensus_contract.json",
@@ -983,54 +588,9 @@
       "bytes": 1920128
     },
     {
-      "file": "references/lung_adenocarcinoma/final_training_history.csv",
-      "sha256": "37a67a85f2524f830db5632534a82be8a3df5b113ef5ae07e796e891e9b204d3",
-      "bytes": 42461
-    },
-    {
       "file": "references/lung_adenocarcinoma/gene_order_10k.npy",
       "sha256": "532a9a0f841203c800b7a493f52e6ee5957f504e4d14b62f0eea199b47878609",
       "bytes": 440128
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "909617cff0f43db792190cd61c29d7c1e14a508fb1b0bc84d7ad5977c5de3626",
-      "bytes": 215431
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "32e28df52a3484d31dd859c09e7eb77d611375e6b14043226e481e2d94e6a0d1",
-      "bytes": 215376
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "28b78c9e5a7415e1bcd4c198d3d00481a257e82ee521db421b609fbee6b007c0",
-      "bytes": 215538
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "619d8bf6f65edf42c45ae31bd02c9fd2a00d0cdacd381687dfaa82782703addc",
-      "bytes": 215522
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "da6c11456f752f820fe1c0b4251fc6ec9dea510134c90586029d32b73d4ccce9",
-      "bytes": 215534
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_test.csv",
-      "sha256": "f766bc30da65c135c8e3363d4ff5279c82b30aebd60b0e5b6991c40f21252e9b",
-      "bytes": 215778
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_train.csv",
-      "sha256": "ddfa535de1a075032c1ef18fd3b9090aee0062962693c1f247639e2002811241",
-      "bytes": 215539
-    },
-    {
-      "file": "references/lung_adenocarcinoma/gene_pcc_10k_val.csv",
-      "sha256": "d4768fde3ebb3123a5a80db3c89613cfd339964a071b68b45c57c37d7e10e785",
-      "bytes": 215708
     },
     {
       "file": "references/lung_adenocarcinoma/gene_weight_10k.npy",
@@ -1048,21 +608,6 @@
       "bytes": 11648
     },
     {
-      "file": "references/lung_adenocarcinoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "53fff6bc2b99140f6ceecfc97d30e76f3677d15c24318e6036c50ed5227974ae",
-      "bytes": 1795
-    },
-    {
-      "file": "references/lung_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "e9f5d861756b52d9f59739bc1393c938a454644a0e4dc7d399122661e4ccd19c",
-      "bytes": 963
-    },
-    {
-      "file": "references/lung_adenocarcinoma/spot_nmf_refinement_history.csv",
-      "sha256": "e3c8fed467496423957e8d7ec86ccfc8e63e6c3f29ff144311938be4ed1717a4",
-      "bytes": 3820
-    },
-    {
       "file": "references/lung_adenocarcinoma/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -1076,11 +621,6 @@
       "file": "references/pancreatic_adenocarcinoma/batch_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/candidate_dictionary_selection.csv",
-      "sha256": "38395f5a1b3d1a84f8fac0b8587b65dd4186130a6b87a6be4d5480bea5215add",
-      "bytes": 981
     },
     {
       "file": "references/pancreatic_adenocarcinoma/consensus_contract.json",
@@ -1108,54 +648,9 @@
       "bytes": 1920128
     },
     {
-      "file": "references/pancreatic_adenocarcinoma/final_training_history.csv",
-      "sha256": "09e686f6e443e44fc0097407d2d499dc91ba230fcd7a07a5650c54842a13a405",
-      "bytes": 43013
-    },
-    {
       "file": "references/pancreatic_adenocarcinoma/gene_order_10k.npy",
       "sha256": "97223eff1cd696408ec91fc872d93cfe805ba8166bebfcb7aa28a3468ca656e4",
       "bytes": 400128
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "85b2b7374882272d42e269fe9b182d2b4829af2ec6db6f760186aee008df4787",
-      "bytes": 215272
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "3b6d3b68d8ef4197b1307fee9533f75a3143348e758a17bb8a938e9b1a07830e",
-      "bytes": 215253
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "3aa9592cb9ed09ca77706cec328a84be89f187de416b1d978bf8c7d6455ad92c",
-      "bytes": 215268
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "572a47983b747721c0716016279634adf4cbcb91500c8c2002bf1d416505ac0e",
-      "bytes": 215333
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "cfa11aea70ad60611d4b52fa4bdf10c21ed1e022d53ba30a8932728148359389",
-      "bytes": 215347
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_test.csv",
-      "sha256": "33e9b3133876ddace21cedc3fc7f968069867bfa72a40b629218e4972378bec3",
-      "bytes": 215263
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_train.csv",
-      "sha256": "f10923ef5a7562dfa7606767747761ed485ff9e15546fb859bce3b66d8d807ea",
-      "bytes": 215309
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/gene_pcc_10k_val.csv",
-      "sha256": "e45b4050889806ee5d1848ee2d941ab3a1c9e1621b036c07c4869d9290fe28e6",
-      "bytes": 215292
     },
     {
       "file": "references/pancreatic_adenocarcinoma/gene_weight_10k.npy",
@@ -1173,21 +668,6 @@
       "bytes": 9344
     },
     {
-      "file": "references/pancreatic_adenocarcinoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "c4570d2da2959d812629250921d8e08b6ed99331d32ec36564326a6650be16ee",
-      "bytes": 1457
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "8c1b7e52ea4417ddac035c075bff7aa6bd4d3034cc6df051e195f2cc25d44896",
-      "bytes": 782
-    },
-    {
-      "file": "references/pancreatic_adenocarcinoma/spot_nmf_refinement_history.csv",
-      "sha256": "23b3d72faf3faf3ed91891f261456d5d1117224ae1aa7ffe2c7ff698307c1033",
-      "bytes": 3847
-    },
-    {
       "file": "references/pancreatic_adenocarcinoma/technology_gene_adapters.npy",
       "sha256": "8f0568184ccaca198fc66b9d98666cd099d2a2f3ce6eae3449045f7863da2c3c",
       "bytes": 40128
@@ -1201,11 +681,6 @@
       "file": "references/prostate_adenocarcinoma/batch_gene_adapters.npy",
       "sha256": "8e505ade47f4f0fcb9e1986dee2b8e65a45f225fd74dfbdb253790e3cedee5bc",
       "bytes": 80128
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/candidate_dictionary_selection.csv",
-      "sha256": "52c11a464cadc34e0a4275543298eeafffdcbd59fe5ef01c0c6fc4cff2fec99d",
-      "bytes": 886
     },
     {
       "file": "references/prostate_adenocarcinoma/consensus_contract.json",
@@ -1233,54 +708,9 @@
       "bytes": 3840128
     },
     {
-      "file": "references/prostate_adenocarcinoma/final_training_history.csv",
-      "sha256": "75006868e91d06ac3d8815f9b5f2220c75b7c223958a71c12cf49266e0054dda",
-      "bytes": 45986
-    },
-    {
       "file": "references/prostate_adenocarcinoma/gene_order_10k.npy",
       "sha256": "72d418c16ab8e6e01c374a3a02e23757e1805f518b11ec702532e3c31a49ea7e",
       "bytes": 400128
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_all177_full_fit.csv",
-      "sha256": "c64ea6d6d512977b7293ebc20dc9f19d209567931e5aa1b837c1186afa79aabd",
-      "bytes": 215460
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_all177.csv",
-      "sha256": "c2c27a3f6049b3a6203cdb2bd58e61894038290fa353ae2f5c9ed81e4d483a5b",
-      "bytes": 215469
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_test.csv",
-      "sha256": "93721a07a7fa25842a40b580e8c1670d6280cef3f1e84db095ab965d95b7423f",
-      "bytes": 215426
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_train.csv",
-      "sha256": "f2fe310d2d9886a80e97d02ef0f4abe925f333ce4774dec539c8de9a48b114d0",
-      "bytes": 215457
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_spot_nmf_val.csv",
-      "sha256": "df274837ac1ea753b9f1ebdcb592c44f2f145d8b832d90fe34ef0a5e8aed9de9",
-      "bytes": 215441
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_test.csv",
-      "sha256": "e0a2ae59d00bc6086cc55260537de4c9e56ed7ea46632670eefc067dd64c1ff5",
-      "bytes": 218098
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_train.csv",
-      "sha256": "09ea3a057dd5afc8bb63b32de4771a49f3abc37bcf1ad0b3450797b3988b9f53",
-      "bytes": 215437
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/gene_pcc_10k_val.csv",
-      "sha256": "1694bf6caa88f947bfc64925e369f4a2bd729850f5895f1b413a7a09016ac586",
-      "bytes": 218590
     },
     {
       "file": "references/prostate_adenocarcinoma/gene_weight_10k.npy",
@@ -1296,21 +726,6 @@
       "file": "references/prostate_adenocarcinoma/local_to_consensus_mapping.npy",
       "sha256": "4b6a8043e474fec9428bf4218769f93c9ce9fcb4c5548109ad77026e8baef8f2",
       "bytes": 18368
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/reconstruction_metrics_by_slide.csv",
-      "sha256": "5a84638068b3702c4e51e51bb7558cbef732e206811d8fb59abe7c58ede2c21e",
-      "bytes": 2584
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/spot_nmf_reconstruction_metrics_by_slide.csv",
-      "sha256": "c7a715520b4711b3ab19be51408e12112b4d95362eb7eced2a8aa69c9a6e10db",
-      "bytes": 1358
-    },
-    {
-      "file": "references/prostate_adenocarcinoma/spot_nmf_refinement_history.csv",
-      "sha256": "0984e702966fc88538bfb577a453feee4c544ea9b8531abbf2d1c9d934893cf7",
-      "bytes": 4399
     },
     {
       "file": "references/prostate_adenocarcinoma/technology_gene_adapters.npy",

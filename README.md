@@ -61,11 +61,11 @@ python -m covarst infer-spots --cancer colorectal_cancer \
   --features DATA/slide.features.npz --output WORK/slide.spot_expression.h5
 ```
 
-部署模型由同癌种教师集成蒸馏得到，仓库里的一致性结果衡量的是拟合程度，不是独立患者验证。
+部署模型由同癌种教师集成蒸馏得到，一致性门槛衡量的是拟合程度，不是独立患者验证。
 H&E 推理输出的是表达概率，细胞模块需要实测粗计数，两者不能直接互换。
 ParamNet、Virchow2 和 CellViT++ 只提供官方链接，权重不随包分发。
 
-[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [发布状态](CoVarST/docs/RELEASE_STATUS.md) | [核查报告](CoVarST/docs/LOCAL_AUDIT.md)
+[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md)
 
 ### CRC Survival Models
 
@@ -83,7 +83,7 @@ python predict.py validate-install
 
 输出是相对风险，不是生存概率或治疗建议。原始 WSI 流程需要用户本地准备 CellViT++ 与 UNI，仓库只提供说明和官方链接。
 
-[项目说明](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [外部依赖说明](crc-survival-models/docs/THIRD_PARTY_NOTICES.md) | [Fig3 统计与模型对应关系](crc-survival-models/docs/FIG3_PROVENANCE.md)
+[项目说明](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [外部依赖说明](crc-survival-models/docs/THIRD_PARTY_NOTICES.md)
 
 ## 路线图
 

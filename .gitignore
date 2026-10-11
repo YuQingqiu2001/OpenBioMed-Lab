@@ -18,3 +18,5 @@ literature-workspace/
 
 # Agent configs
 agents/
+# Local-only figures
+assets/

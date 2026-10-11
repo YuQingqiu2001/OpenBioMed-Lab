@@ -6,10 +6,9 @@
 |---|---|
 | 运行已有癌种模型 | [使用指南](docs/QUICKSTART.md)、[H&E 推理](docs/HE_TO_SPOTS.md) |
 | 理解或重建参考矩阵 | [参考矩阵构建](docs/REFERENCE_PROGRAMS.md) |
-| 理解每癌种一个权重的整合过程 | [模型整合](docs/MODEL_CONSOLIDATION.md) |
 | 从实测粗 ST 重建细胞表达 | [细胞输入规范与输出](docs/SPOT_TO_CELL.md) |
 | 获取第三方权重 | [官方来源](docs/THIRD_PARTY.md) |
-| 核对完成程度和检查证据 | [发布状态](docs/RELEASE_STATUS.md)、[核查报告](docs/LOCAL_AUDIT.md) |
+| 检查安装与资产完整性 | [使用指南](docs/QUICKSTART.md) |
 
 每个癌种发布一个原容量学生模型，共九个。训练目标是同癌种全部原始教师在图像输入上的概率均值，原始 166 个交叉验证权重不进入公开包。
 

@@ -45,13 +45,12 @@ python -m covarst fit-fixed-reference --queue-dir WORK/local_bayes \
   --target-programs 40 --selection-tolerance 0.002
 ```
 
-`compress-programs` 是早期仅供 RCCD 使用的辅助入口，它的开发默认值不是最终方案；最终选择用上面的命令，再执行对应的联合细化。每份癌种参考都附带历史候选选择、细化摘要和配置。
+`compress-programs` 是早期仅供 RCCD 使用的辅助入口，它的开发默认值不是最终方案；最终选择用上面的命令，再执行对应的联合细化。每份癌种参考都附带参考构建约定。
 
 | 文件 | 内容 |
 |---|---|
 | `local_to_consensus_mapping.npy` | 局部到共识映射 |
 | `local_program_assignment.csv` | 局部分配记录 |
-| `candidate_dictionary_selection.csv` | 候选规模选择依据 |
 | `consensus_contract.json` | 参考构建约定 |
 | `consensus_reference_probability_10k.npy` | 中性参考 W |
 | `gene_order_10k.npy` | 精确基因顺序 |

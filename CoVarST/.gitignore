@@ -5,3 +5,16 @@ __pycache__/
 WORK/
 DATA/
 *.partial
+
+# 研究记录与核查产出，不随包分发
+validation/
+provenance/
+docs/LOCAL_AUDIT.md
+docs/RELEASE_STATUS.md
+docs/MODEL_CONSOLIDATION.md
+references/*/gene_pcc_10k_*.csv
+references/*/final_training_history.csv
+references/*/spot_nmf_refinement_history.csv
+references/*/reconstruction_metrics_by_slide.csv
+references/*/spot_nmf_reconstruction_metrics_by_slide.csv
+references/*/candidate_dictionary_selection.csv

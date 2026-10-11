@@ -130,11 +130,6 @@ results/CRC_001/
 - 结构检查：`python -m pytest tests/ -q`
 - 安装校验：`python predict.py validate-install`，加 `--raw-wsi` 可额外检查本地
   CellViT++ 与 UNI 路径
-- 运行记录：`docs/validation/` 保留两次真实运行的完整数值，可用来核对运行环境：
-  - 304 MB 结直肠癌 SVS 端到端：细胞拓扑 risk `-0.3449`（low）、Patch risk `0.2766`
-    （high）。两套模型使用不同输入，同一病例可以落入不同分组。
-  - Patch 模型 CPU 复跑与 GPU 记录值的连续分数差约 0.0006，分组一致；这一量级的
-    差异来自浮点执行环境。
 
 ## Fig3 统计量
 
@@ -143,8 +138,7 @@ results/CRC_001/
 HR 1.810（95% CI 1.329 至 2.464）。
 
 Patch 模型在四个队列上的连续风险随机效应 Meta 分析为 HR 1.743
-（95% CI 1.176 至 2.583），P=`0.0206`。各队列统计量见
-[Fig3 模型溯源](docs/FIG3_PROVENANCE.md)。
+（95% CI 1.176 至 2.583），P=`0.0206`。
 
 ## 项目结构
 
@@ -154,13 +148,11 @@ crc-survival-models/
 ├── predict_wsi.py               原始 WSI 端到端入口（含 --check-only 预检）
 ├── environment.yml              conda 环境（Python 3.10、PyTorch 2.2.1、OpenSlide 等）
 ├── models/
-│   ├── cell_topology/           模型卡、推理代码、权重、WSI 特征流程、参考统计量
-│   └── patch_feature/           模型卡、推理代码、五折权重、Patch cache 提取器、参考统计量
+│   ├── cell_topology/           模型卡、推理代码、权重、WSI 特征流程
+│   └── patch_feature/           模型卡、推理代码、五折权重、Patch cache 提取器
 ├── docs/
 │   ├── QUICKSTART.md            WSI 完整流程
-│   ├── FIG3_PROVENANCE.md       Fig3 与参考统计量的对应关系
-│   ├── THIRD_PARTY_NOTICES.md   外部依赖来源与许可
-│   └── validation/              验证运行记录
+│   └── THIRD_PARTY_NOTICES.md   外部依赖来源与许可
 ├── tests/                       结构检查（pytest）
 ├── SKILL.md                     供 Agent 调用本项目时的操作约定
 └── LICENSE                      CC BY-NC-SA 4.0
@@ -203,8 +195,7 @@ C-index 0.6454, log-rank P=`8.75e-05`, and HR 1.810 per IQR of risk
 (95% CI 1.329 to 2.464). For the Patch Feature model, the continuous-risk random-effects
 estimate across four cohorts was HR 1.743 (95% CI 1.176 to 2.583), P=`0.0206`.
 
-Structure checks run with `python -m pytest tests/ -q`; validation records from two full
-runs are kept under `docs/validation/`. This code and the included models are for
+Structure checks run with `python -m pytest tests/ -q`. This code and the included models are for
 research use only, and are released under CC BY-NC-SA 4.0 (see `LICENSE`); please cite
 this repository when using them.
 

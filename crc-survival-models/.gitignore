@@ -13,3 +13,7 @@ results/
 *.tmp
 cell_detection_status.json
 patch_cache_audit.tsv
+
+docs/validation/
+docs/FIG3_PROVENANCE.md
+models/*/reference_results/

@@ -12,4 +12,4 @@
 
 Virchow2 的获取和使用遵循官方模型说明与许可，本包许可不给第三方权重附加任何使用权。ParamNet 根目录下需要有 `source.model.ParamNet` 和 `checkpoints/ParamNet-Uni.pt`；Virchow2 根目录下需要放官方兼容权重。实际配准核普查按 CellViT++ 的文档生成，并把类别显式映射到本包的五类规范。
 
-`_engine` 是本研究的数学实现和适配代码。`provenance/source_manifest.json` 记录了完整复制、精确语法树子集和路径调整的来源哈希；内部历史名称因兼容性保留，公开名称统一为 CoVarST。
+`_engine` 是本研究的数学实现和适配代码。内部历史名称因兼容性保留，公开名称统一为 CoVarST。
