@@ -6,42 +6,36 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-blue.svg)](literature-learning-suite/LICENSE)
 
-## 这是什么
+OpenBioMed Lab 收集生物医学 AI 研究中的可复现工具，目前覆盖文献分析、病理图像与空间转录组。
+每个子项目都可以独立安装使用，操作说明同时面向人和 AI Agent。
 
-OpenBioMed Lab 收集在生物医学 AI 研究中开发的可复现工具。所有工具都以 AI Agent 作为主要操作界面。
-文档既供人阅读，也可由 Agent 直接执行。
+## 运行环境
 
-## 推荐运行环境
-
-本 Lab 的每个子项目都包含 `SKILL.md`，Agent 加载后即可掌握完整操作流程。
-经过验证的运行方式：
+每个子项目都包含 `SKILL.md`，Agent 加载后可以执行完整流程。开发时使用的组合：
 
 - Agent 宿主：[Hermes Agent](https://github.com/NousResearch/hermes-agent)（[文档](https://hermes-agent.nousresearch.com/docs)）
 - 语言模型：[DeepSeek V4 Pro](https://www.deepseek.com/)（[API](https://platform.deepseek.com/)）
 
-这套组合在文献深度分析任务上跑过数百篇论文。
-
 ## 子项目
 
-### 1. Literature Learning Suite `v1.3.0`
+### Literature Learning Suite `v1.3.0`
 
-学术文献的深度分析与知识图谱构建工具。
+学术文献的深度分析与知识图谱构建工具。分析结果以 NDJSON 知识图谱持久化，可以全文检索、图遍历和导出。
 
-[项目文档](literature-learning-suite/README.md) | [中文指南](literature-learning-suite/GUIDE_ZH.md)
-
-工具从 PubMed/arXiv 检索论文，获取全文，按 7 层结构解剖，把结果持久化为 NDJSON 知识图谱并自动生成关联边，最后输出每日速报。
+- 检索：PubMed、arXiv、bioRxiv、medRxiv、Crossref
+- 分析：7 层结构化解剖协议（T1 到 T7），每层都有内容要求，只贴标签的条目会被自检判为空壳
+- 关联：5 种策略生成论文之间的语义边，随包提供 90,125 个基因符号与 25,939 条通路和 GO 术语
+- 数据：21,800 种期刊的 JCR 2024 影响因子
+- 自检：10 维度知识图谱健康检查
 
 安装到 Hermes Agent：
 
 ```bash
-# 在 Hermes Agent 中执行
 git clone https://github.com/YuQingqiu2001/OpenBioMed-Lab.git
 cp -r OpenBioMed-Lab/literature-learning-suite ~/.hermes/skills/
 ```
 
-装好后 Agent 会识别 `literature-learning-suite` skill，加载 `SKILL.md` 获取完整操作流程，之后用对话就能驱动文献分析。
-
-也可以手动运行：
+也可以直接运行脚本：
 
 ```bash
 cd literature-learning-suite
@@ -49,47 +43,56 @@ pip install -r scripts/requirements.txt
 python scripts/init_workspace.py
 ```
 
-包含的内容：
+[项目说明](literature-learning-suite/README.md) | [中文指南](literature-learning-suite/GUIDE_ZH.md)
 
-| 组件 | 说明 |
-|------|------|
-| 检索工具 | PubMed/arXiv/bioRxiv/Crossref 多源检索 |
-| 分析协议 | S 级 7 层解剖（T1-T7，含空壳检测） |
-| 关联引擎 | 5 策略语义边生成（90,125 基因 + 25,939 通路） |
-| 期刊数据 | 21,800 种期刊 JCR 2024 IF（自动标注） |
-| 质量自检 | 10 维度知识图谱健康检查 |
-| 文档 | 7 种语言（中/英/德/日/韩/西/阿） |
-| MCP 模板 | PubMed/arXiv/Fetch/Playwright 四种 MCP 配置 |
+### CoVarST
 
-实操验证数据见子项目的 [README](literature-learning-suite/README.md)。
+从 H&E 图像恢复空间转录组表达的 Python 包，覆盖九个癌种。
 
-### 2. CoVarST
+- 九个癌种各有一套固定的表达程序参考，合计 396 个 Programs，每套 10,000 个基因
+- 每个癌种一个部署模型，输入 H&E 特征，输出 spot 级表达
+- 细胞级重建只用同切片实测的低分辨率 ST 和真实细胞核
 
-[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [本地发布状态](CoVarST/docs/RELEASE_STATUS.md) | [核查报告](CoVarST/docs/LOCAL_AUDIT.md)
+```bash
+cd CoVarST
+export PYTHONPATH="$PWD/src"
+python -m covarst verify-assets
+python -m covarst infer-spots --cancer colorectal_cancer \
+  --features DATA/slide.features.npz --output WORK/slide.spot_expression.h5
+```
 
-这个子项目研究从 H&E 图像恢复空间转录组表达，分三部分。第一部分把逐切片的局部 Programs 整理成每个癌种统一的固定参考矩阵；第二部分为九个癌种各整合出一个模型，从 H&E 直接推理 spot 表达；第三部分只用同切片实测的粗分辨率 ST 和真实图像里的细胞核，重建细胞级表达。
+部署模型由同癌种教师集成蒸馏得到，仓库里的一致性结果衡量的是拟合程度，不是独立患者验证。
+H&E 推理输出的是表达概率，细胞模块需要实测粗计数，两者不能直接互换。
+ParamNet、Virchow2 和 CellViT++ 只提供官方链接，权重不随包分发。
 
-H&E 推理输出的是表达概率，细胞模块要的是实测粗计数，两者目前不能直接互换。
+[项目说明](CoVarST/README.md) | [中文指南](CoVarST/GUIDE_ZH.md) | [快速开始](CoVarST/docs/QUICKSTART.md) | [发布状态](CoVarST/docs/RELEASE_STATUS.md) | [核查报告](CoVarST/docs/LOCAL_AUDIT.md)
 
-模型整合保留原网络容量，用同癌种多折预测概率做集成蒸馏，每个癌种最终只留一个部署模型。原始患者级交叉验证统计和整合模型的教师一致性结果分别记录，九个癌种都通过了整合一致性门槛，具体资产见项目发布清单。ParamNet、Virchow2 和 CellViT++ 只链接官方项目，不复制其权重。
+### CRC Survival Models
 
-### 3. CRC Survival Models
+两套结直肠癌病理生存模型，附权重、推理代码和模型卡。输入全切片图像或已提取的特征文件，输出连续的总体生存相对风险。
 
-`Fig3` 使用的两套结直肠癌病理生存模型已经整理为独立子项目：
+- Cell Topology：输入带细胞类型的空间邻接图，分别给出全组织和肿瘤前沿的相对风险
+- Patch Feature：输入病理 patch 表征与空间邻域，由五折模型给出患者相对风险
 
-- Cell Topology：根据带细胞类型的邻接图，分别计算全组织和肿瘤前沿风险。
-- Patch Feature：结合 Patch 表征、局部空间梯度和肿瘤核心、前沿、瘤周信息，以五折集成输出风险。
+```bash
+cd crc-survival-models
+conda env create -f environment.yml
+conda activate crc-survival
+python predict.py validate-install
+```
 
-仓库包含模型权重、推理代码、模型卡和 `Fig3` 统计量。UNI 与 CellViT++ 只链接官方项目，不在本仓库中复制源码或权重。
+输出是相对风险，不是生存概率或治疗建议。原始 WSI 流程需要用户本地准备 CellViT++ 与 UNI，仓库只提供说明和官方链接。
 
-[项目说明](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [Fig3 统计与模型对应关系](crc-survival-models/docs/FIG3_PROVENANCE.md)
+[项目说明](crc-survival-models/README.md) | [快速开始](crc-survival-models/docs/QUICKSTART.md) | [外部依赖说明](crc-survival-models/docs/THIRD_PARTY_NOTICES.md) | [Fig3 统计与模型对应关系](crc-survival-models/docs/FIG3_PROVENANCE.md)
 
 ## 路线图
 
-| # | 子项目 | 说明 |
-|---|--------|------|
-| 4 | 常规生物学/医学数据运行 | 常见生物医学数据格式的读取、处理、可视化流水线 |
-| 5 | CoVarST 独立验证与扩展 | 对整合部署模型开展独立验证并扩展癌种 |
+| # | 方向 | 说明 |
+|---|------|------|
+| 1 | 生物信息学 DSH 插件与 Codex Skill | 把常用生信分析流程封装成 Agent 可直接加载的插件与技能 |
+| 2 | 糊化与低分辨率 H&E 重建 | 从模糊、低倍 H&E 恢复可用的形态信息，并据此定义新的病理大模型 |
+| 3 | 疾病演化高维特征谱构建 | 在疾病演化过程中构建高维特征谱，刻画状态转变与轨迹 |
+| 4 | 虚拟组织构建 | 生成带空间结构和细胞组成的虚拟组织，用于方法验证与数据增广 |
 
 ## 署名
 
