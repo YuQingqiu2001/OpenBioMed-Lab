@@ -1,6 +1,6 @@
 # 独立 Programs 如何形成癌种统一参考
 
-最终产物是 `references/CANCER/consensus_reference_probability_10k.npy`，记作 W，形状为 K × 10,000，每行是一个 Program 的基因概率分布。`gene_order_10k.npy`、Program 顺序和批次适配器都是冻结资产。教师和学生都用这套参考解码 `theta_rna @ W`。
+最终产物是 `references/CANCER/consensus_reference_probability_10k.npy`，记作 W，形状为 K × 10,000，每行是一个 Program 的基因概率分布。`gene_order_10k.npy`、Program 顺序和批次适配器都是冻结资产。推理时用这套参考解码 `theta_rna @ W`。
 
 ## 最终构建步骤
 
@@ -59,4 +59,4 @@ python -m covarst fit-fixed-reference --queue-dir WORK/local_bayes \
 
 ## 评估范围
 
-历史固定参考在图像模型的患者留一评估之前就用上了全部可用的癌种 RNA，因此是队列条件下的传导式参考。原始成绩描述的是固定参考下的图像泛化，不代表参考对全新 RNA 队列的完全独立泛化。教师整合不改变这一范围。
+历史固定参考在图像模型的患者留一评估之前就用上了全部可用的癌种 RNA，因此是队列条件下的传导式参考。原始成绩描述的是固定参考下的图像泛化，不代表参考对全新 RNA 队列的完全独立泛化。部署权重不改变这一范围。

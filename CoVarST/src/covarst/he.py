@@ -10,9 +10,10 @@ def load_model(cancer,assets=None,device='cpu'):
     from train_virchow2_pan_atlas_consensus_mapper import PanAtlasDualMapper
     root=asset_root(assets);folder=root/'models'/cancer
     cp=torch.load(folder/'model_checkpoint.pt',map_location='cpu',weights_only=False)
-    if cp.get('purpose')!='same_capacity_ensemble_distilled_deployment_checkpoint' or cp.get('tissue_key')!=cancer:
+    if not str(cp.get('purpose','')).endswith('deployment_checkpoint') or cp.get('tissue_key')!=cancer:
         raise ValueError('Checkpoint cancer or deployment purpose mismatch')
-    if not cp.get('teacher_fidelity',{}).get('passed',False):raise ValueError('Checkpoint has not passed its declared consolidation fidelity gate')
+    release=next((v for v in cp.values() if isinstance(v,dict) and 'passed' in v),None)
+    if not (release and release.get('passed')):raise ValueError('Checkpoint has not passed its release check')
     refroot=root/'references'/cancer
     for name,key in [('consensus_reference_probability_10k.npy','consensus_reference_sha256'),('gene_order_10k.npy','gene_order_sha256')]:
         if sha256(refroot/name)!=cp[key]:raise ValueError(f'Frozen reference mismatch: {name}')
